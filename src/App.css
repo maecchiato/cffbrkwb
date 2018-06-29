@@ -33,3 +33,35 @@
 {
   background-color: #000000!important;
 }
+
+
+@media (min-width: 768px) {
+    .home-background {
+        height:100%;
+        padding: 0
+    }
+
+}
+
+
+
+/* Home Section */
+
+#home-section
+{
+  height: 100%;
+}
+
+.home-background
+{
+  background-image: url('https://coffeebreak.ph/beta/img/intro-bg.jpg');
+  width: 100%;
+  display: table;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
