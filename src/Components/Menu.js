@@ -2,10 +2,8 @@ import React from 'react';
 import '../App.css';
 
 const Menu = () => (
-  <div id = "home-section" className = "row">
-    <header className = "pt-5">
-      <h1 className = "pt-5">dasdasda</h1>
-    </header>
+  <div id = "menu-section" className = "row">
+    <h1 className = "p-5 display-1">Menu</h1>
   </div>
 )
 
