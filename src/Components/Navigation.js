@@ -6,10 +6,14 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => (
   <nav className = "navbar navbar-expand-lg fixed-top navbar-dark bg-black">
-    <a className ="navbar-brand" href = "#">
+  <Link to = "/" >
+
+    <a className ="navbar-brand" >
     <img src="https://coffeebreak.ph/beta/img/coffeebreakLogo.png" width="150" height="50" className = "d-inline-block align-top" alt="" />
 
     </a>
+
+  </Link>
     <button className = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className = "navbar-toggler-icon"></span>
     </button>
