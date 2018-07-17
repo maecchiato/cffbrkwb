@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { Link, Switch, Route, BrowserRouter } from 'react-router-dom';
-import { render } from "react-dom";
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Navigation from './Components/Navigation.js';
 import Footer from './Components/Footer.js';

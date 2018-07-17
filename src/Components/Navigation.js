@@ -20,44 +20,44 @@ const Navigation = () => (
 
     <div className = "collapse navbar-collapse" id = "navbarNavDropdown">
       <ul className = "navbar-nav">
-        <li className = "nav-item active ml-md-3">
+        <li className = "nav-item ml-md-3">
             <Link to = "/" className = "nav-link">
                 <a>HOME</a>
             </Link>
         </li>
         <li className = "nav-item ml-md-3">
-          <Link to = "/about-us" className = "nav-link">
+          <Link to = "/about-us" className = "nav-link" data-toggle = "collapse" data-target=".navbar-collapse">
               ABOUT US
           </Link>
         </li>
         <li className="nav-item dropdown ml-md-3">
-          <Link to = "/menu" className = "nav-link">
+          <Link to = "/menu" className = "nav-link" data-toggle = "collapse" data-target=".navbar-collapse">
             <a className = "dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               MENU
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">Beverages</a>
-              <a className="dropdown-item" href="#">Food</a>
+              <a className="dropdown-item" href="/">Beverages</a>
+              <a className="dropdown-item" href="/">Food</a>
             </div>
           </Link>
         </li>
         <li className = "nav-item ml-md-3">
-          <Link to = "/store-locator" className = "nav-link">
+          <Link to = "/store-locator" className = "nav-link" data-toggle = "collapse" data-target=".navbar-collapse">
               STORE LOCATOR
           </Link>
         </li>
         <li className = "nav-item ml-md-3">
-          <Link to = "/partners" className = "nav-link">
+          <Link to = "/partners" className = "nav-link" data-toggle = "collapse" data-target=".navbar-collapse">
               PARTNERS
           </Link>
         </li>
         <li className = "nav-item ml-md-3">
-          <Link to = "/careers" className = "nav-link">
+          <Link to = "/careers" className = "nav-link" data-toggle = "collapse" data-target=".navbar-collapse">
               CAREERS
           </Link>
         </li>
         <li className = "nav-item ml-md-3">
-          <Link to = "/contact" className = "nav-link">
+          <Link to = "/contact" className = "nav-link" data-toggle = "collapse" data-target=".navbar-collapse">
               CONTACT
           </Link>
         </li>

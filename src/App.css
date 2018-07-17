@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
 /* Bootstrap Overrides */
 
 .bg-black
 {
-  background-color: #000000!important;
+  background-color: rgba(0,0,0,0.90)!important;
 }
 
 .container-fluid
@@ -10,17 +15,6 @@
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
-
-.card
-{
-  border: 0px !important;
-}
-
-.card h5
-{
-  line-height: 0.6;
-}
-
 
 .navbar-dark .navbar-nav .nav-link:hover {
     opacity: 1;
@@ -87,7 +81,7 @@
   padding: 165px 0;
   text-align: center;
   color: white;
-  background: url("Library/img/home-bg.jpg") no-repeat bottom center scroll;
+  background: url("Library/img/copy.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -95,25 +89,160 @@
   background-size: cover;
 }
 
+
+@media only screen and (min-width: 600px) {
+
+  .home-section
+  {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 165px 0;
+    text-align: center;
+    color: white;
+    background: url("Library/img/home-bg.jpg") no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
 /*  About Section */
+
+#about-section
+{
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+  padding: 30% 0;
+}
+
+#about-section .about-coffee
+{
+  width: 50%;
+}
+
+#about-section .about-title
+{
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#about-section .about-description
+{
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#about-section .about-mv-description
+{
+  font-size: 0.95em;
+}
+
+#about-section .about-quote
+{
+  margin-top: 9%;
+  font-size: .63em;
+}
 
 #about-section .about-section-line
 {
   position: absolute;
   height: 100%;
   width: 12%;
-  background-color: red;
   bottom: 0;
   left: 15%;
   background-color: #ffb24a;
 }
 
+.full-height-toggle
+{
+  height: 100%;
+}
+
+#about-section .about-more
+{
+  color: #ed1c24 !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  #about-section .about-coffee
+  {
+    position: fixed;
+    left: 5%;
+    width: 30%;
+    bottom: 12%;
+  }
+
+  #about-section
+  {
+    padding: 10% 0 !important;
+  }
+
+  #about-section .about-title
+  {
+    font-size: 4.2rem !important;
+  }
+
+  #about-section .about-description
+  {
+    font-size: 1.1em;
+  }
+
+
+  #about-section .about-quote
+  {
+    margin-top: 10%;
+    font-size: 1em;
+  }
+
+}
 
 /* Menu Section */
 
 #menu-section
 {
-  padding-top: 5%;
+  padding: 7% 0;
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+}
+
+#menu-section .card {
+  background-color: #f7f7f7;
+  border: 0px !important;
+}
+
+#menu-section .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.3rem;
+}
+
+#menu-section .nav-pills-option
+{
+  background-color: #e7e7e7;
+}
+
+#menu-section a
+{
+  color: #1d1d1d;
+  font-size: 1em;
+}
+
+#menu-section .card-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #721c24;
+    letter-spacing: .6px;
 }
 
 #menu-section .menu-title-box
@@ -135,20 +264,327 @@
 }
 
 
-#menu-section a
-{
-  color: black;
-  font-size: 23px;
-}
-
 #menu-section .nav-pills .nav-link.active, #menu-section .nav-pills .show>.nav-link
 {
   background-color: #721c24;
   color: white;
 }
 
-#facebookCoffeebreak
+@media only screen and (min-width: 769px) {
+
+  #menu-section
+  {
+    height: 100%;
+  }
+}
+
+/* Partners Section */
+
+#partners-section
 {
-  border: none !important;
-  overflow: hidden !important;
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+  height: 100%;
+}
+
+#partners-section .partners-background
+{
+  height: 100%;
+  display: table;
+  width: 100%;
+  padding-top: 30%;
+  text-align: center;
+  color: white;
+  background: url("Library/img/partners-bg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+#partners-section .partners-box
+{
+  padding: 20% 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+}
+
+#partners-section .partners-title
+{
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#partners-section .btn-warning
+{
+  background-color: #ffb24a;
+  border-color: #ffb24a;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+#partners-section .partners-info
+{
+  padding: 8% 0;
+  width: 100%;
+}
+
+
+#partners-section .partners-info
+{
+  padding: 5% 0;
+}
+
+#partners-section .info-title
+{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+#partners-section .btn-secondary
+{
+  background-color: #721c24;
+  border-color: #721c24;
+}
+
+#partners-section .partner-details
+{
+  background-color: #ffb24a;
+  color: #1d1d1d;
+  padding: 6% 0 9% 0;
+}
+
+#partners-section .partner-details a
+{
+  text-decoration: none;
+}
+
+#partners-section .partner-details .alert-danger
+{
+  background-color: #721c24;
+  border-color: #721c24;
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+
+  #partners-section .partners-background
+  {
+    padding: 15% 0 35% 0;
+  }
+
+  #partners-section .partners-box
+  {
+    padding: 3% 0;
+  }
+
+  #partners-section .partners-title
+  {
+    font-size: 3.8em;
+  }
+
+}
+
+#store-locator-section
+{
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+}
+
+#store-locator-section .map-search-overlay
+{
+  position: absolute;
+  top: 15%;
+  width: 80%;
+  right: 5%;
+}
+
+#store-locator-section .map-section
+{
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+
+  #store-locator-section .store-search-box
+  {
+    padding-top: 30%;
+  }
+
+}
+
+#careers-section
+{
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+  padding: 20% 0;
+  height: 0%;
+}
+
+#careers-section .career-title-parent
+{
+  background-color: #1d1d1d;
+  color: #d6943f;
+  padding: 1.5% 0;
+}
+
+#careers-section .career-title
+{
+  font-size: 3em;
+  font-family: 'Crete Round', Open Sans !important;
+}
+
+#careers-section .info-card {
+  display: inline-block;
+  margin: 10px;
+  -webkit-perspective: 600px;
+}
+
+#careers-section .front,#careers-section .back {
+  border-radius: 10px;
+  transition: -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+#careers-section .front {
+  background-color: #721c24;
+  overflow: hidden;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+}
+
+#careers-section .back{
+  font-size: 1.1rem !important;
+  padding: 20px;
+  padding-top: 0px;
+  width: 250px;
+  height: 300px;
+  -webkit-transform: rotateY(-180deg);
+  overflow: scroll;
+}
+
+#careers-section .card-image {
+  width: 100%;
+  height: 100%;
+}
+
+#careers-section .career-font{
+  font-size: 2.5rem !important;
+  font-family: 'Markazi Text', Open Sans !important;
+}
+
+#careers-section .career-pos{
+  padding-top: 20px;
+}
+
+#careers-section .info-card:hover .back {
+  -webkit-transform: rotateY(0);
+}
+
+#careers-section .info-card:hover .front {
+  -webkit-transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 600px) {
+
+  #careers-section
+  {
+    padding: 5% 0 !important;
+    height: 100%;
+  }
+
+  #careers-section .career-title
+  {
+    font-size: 4em !important;
+
+  }
+
+}
+
+/*  Contact Section */
+
+#contact-section
+{
+  background-color: #f7f7f7;
+  color: black;
+  height: 100%;
+  padding: 5% 0;
+}
+
+#contact-section
+{
+  font-size: 2.5rem !important;
+ font-family: 'Oswald', Open Sans !important;
+}
+
+#contact-section .contact-sideimg{
+  height: 100%;
+  width: 80%;
+  display: inline-block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contact-section .contact-card {
+  display: inline-block;
+  -webkit-perspective: 600px;
+}
+#contact-section .card-front .card-back{
+  border-radius: 10px;
+  transition: -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+
+#contact-section .card-front{
+  background-color: #721c24;
+overflow: hidden;
+width: 400px;
+height: 465px;
+position: absolute;
+z-index: -1;
+color: #dfd1c8;
+visibility: visible;
+}
+#contact-section .card-back
+{
+  padding: 10px;
+  width:  400px;
+  height: 465px;
+  -webkit-transform: rotateY(-180deg);
+  overflow: hidden;
+}
+#contact-section .contact-card:hover .card-front{
+  -webkit-transform: rotateY(-180deg);
+}
+#contact-section .contact-card:hover .card-back {
+  -webkit-transform: rotateY(0);
+}
+
+#contact-section .contact-title
+{
+  font-size: 3.0rem !important;
+  font-family: 'Markazi Text', open sans !important;
+}
+
+#contact-section .contact-semi-title{
+  font-size: 2.5rem !important;
+    font-family: 'Oswald', Open Sans !important;
+}
+
+#contact-section .contact-description{
+  font-size: 0.6rem !important;
+  font-weight: 600;
+  font-style: italic;
 }
