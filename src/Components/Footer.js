@@ -6,11 +6,11 @@ import Controls from './Control.js';
 const Footer = () => (
   <div className ="pos-f-t fixed-bottom text-white">
     <div className="collapse" id="navbarToggleExternalContent">
-      <div className="bg-black p-4">
+      <div className="bg-black-with-opacity p-4">
         <Controls />
       </div>
     </div>
-    <nav className="navbar navbar-dark bg-black">
+    <nav className="navbar navbar-dark bg-black-with-opacity">
       <p className = "navbar-text d-none d-md-block">
         Coffeebreak Café International Inc., © All Rights Reserved 2018
       </p>

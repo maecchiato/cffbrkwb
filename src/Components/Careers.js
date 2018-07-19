@@ -16,93 +16,52 @@ const Careers = () => (
        </div>
     </div>
     </div>
-    <div className = "row mt-4 mx-auto">
-      <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-        <div className="inrefo-card d-block mx-5">
+    <div className = "row mt-4 mx-auto pb-5">
+      <div className = "col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+
+      </div>
+      <div className = "col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div className="info-card d-block mx-5">
               <div className="front">
                 <img src={hr} className = "card-image"/>
               </div>
             <div className="back">
-              <h6>HUMAR RESOURCE ASSISTANT</h6>
+            <h6>MANAGEMENT TRAINEE</h6>
               <ul className = "text-left">
-              <li>Male or Female, 21 to 25 years of age</li>
-              <li>Psychology or Behavioral Science Graduate</li>
-              <li>With background in Labor Relations and Employee Benefits</li>
-              <li>Can work under pressure and with minimal supervision</li>
-              <li>Enthusiastic and with pleasing personality</li>
-              <li>Well-versed in speaking English and Filipino</li>
-              <li>Willing to work long hours and even on holidays</li>
-              <li>With good morals and has embodied ethical values</li>
-              <li>People-oriented and have a good interpersonal skills</li>
-              </ul>
+                  <li>Candidate must possess a Bachelor&apos;s Degree in Hotel and Restaurant Management,
+                  Hospitality Management, Business Administration/Management or equivalent</li>
+                  <li>Confident, honest, trustworthy and dependable</li>
+                  <li>Has a strong sense of responsibility and leadership</li>
+                  <li>People oriented and has excellent interpersonal skills</li>
+                  <li>Possesses good communicating skills both in written and oral</li>
+                  <li>Experience in managing store operations is and advantage</li>
+                  <li>Fresh graduates are welcome to apply</li>
+                </ul>
             </div>
           </div>
       </div>
-      <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+      <div className = "col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
          <div className="info-card d-block mx-5">
             <div className="front">
                <img src={af} className = "card-image"/>
             </div>
           <div className="back">
-            <h6>ACCOUNTING OFFICER</h6>
-            <ul className = "text-left">
-            <li>Female, 21 to 25 years of age</li>
-            <li>Psychology or Behavioral Science Graduate</li>
-            <li>With background in Labor Relations and Employee Benefits</li>
-            <li>Can work under pressure and with minimal supervision</li>
-            <li>Enthusiastic and with pleasing personality</li>
-            <li>Well-versed in speaking English and Filipino</li>
-            <li>Willing to work long hours and even on holidays</li>
-            <li>With good morals and has embodied ethical values</li>
-            <li>People-oriented and have a good interpersonal skills</li>
-            </ul>
+            <h6>BARISTA/DINING PERSONNEL</h6>
+                <ul className = "text-left">
+                  <li>Candidate should be at least college level or HRM or any food service related course</li>
+                  <li>Honest, trustworthy, responsible and dependable</li>
+                  <li>Possesses good interpersonal and communication skills</li>
+                  <li>Has a sense of urgency</li>
+                  <li>Experience in food service is a plus</li>
+                  <li>Flexible and can work long hours</li>
+                </ul>
           </div>
         </div>
       </div>
-      <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-         <div className="info-card d-block mx-5">
-            <div className="front">
-               <img src={mo} className = "card-image"/>
-            </div>
-          <div className="back">
-            <h6>MARKETING OFFICER/RESEARCH ANALYST/BUSINESS DEVELOPMENT OFFICER</h6>
-            <ul className = "text-left">
-            <li>Male or Female, 21 to 25 years of age</li>
-            <li>Psychology or Behavioral Science Graduate</li>
-            <li>With background in Labor Relations and Employee Benefits</li>
-            <li>Can work under pressure and with minimal supervision</li>
-            <li>Enthusiastic and with pleasing personality</li>
-            <li>Well-versed in speaking English and Filipino</li>
-            <li>Willing to work long hours and even on holidays</li>
-            <li>With good morals and has embodied ethical values</li>
-            <li>People-oriented and have a good interpersonal skills</li>
-            </ul>
-          </div>
-        </div>
-        </div>
-        <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-        <div className="info-card d-block mx-5">
-            <div className="front">
-               <img src={mis} className = "card-image"/>
-            </div>
-          <div className="back">
-            <h6>MANAGEMENT INFORMATION SYSTEM OFFICER</h6>
-            <ul className = "text-left">
-            <li>Male, 21 to 25 years of age</li>
-            <li>Information Technology Graduate or any related courses</li>
-            <li>Must have extensive background in troubleshooting, networking and programming</li>
-            <li>Can meet deadlines and able to multi-task</li>
-            <li>Efficient and is very keen to details</li>
-            <li>Can work under pressure and with minimal supervision</li>
-            <li>Willing to work long hours and even on holidays</li>
-            <li>With good morals and has embodied ethical values</li>
-            <li>Willing to be assigned either in Iloilo or Manila</li>
-            </ul>
-          </div>
-        </div>
-    </div>
-    </div>
+      <div className = "col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
 
+      </div>
+    </div>
   </div>
 )
 

@@ -33,50 +33,30 @@ class About extends React.Component {
           </p>
             <p className = "h5 mt-4 font-weight-bold text-lg-right text-center">The Beginning of Coffee Tradition and Heritage</p>
               <p className = "blockquote text-right mr-2 mt-md-3 text-lg-right about-description text-center">
-                In 2004, the first ever outlet opened in a quiet corner of Timawa, Iloilo City. Since then,
-                Coffeebreak bloomed in different locations in the city of Iloilo, offering every person in Iloilo
-                a brand new café experience. It serves a wide and premium variety of quality coffee and pastries
-                that cures day to day problems.
+                In 2004, Coffeebreak opened its first outlet in a quiet corner of Timawa, Iloilo City. Since then,
+                Coffeebreak mushroomed, offering metro Iloilo a brand new café experience.
               </p>
               <p className = "blockquote text-right mr-2 mt-md-1 text-lg-right about-description text-center mb-0">
-                Coffeebreak, a home-grown coffee shop is something to be bragged about. Its rich tradition dwells
-                with different people from generation to generation who witnessed the superb and satisfying taste of
-                local coffee beans hand-picked from the farm, roasted to quality, brewed and blended to perfection.</p>
+                Nearly two decades after, Coffeebreak has continued to charm Iloilo with the warm coffee experience. The company has developed
+                and maintained a formidable corporate background that has stood ground. It has consistently delivered excellent products as a result of
+                first-rate product development that has always considered innovation and the satisfaction of the customers as the primary force. </p>
                 <a onClick = {this.toggleClassClick} className = {this.state.hasClicked ? 'invisible': 'about-more mr-2'} data-toggle="collapse" data-target="#about-dropdown" aria-expanded="true">more.. </a>
               <div id = "about-dropdown" className = "collapse">
                 <p className = "blockquote text-right mr-2 text-lg-right about-description text-center">
-                  In the course of more than a decade, Coffeebreak managed to consistently maintain to deliver product
-                  development, excellent and top-notch research and high standard innovations. Until now, when people find
-                  good coffee, Coffeebreak is always on the top list.
+                  The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent
+                  and quality service it offers. Warm and friendly, every staff believes in fulfilling every coffee lover’s dream of a premium experience-
+                  best tasting coffee coupled with first-rate customer service.
                 </p>
                 <p className = "blockquote text-right mr-2 mt-md-1 text-lg-right about-description text-center">
-                  As a member of the Specialty Coffee Association of America (SCAA), Coffeebreak Café takes a world-class
-                  leap when it comes to delighting its customers. It aims to be not just a coffee shop but a home of coffee
-                  history and a taste of local pride.
-                </p>
-                <p className = "h5 mt-5 font-weight-bold text-lg-right text-center">A Coffee Purveyor and an Advocate</p>
-                <p className = "blockquote text-right mr-2 mt-md-4 text-lg-right about-description text-center">
-                  The first-rate gourmet cafe renowned and widely acclaimed in Metro Iloilo, Coffeebreak is perfect for
-                  coffee lovers, offering a variety of classic favorites, brewed-to-perfection coffee and a lot more
-                  enticing specialties to satisfy every craving.
+                  At Coffeebreak, every coffee served is more than just a cup of delight. A product of finely roasted beans, blended to perfection and
+                  handled by a well-trained team, Coffeebreak understands what every cup means. The passion the brand holds for coffee translates to a
+                  warm experience beyond comparison. Coffeebreak understands that every cup is fuel for the day.
                 </p>
                 <p className = "blockquote text-right mr-2 mt-md-1 text-lg-right about-description text-center">
-                  Coffeebreak, a home-grown coffee shop is something to be bragged about. Its rich tradition dwells
-                  with different people from generation to generation who witnessed the superb and satisfying
-                  taste of local coffee beans hand-picked from the farm, roasted to quality, brewed and blended to perfection.
-                </p>
-                <p className = "blockquote text-right mr-2 mt-md-1 text-lg-right about-description text-center">
-                  In the course of more than a decade, Coffeebreak managed to consistently maintain to deliver product
-                  development, excellent and top-notch research and high standard innovations. Until now, when people
-                  find good coffee, Coffeebreak is always on the top list.
-                </p>
-                <p className = "blockquote text-right mr-2 mt-md-1 text-lg-right about-description text-center">
-                  As a member of the Specialty Coffee Association of America (SCAA), Coffeebreak Café takes a world-class
-                  leap when it comes to delighting its customers. It aims to be not just a coffee shop but a home of coffee
-                  history and a taste of local pride.
+                As a member of the Specialty Coffee Association of America (SCAA), Coffeebreak Café takes a world-class leap when it comes to delighting its customers.
                 </p>
                 <p className = "h3 mt-5 font-weight-bold text-lg-right text-center">Our Mission</p>
-                <p className = "h5 mt-1 font-weight-bold text-lg-right text-center"> Coffeebreak Café International, Inc. commits to do the following mission:</p>
+                <p className = "h5 mt-1 font-weight-bold text-lg-right text-center">Coffeebreak Café International, Inc. commits to do the following mission:</p>
                 <ul className = "list-unstyled">
                   <li>
                     <p className = "blockquote text-right mr-2 mt-md-2 text-lg-right about-mv-description text-center">
@@ -102,18 +82,11 @@ class About extends React.Component {
                     </p>
                   </li>
                 </ul>
-                <p className = "h3 mt-5 font-weight-bold text-lg-right text-center">Our Vission</p>
-                <p className = "h5 mt-1 font-weight-bold text-lg-right text-center">Our Core Vission:</p>
+                <p className = "h3 mt-5 font-weight-bold text-lg-right text-center">Our Core Vision</p>
                 <p className = "blockquote text-right mr-2 mt-md-1 text-lg-right about-mv-description text-center">
-                Coffeebreak Café International, Inc. will be the most successful home-grown Food and Beverage, Retail and Hospitality Company in the country by 2022.
+                  Coffeebreak Café International, Inc. will be the most successful home-grown Food and Beverage, Retail and Hospitality Company in the country by 2022.
                 </p>
 
-
-
-            <blockquote className="blockquote mr-2 about-quote text-lg-right text-center">
-              <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer className="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
           </div>
         </div>
       </div>

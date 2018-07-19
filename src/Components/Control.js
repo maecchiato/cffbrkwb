@@ -9,7 +9,7 @@ const Controls = () => (
             <iframe title = "Coffeebreak Facebook Account" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCoffeebreakCafe&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="340" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" className = " d-md-block d-none"></iframe>
       </div>
       <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-            <iframe title = "Coffeebreak Instagram Account" src="http://instagram.com/p/BULROqjg81-/embed" width="100%" height="340" frameborder="0" className = "d-lg-block d-none"></iframe>
+            <iframe title = "Coffeebreak Instagram Account" src="https://instagram.com/p/BULROqjg81-/embed" width="100%" height="340" frameborder="0" className = "d-lg-block d-none"></iframe>
       </div>
 
       <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-left">

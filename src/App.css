@@ -7,6 +7,11 @@
 
 .bg-black
 {
+  background-color: rgba(0,0,0,1)!important;
+}
+
+.bg-black-with-opacity
+{
   background-color: rgba(0,0,0,0.90)!important;
 }
 
@@ -29,6 +34,12 @@
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
 {
   color: #ffb24a !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover
+{
+  background-color: black;
+  color: #ffb24a;
 }
 
 /* General */
@@ -81,7 +92,7 @@
   padding: 165px 0;
   text-align: center;
   color: white;
-  background: url("Library/img/copy.jpg") no-repeat bottom center scroll;
+  background: url("Library/img/home-bg-mobile.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -211,10 +222,45 @@
 
 #menu-section
 {
-  padding: 7% 0;
+  padding: 15% 0;
   background-color: #f7f7f7;
   color: #1d1d1d;
+  height: 100%;
 }
+
+#menu-section .tab-content
+{
+  background-color: #f7f7f7;
+}
+
+#menu-section .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #721c24;
+}
+
+#menu-section .container-card:hover .overlay {
+  opacity: .9;
+  cursor: default;
+}
+
+#menu-section .text {
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 #menu-section .card {
   background-color: #f7f7f7;
@@ -232,6 +278,13 @@
   background-color: #e7e7e7;
 }
 
+#menu-section .card-footer
+{
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
 #menu-section a
 {
   color: #1d1d1d;
@@ -239,9 +292,8 @@
 }
 
 #menu-section .card-title {
-    font-size: 1.1em;
     font-weight: bold;
-    color: #721c24;
+    color: white;
     letter-spacing: .6px;
 }
 
@@ -274,8 +326,14 @@
 
   #menu-section
   {
-    height: 100%;
+      padding: 7% 0;
   }
+
+  #menu-section .text {
+    font-size: 20px;
+  }
+
+
 }
 
 /* Partners Section */
@@ -356,7 +414,7 @@
 {
   background-color: #ffb24a;
   color: #1d1d1d;
-  padding: 6% 0 9% 0;
+  padding: 6% 0 8% 0;
 }
 
 #partners-section .partner-details a
@@ -516,14 +574,9 @@
   background-color: #f7f7f7;
   color: black;
   height: 100%;
-  padding: 5% 0;
+  padding-top: 15%;
 }
 
-#contact-section
-{
-  font-size: 2.5rem !important;
- font-family: 'Oswald', Open Sans !important;
-}
 
 #contact-section .contact-sideimg{
   height: 100%;
@@ -537,31 +590,34 @@
 
 #contact-section .contact-card {
   display: inline-block;
-  -webkit-perspective: 600px;
+  -webkit-perspective: 800px;
+  padding: 10% 0;
 }
-#contact-section .card-front .card-back{
+
+#contact-section .card-front, #contact-section .card-back{
   border-radius: 10px;
   transition: -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
 
-
 #contact-section .card-front{
   background-color: #721c24;
-overflow: hidden;
-width: 400px;
-height: 465px;
-position: absolute;
-z-index: -1;
-color: #dfd1c8;
-visibility: visible;
+  overflow: hidden;
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  color: #dfd1c8;
+  padding: 15px;
 }
+
 #contact-section .card-back
 {
+  background-color: #ffb24a;
   padding: 10px;
-  width:  400px;
-  height: 465px;
+  width:  90%;
+  height: 80%;
   -webkit-transform: rotateY(-180deg);
   overflow: hidden;
 }
@@ -574,17 +630,33 @@ visibility: visible;
 
 #contact-section .contact-title
 {
-  font-size: 3.0rem !important;
-  font-family: 'Markazi Text', open sans !important;
+  font-size: 2.5rem !important;
+  font-weight: 400;
 }
 
 #contact-section .contact-semi-title{
-  font-size: 2.5rem !important;
-    font-family: 'Oswald', Open Sans !important;
+  font-size: 2rem !important;
+  font-family: 'Oswald', Open Sans !important;
 }
 
 #contact-section .contact-description{
-  font-size: 0.6rem !important;
+  font-size: 1rem !important;
   font-weight: 600;
   font-style: italic;
+}
+
+#contact-section .contact-back-description
+{
+  font-size: 0.85rem !important;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 769px) {
+
+
+  #contact-section
+  {
+    padding-top: 3%;
+  }
+
 }

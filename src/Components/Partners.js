@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 
+import awardsimg from '../Library/img/awards.png';
+
 const Partners = () => (
   <div id = "partners-section">
     <div className = "partners-background row h-100 mx-0">
@@ -33,7 +35,7 @@ const Partners = () => (
           </div>
         </div>
           <div className = "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <img src = "http://fireworxmedia.co.za/wp-content/uploads/Awards-300x247.png" className = "d-md-block d-none mx-auto"/>
+            <img src = {awardsimg} className = "d-md-block d-none mx-auto img-fluid"/>
       </div>
     </div>
     <span id = "details"></span>
@@ -124,16 +126,6 @@ const Partners = () => (
                                 </p>
                               </div>
                           </div>
-                          <div className="tab-pane fade active show" id="v-pills-faq" role="tabpanel" aria-labelledby="v-pills-profile-tab"><a href="#" data-toggle="collapse" data-target="#FAQ9">
-                              <div className="alert alert-danger" role="alert">
-                                Q: Where do we get the construction and renovation, machines and equimpents, furniture and fixture exepnse?</div>
-                                </a>
-                                <div id="FAQ9" className="collapse">
-                                  <p className="p">
-                                    A: From the Franchisee&apos;s Account
-                                  </p>
-                                </div>
-                            </div>
                       </div>
             </div>
           <div className = "col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
