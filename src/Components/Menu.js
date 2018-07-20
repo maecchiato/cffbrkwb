@@ -49,7 +49,7 @@ const Menu = () => (
               <div className = "card container-card">
                   <img className = "card-img-top" src = {menu4} alt  ="Card Image Cap" />
                   <div className = "card-body overlay">
-                    <h5 className = "card-title text">Hot Mocha Neque</h5>
+                    <h5 className = "card-title text">Hot Mocha</h5>
                     </div>
               </div>
               <div className = "card container-card">
