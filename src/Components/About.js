@@ -1,7 +1,8 @@
 import React from 'react';
 import '../App.css';
 
-import coffee from '../Library/img/about-coffee.png';
+import coffeevideo from '../Library/img/about-coffee.mp4';
+import coffee from '../Library/img/menu/americano.png';
 
 class About extends React.Component {
   constructor()
@@ -24,7 +25,12 @@ class About extends React.Component {
     return(
   <div id = "about-section" className = {this.state.hasClicked ? 'row mx-0': 'row mx-0'}>
       <div className = "col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-        <img className = "about-coffee mt-4 mx-auto d-block" src = {coffee} alt = "Coffeebreak Aiming High!"/>
+      <div className = "d-none d-xl-block">
+        <video className = "about-coffee d-block mx-auto " autoplay="autoplay" loop="loop">
+          <source src={coffeevideo} type="video/mp4" />
+        </video>
+      </div>
+      <img className = "about-coffee mt-4 mx-auto d-block d-xl-none" src = {coffee} alt = "Coffeebreak Aiming High! 14 coffee shop and counting!"/>
       </div>
       <div className = "col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
         <div className = "text-right">

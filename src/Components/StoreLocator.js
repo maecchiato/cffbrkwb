@@ -13,12 +13,12 @@ import {
 const defaultMapOptions = {
    disableDefaultUI: true,
  };
-
- const handleToggle = () => {
- this.setState({
-   isOpen: !false
- });
- }
+ //
+ // const handleToggle = () => {
+ // this.setState({
+ //   isOpen: !false
+ // });
+ // }
 
 const _ = require("lodash");
 const MapWithASearchBox = compose(
@@ -79,8 +79,7 @@ const MapWithASearchBox = compose(
   }),
   withScriptjs,
   withGoogleMap
-)
-(props =>
+)(props =>
   <GoogleMap
     ref={props.onMapMounted}
     defaultZoom={14}

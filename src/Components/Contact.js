@@ -8,7 +8,7 @@ const Contact = () => (
   <div id = "contact-section" className = "h-100">
     <div className = "row h-100 mx-0">
     <div className = "col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 px-0 d-xl-block d-md-none d-none">
-      <img src = {cbside} className="contact-sideimg img-fluid d-lg-block d-md-none d-none"/>
+      <img src = {cbside} className="contact-sideimg img-fluid d-lg-block d-md-none d-none" alt = "Coffeebreak's roasted coffee is a must"/>
     </div>
     <div className = "col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
         <div className="contact-card mx-auto d-block mx-auto pl-lg-5 pl-xl-0 pl-md-5 pl-4">
@@ -23,7 +23,7 @@ const Contact = () => (
             <p className = "contact-semi-title font-weight-bold">
               Talk to Us!
             </p>
-            <img src = {cbcake} className = "img-fluid" />
+            <img src = {cbcake} className = "img-fluid" alt = "Have a slice of Coffeebreak's specialty cake"/>
           </div>
 
           <div className = "card-back">

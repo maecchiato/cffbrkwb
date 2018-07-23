@@ -35,7 +35,7 @@ const Partners = () => (
           </div>
         </div>
           <div className = "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <img src = {awardsimg} className = "d-md-block d-none mx-auto img-fluid"/>
+            <img src = {awardsimg} className = "d-md-block d-none mx-auto img-fluid" alt = "A Multi Awarded Coffee Shop hailed as the 'Best Coffeeshop in Iloilo' with a whooping constant 5 star rating"/>
       </div>
     </div>
     <span id = "details"></span>
