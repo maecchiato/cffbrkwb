@@ -28,7 +28,7 @@ class Home extends React.Component {
         <div className="video-background d-none d-xl-block">
             <div className="video-foreground">
               <YouTube
-                videoId="Hxgsj6firoU"
+                videoId="GiKGJrc2VbA"
                 opts={videoOptions}
                 className="video-iframe"
                 onReady={this._onReady}
