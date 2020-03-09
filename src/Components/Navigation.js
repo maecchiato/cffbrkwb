@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 
+
 import { Link } from 'react-router-dom';
 
 
@@ -32,16 +33,31 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <div class="d-flex" id="wrapper">
-        <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading">Start Bootstrap </div>
-          <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+      <div className="d-flex bg-warning fixed-top h-100" id="wrapper">
+        <div className="ml-1 " id="sidebar-wrapper">
+          <div className="text-center pt-3 mb-4 sidebar-heading">
+            <img className="d-inline-block" src={require("../Library/img/cb-logo.png")} />
+          </div>
+          <div className="ml-4 list-group">
+            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">HOME</a>
+            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">ABOUT US</a>
+            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">MENU</a>
+            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">PARTNERS</a>
+            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">CAREERS</a>
+            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">CONTACT</a>
+          </div>
+          <div className="footnote ml-4 text-left">
+            <p className = "footnote-text">Door 5, Q.H.P. Business Center, <br/>
+              Arsenal St. Iloilo City, 5000, <br/>
+              Philippines <br/>
+              (033) 335 - 09 - 35 <br/>
+              customercare@coffeebreak.ph <br/>
+              (033) 335 - 00 - 26
+            </p> 
+          </div>
+          <div className="socials container-fluid">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
           </div>
         </div>
       </div>

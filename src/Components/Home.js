@@ -25,18 +25,21 @@ class Home extends React.Component {
 
     return(
       <div className = "home-section">
-        <div className="video-background d-none d-xl-block">
-            <div className="video-foreground">
-              <YouTube
-                videoId="GiKGJrc2VbA"
-                opts={videoOptions}
-                className="video-iframe"
-                onReady={this._onReady}
-                onEnd={this._onEnd}
-              />
-            </div>
-        </div>
+        
       </div>
+
+    /* cut this out of the home-section div */
+    // <div className="video-background d-none d-xl-block">
+    // <div className="video-foreground">
+    //   <YouTube
+    //     videoId="GiKGJrc2VbA"
+    //     opts={videoOptions}
+    //     className="video-iframe"
+    //     onReady={this._onReady}
+    //     onEnd={this._onEnd}
+    //   />
+    // </div>
+    // </div>
     )
   }
 }

@@ -705,86 +705,43 @@
   }
 }
 
-/* Navbar */
-.nnavbar {
-  position: relative;
-  width: 198px;
-  height: 720px;
-}
-
-
-
-/* Group 1 */
-.nnavbar-nav {
-  position: absolute;
-  width: 198px;
-  height: 720px;
-  left: 0px;
-  top: 0px;
-}
-
-  /* Rectangle 1 */
-.rectangle {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-}
-
-/* Gray 1 */
-.nnavbar-bg {
-  background: #333333;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-/* image 1 */
-.logo-img {
-  position: absolute;
-  left: 19.7%;
-  right: 19.7%;
-  top: 2.64%;
-  bottom: 80.69%;
-  background: url("/src/cb-logo.png");
-}
-
 #sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+  background: #333333;
+  width: 198px;
 }
 
-#sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
+.sidebar-heading {
+  width: 100%;
 }
 
-#sidebar-wrapper .list-group {
-  width: 15rem;
+.sidebar-heading > img {
+  /* margin-top: 15%;
+  margin-left: 20%; */
+  
 }
 
-#page-content-wrapper {
-  min-width: 100vw;
+@font-face {
+  font-family: Barlow-Regular;
+  src: url(Library/fonts/Barlow/Barlow-Regular.ttf);
 }
 
-#wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
+@font-face {
+  font-family: Barlow-Thin;
+  src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
 }
 
-@media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
+.list-group > a {
+  color: white;
+  font: normal 14px 'Barlow-Regular', sans-serif;
+  letter-spacing: 2px;
+}
 
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
+.footnote {
+  margin-top: 6rem;
+}
 
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
+.footnote-text {
+  color: white;
+  font: normal 10px 'Barlow-Thin', sans-serif;
+  line-height: 15px;
 }
