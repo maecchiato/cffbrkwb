@@ -675,7 +675,7 @@
       bottom: 0;
       right: 0;
       left: 0;
-      &::after {
+      /* &::after {
           display: block;
           content: '';
           position: absolute;
@@ -685,7 +685,7 @@
           height: 100%;
           z-index: 1;
           background: rgba(0,0,0,0.75)
-      }
+      } */
   }
   .video-foreground,
   .video-background iframe {
