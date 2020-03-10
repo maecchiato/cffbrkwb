@@ -33,31 +33,45 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <div className="d-flex bg-warning fixed-top h-100" id="wrapper">
-        <div className="ml-1 " id="sidebar-wrapper">
-          <div className="text-center pt-3 mb-4 sidebar-heading">
-            <img className="d-inline-block" src={require("../Library/img/cb-logo.png")} />
+      <div className="d-flex fixed-top h-100" id="wrapper">
+        <div id="sidebar-wrapper">
+          <div className="text-center sidebar-heading">
+            <Link to = "/">
+              <img className="d-inline-block" src={require("../Library/img/cb-logo.png")} />  
+            </Link>
           </div>
-          <div className="ml-4 list-group">
-            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">HOME</a>
-            <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">ABOUT US</a>
+          <div className="ml-sm-4 list-group">
+            <a href="/" className="mb-3 mt-1 align-middle list-group-item-action">HOME</a>
+            <a href="/about" className="mb-3 mt-1 align-middle list-group-item-action">ABOUT US</a>
             <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">MENU</a>
             <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">PARTNERS</a>
             <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">CAREERS</a>
             <a href="#" className="mb-3 mt-1 align-middle list-group-item-action">CONTACT</a>
           </div>
-          <div className="footnote ml-4 text-left">
+          <div className="footnote ml-sm-4 text-left">
             <p className = "footnote-text">Door 5, Q.H.P. Business Center, <br/>
               Arsenal St. Iloilo City, 5000, <br/>
               Philippines <br/>
               (033) 335 - 09 - 35 <br/>
               customercare@coffeebreak.ph <br/>
               (033) 335 - 00 - 26
-            </p> 
+            </p>
+            <div className="social-media-icons mt-2">
+              <a href="https://www.facebook.com/CoffeebreakCafe/">
+                <i className="social-media-icon fab fa-facebook-square mr-2"></i>
+              </a>
+              <a href="https://www.instagram.com/coffeebreakph/">
+                <i className="social-media-icon fab fa-instagram mr-2"></i>
+              </a>
+              <a href="https://twitter.com/iamcoffeebreak">
+                <i className="social-media-icon fab fa-twitter-square"></i>
+              </a></div>
           </div>
-          <div className="socials container-fluid">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
+          <div className="footnote-text mt-4">
+            <center className="footnote-signature" >
+              © Coffeebreak Café International Inc. <br/> 
+              All Rights Reserved 2020
+            </center>
           </div>
         </div>
       </div>

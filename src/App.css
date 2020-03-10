@@ -66,14 +66,17 @@
   color: #ffb24a!important;
 }
 
+
 /* Navigation */
 
-.navbar .dropdown-item, .navbar .dropdown-menu
+/* .navbar .dropdown-item, .navbar .dropdown-menu
 {
   background-color: black;
   color: white;
 
-}
+} */
+
+z`
 /* Controls Section */
 
 #controls-section .control-title
@@ -83,49 +86,111 @@
 }
 
 /* Home Section */
+.home-section {
+  width: 100%;
+  height: 100%;
 
-
-/* @media only screen and (max-width: 768px) {
-
-  .home-section
-  {
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding: 165px 0;
-    text-align: center;
-    color: white;
-    background: url("Library/img/home-bg-mobile.jpg") no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-} */
-
-
-
-@media only screen and (max-width: 1200px) {
-
-  .home-section
-  {
-    /* display: table;
-    width: 100%;
-    height: 100%;
-    padding: 165px 0;
-    text-align: center;
-    color: white;
-    background: url("Library/img/home-bg.jpg") no-repeat bottom center scroll;
-    background-color: black; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  /* background: #6c6c6c url("Library/img/home-bg-img.png") right top no-repeat fixed;
+  background-size: cover; */
 
 }
+
+
+.home-section .bg-img {
+  float: right;
+  max-width: 100%;
+  height: auto ;
+
+  overflow: hidden;
+}
+
+.large-texts {
+  width: 40%;
+  height: 20%;
+
+  position: absolute;
+  top: 18%;
+  left: 20%;
+}
+
+@font-face {
+  font-family: Barlow-ExtraBold;
+  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
+}
+
+#large-text-exp {
+  color: white;
+  font-size: 75px;
+  font-family: 'Barlow-ExtraBold', sans-serif;
+
+  letter-spacing: 5px;
+
+  top: 0px;
+  margin-top: 0px;
+  
+}
+
+@font-face {
+  font-family: Underland;
+  src: url(Library/fonts/Underland-Alternative.otf);
+  /* font-weight: bold; */
+}
+
+#large-text-pc {
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  position: absolute;
+  top: 3rem;
+  width: 130%;
+  
+  font: normal 67px 'Underland', sans-serif;
+}
+
+.sub-text {
+  width: 45%;
+  height: 20%;
+
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+
+.sub-text p {
+  font:  normal 1.1rem 'Barlow-Thin', sans-serif;
+  color: white;
+
+  line-height: 2rem;
+  letter-spacing: .1rem;
+}
+
+.link-button {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+
+.link-button button {
+  border: 3px solid;
+  /* #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F */
+  border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
+  background-color: transparent;
+  padding: 5px 25px;
+
+  font: normal 1rem 'Barlow-Regular', sans-serif;
+  color: #F2DD86;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+
+  width: 100%;
+}
+
+.link-button button a {
+}
+
+
 /*  About Section */
 
 #about-section
@@ -705,13 +770,21 @@
   }
 }
 
+#wrapper {
+  width: 15%;
+  background-color: yellow;
+}
+
 #sidebar-wrapper {
   background: #333333;
-  width: 198px;
+  width: 100%;
 }
 
 .sidebar-heading {
   width: 100%;
+  
+  padding-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .sidebar-heading > img {
@@ -730,6 +803,7 @@
   src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
 }
 
+
 .list-group > a {
   color: white;
   font: normal 14px 'Barlow-Regular', sans-serif;
@@ -737,11 +811,22 @@
 }
 
 .footnote {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .footnote-text {
   color: white;
   font: normal 10px 'Barlow-Thin', sans-serif;
   line-height: 15px;
+}
+
+.social-media-icon {
+  font-size: 1rem;
+  color: white;
+}
+
+.footnote-signature {
+  color: #6C6C6C;
+  font: normal 'Barlow-Thin', sans-serif;
+  line-height: 10px;
 }
