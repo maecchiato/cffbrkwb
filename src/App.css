@@ -3,6 +3,55 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 
+/* Colors */
+:root {
+  --gray-shadow: rgb(37, 37, 37);
+  --gray-sidebar: #333333;
+  --gray-footnote: #6C6C6C;
+  --gold-button: #F2DD86;
+}
+
+/* Animations */
+.kenburns-top {
+	-webkit-animation: kenburns-top 20s linear infinite alternate both;
+	        animation: kenburns-top 20s linear infinite alternate both;
+}
+
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+
 /* Bootstrap Overrides */
 
 .bg-black
@@ -66,6 +115,9 @@
   color: #ffb24a!important;
 }
 
+.main-container {
+}
+
 
 /* Navigation */
 
@@ -76,7 +128,7 @@
 
 } */
 
-z`
+
 /* Controls Section */
 
 #controls-section .control-title
@@ -85,27 +137,123 @@ z`
   font-size: 1.25em;
 }
 
+
+
 /* Home Section */
-.home-section {
-  width: 100%;
-  height: 100%;
 
-  /* background: #6c6c6c url("Library/img/home-bg-img.png") right top no-repeat fixed;
-  background-size: cover; */
+/* SLIDER CLASSES*/
 
+::-webkit-scrollbar {
+  display: none;
 }
 
 
-.home-section .bg-img {
-  float: right;
-  max-width: 100%;
-  height: auto ;
+.nextButton {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: url('Library/img/next-button.png') no-repeat center center / 3rem;
+  width: 5rem;
+  height: 7rem;
+  text-indent: -9999px;
+  cursor: pointer;
+}
 
+.slider {
+    position: absolute !important;
+    bottom: 0px !important;
+    width: 100%;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+/* END OF SLIDER CLASSES*/
+
+
+
+.home-section {
+  width: 100%;
+  height: 200%;
+}
+
+.upper-section {
+  width: 100%;
+  height: 50%;
+}
+
+.home-intro {
+  background-color: red;
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  z-index: 2;
+
+  left: 35%;
+}
+
+/* for centering 
+
+    margin-left: auto;
+    margin-right: auto;
+
+    verical-align: middle;
+*/
+
+.home-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
   overflow: hidden;
+  z-index: 1;
+}
+
+
+.home-bg-img-logo {
+  position: absolute;
+  /* right */
+}
+
+.home-bg-img-canvas {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.home-bg-img-coffeebean {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+}
+
+.down-button {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 40%;
+  bottom: 5%;
+  z-index: 10;
+  background: url('Library/img/next-button.png') no-repeat center center / 2rem;
+  width: 4rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+.lower-section {
+  height: 50%;
+
+  position: relative;
+  bottom: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .large-texts {
-  width: 40%;
+  width: 50%;
   height: 20%;
 
   position: absolute;
@@ -170,6 +318,7 @@ z`
   position: absolute;
   top: 70%;
   left: 20%;
+
 }
 
 .link-button button {
@@ -180,14 +329,13 @@ z`
   padding: 5px 25px;
 
   font: normal 1rem 'Barlow-Regular', sans-serif;
-  color: #F2DD86;
+  color: var(--gold-button);
   line-height: 2rem;
   letter-spacing: .1rem;
 
   width: 100%;
-}
 
-.link-button button a {
+  cursor: pointer;
 }
 
 
@@ -773,10 +921,11 @@ z`
 #wrapper {
   width: 15%;
   background-color: yellow;
+  box-shadow: 4px 0px 5px var(--gray-shadow);
 }
 
 #sidebar-wrapper {
-  background: #333333;
+  background: var(--gray-sidebar);
   width: 100%;
 }
 
@@ -787,7 +936,7 @@ z`
   margin-bottom: 3rem;
 }
 
-.sidebar-heading > img {
+.sidebar-heading img {
   /* margin-top: 15%;
   margin-left: 20%; */
   
@@ -826,7 +975,7 @@ z`
 }
 
 .footnote-signature {
-  color: #6C6C6C;
+  color: var(--gray-footnote);
   font: normal 'Barlow-Thin', sans-serif;
   line-height: 10px;
 }
