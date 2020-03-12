@@ -11,6 +11,17 @@
   --gold-button: #F2DD86;
 }
 
+/* Font Faces */
+@font-face {
+  font-family: Barlow-ExtraBold;
+  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: Underland;
+  src: url(Library/fonts/Underland-Alternative.otf);
+}
+
 /* Animations */
 .kenburns-top {
 	-webkit-animation: kenburns-top 20s linear infinite alternate both;
@@ -141,7 +152,7 @@
 
 /* Home Section */
 
-/* SLIDER CLASSES*/
+/* Slider Classes*/
 
 ::-webkit-scrollbar {
   display: none;
@@ -184,17 +195,62 @@
 }
 
 .home-intro {
-  background-color: red;
   position: absolute;
-  width: 45%;
+  width: 70%;
   height: 100%;
   z-index: 2;
 
-  left: 35%;
+  left: 23%;
+}
+
+.home-img-logo {
+  height: auto;
+  width: 20%;
+
+  border: 3px solid;
+  border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
+  background-color: transparent;
+}
+
+#home-intro-large-text-white {
+  color: white;
+  font-size: 54px;
+  font-family: 'Barlow-ExtraBold', sans-serif;
+  /* letter-spacing: 5px; */
+/* 
+  top: 0px;
+  margin-top: 0px; */
+  
+}
+
+#home-intro-large-text-gold {
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  position: relative;
+  top: -2rem;
+  
+  font: normal 50px 'Underland', sans-serif;
+}
+
+.home-intro-sub-text {
+  padding: 0 10%;
+  height: 20%;
+
+}
+
+.home-intro-sub-text p {
+  font:  normal 1rem 'Barlow-Thin', sans-serif;
+  color: white;
+
+  line-height: 2rem;
+  letter-spacing: .1rem;
 }
 
 /* for centering 
-
+  BS4: text-center --for container div
     margin-left: auto;
     margin-right: auto;
 
@@ -211,11 +267,6 @@
 }
 
 
-.home-bg-img-logo {
-  position: absolute;
-  /* right */
-}
-
 .home-bg-img-canvas {
   position: absolute;
   right: 0px;
@@ -224,7 +275,7 @@
 }
 
 .home-bg-img-coffeebean {
-  position: absolute;
+  position: relative;
   left: 15%;
   top: 5%;
 }
@@ -261,10 +312,6 @@ html {
   left: 20%;
 }
 
-@font-face {
-  font-family: Barlow-ExtraBold;
-  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
-}
 
 #large-text-exp {
   color: white;
@@ -276,12 +323,6 @@ html {
   top: 0px;
   margin-top: 0px;
   
-}
-
-@font-face {
-  font-family: Underland;
-  src: url(Library/fonts/Underland-Alternative.otf);
-  /* font-weight: bold; */
 }
 
 #large-text-pc {

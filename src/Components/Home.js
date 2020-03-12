@@ -44,9 +44,16 @@ class Home extends React.Component {
             <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
-          <div className = "home-intro">
-              <img className="home-bg-img-logo" src={require("../Library/img/cb-logo.png")}/>
+          <div className = "home-intro   text-center pt-5">
+            <img className="home-img-logo " src={require("../Library/img/cb-logo.png")}/>
+            <div className="home-intro-large-texts    text-center pt-5">
+              <h1 id = "home-intro-large-text-white">TOTALLY HOMEGROWN</h1>
+              <h1 id = "home-intro-large-text-gold">Definitely World-Class</h1>
             </div>
+            <div className="home-intro-sub-text   text-center">
+              <p>The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.</p>
+            </div>
+          </div>
           <a class="down-button" href="#lower-section"></a>
         </div>
         <div className = "lower-section" id="lower-section">
