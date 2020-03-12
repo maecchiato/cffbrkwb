@@ -29,7 +29,7 @@ class About extends React.Component {
             <p id="about-header-left" className="">Our Coffee Story</p>
             <p id="about-header-right" className="">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</p>
           </div>
-          <img src={require("../Library/img/about-timeline.png")} />
+          <img src={require("../Library/img/timeline.svg")} />
         </div>
         <div className="about-lower-section">
           <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} />

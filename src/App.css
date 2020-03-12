@@ -9,6 +9,7 @@
   --gray-sidebar: #333333;
   --gray-footnote: #6C6C6C;
   --gold-button: #F2DD86;
+  --brown-black: #704800;
 }
 
 /* Font Faces */
@@ -358,7 +359,7 @@ html {
 
 }
 
-.link-button button {
+.link-button .button-wide {
   border: 3px solid;
   /* #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F */
   border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
@@ -374,6 +375,14 @@ html {
 
   cursor: pointer;
 }
+
+.link-button .button-wide:hover {
+  background-color: var(--gold-button);
+  color: var(--brown-black);
+  border-image: var(--gold-button) !important;
+
+}
+
 
 
 /*  About Section */
