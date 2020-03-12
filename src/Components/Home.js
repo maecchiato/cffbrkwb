@@ -61,7 +61,7 @@ class Home extends React.Component {
             {content.map((item, index) => (
               <div key={index}
                 className = "slider-content"
-                style={{ background: `#6C6C6C url(${item.image}) right top no-repeat fixed`}}
+                style={{ background: `#6C6C6C url(${item.image}) no-repeat top right / cover`}}
               >
                 <div className="large-texts">
                   <h1 id = "large-text-exp">{item.title}</h1>
