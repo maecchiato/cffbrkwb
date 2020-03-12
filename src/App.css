@@ -216,10 +216,6 @@
   color: white;
   font-size: 54px;
   font-family: 'Barlow-ExtraBold', sans-serif;
-  /* letter-spacing: 5px; */
-/* 
-  top: 0px;
-  margin-top: 0px; */
   
 }
 
@@ -254,7 +250,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    verical-align: middle;
+    vertical-align: middle;
 */
 
 .home-bg-img {
@@ -382,13 +378,80 @@ html {
 
 /*  About Section */
 
-#about-section
-{
-  background-color: #f7f7f7;
-  color: #1d1d1d;
-  padding: 30% 0;
+.about-section {
+  width: 100%;
+  height: 200%;
+
+  background-color: #7e1d1d;
 }
 
+.about-section > div {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  padding-left: 15%;
+}
+
+.about-upper-section {
+  /* background-color: rgb(33, 80, 33); */
+  background: var(--gray-sidebar) url(Library/img/about-bg-img-gradient.png) no-repeat right;
+  background-size: cover;
+}
+
+.about-header {
+  position: absolute;
+  width: 85%;
+  height: 18%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  top: 5%;
+}
+
+.about-header > p {
+  position: absolute;
+  width: 50%;
+  line-height: 50%;
+  z-index: 3;
+}
+
+#about-header-left {
+  top: 20%;
+  left: 0px;
+  text-align: right;
+
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font: normal 3rem 'Underland', sans-serif;
+  letter-spacing: .1rem;
+}
+
+#about-header-right {
+  top: 35%;
+  right: 0px;
+  padding-left: 2%;
+
+  font:  normal 1rem 'Barlow-ExtraBold', sans-serif;
+  color: white;
+
+  letter-spacing: .4rem;
+}
+
+.about-upper-section img {
+  position: relative;
+  top: 25%;
+  left: 15%;
+}
+
+
+.about-lower-section {
+  background: rgb(26, 26, 93);
+
+  background: #333333;
+}
+/*
 #about-section .about-coffee
 {
   width: 50%;
@@ -475,7 +538,7 @@ html {
     font-size: 1em;
   }
 
-}
+} */
 
 /* Menu Section */
 
@@ -974,7 +1037,7 @@ html {
   width: 100%;
   
   padding-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .sidebar-heading img {
