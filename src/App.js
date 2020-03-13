@@ -19,7 +19,7 @@ class App extends Component {
       <div className = "App">
         <BrowserRouter>
           <div className = "container-fluid main-container">
-            <Navigation />
+            {/* <Navigation /> */}
                 <Switch>
                   <Route exact path = "/" component = {Home} />
                   <Route exact path = "/about-us" component = {About} />

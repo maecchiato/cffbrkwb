@@ -24,17 +24,27 @@ class About extends React.Component {
   render() {
     return(
       <div className="about-section">
-        <div className="about-upper-section ">
-          <div className="about-header   ">
+        <div className="about-upper-section  text-center">
+          <div className="about-header ">
             <p id="about-header-left" className="">Our Coffee Story</p>
             <p id="about-header-right" className="">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</p>
           </div>
           <img src={require("../Library/img/timeline.svg")} />
         </div>
         <div className="about-lower-section">
-          {/* <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} /> */}
-          <div className="about-lower-left">
-          
+          <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} />
+          <div className="about-lower-left  text-center">
+            <p className="about-lower-left-title">
+              Our Core Vision
+            </p>
+            <p className="about-lower-left-text">
+            Coffeebreak Café International, Inc. will be the most successful home-grown Food and Beverage, Retail and Hospitality Company in the country by 2022.
+            </p>
+            <p className="about-lower-left-subtext">
+              Warm and friendly, every staff believes in fulfilling every coffee lover’s dream of a premium experience- best tasting coffee coupled with first-rate customer service.
+              <br/> As a member of the Specialty Coffee Association of America (SCAA), Coffeebreak Café takes a world-class leap when it comes to delighting its customers.
+            </p>
+            
           </div>
           <div className="about-lower-right">
           
