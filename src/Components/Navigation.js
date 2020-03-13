@@ -37,7 +37,7 @@ class Navigation extends React.Component {
         <div id="sidebar-wrapper">
           <div className="text-center sidebar-heading">
             <Link to = "/">
-              <img className="d-inline-block" src={require("../Library/img/cb-logo.png")} />  
+              <img className="d-inline-block" src={require("../Library/img/logo.svg")} />  
             </Link>
           </div>
           <div className="ml-sm-4 list-group">

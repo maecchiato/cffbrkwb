@@ -23,9 +23,20 @@
 }
 
 @font-face {
+  font-family: Barlow-Regular;
+  src: url(Library/fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: Barlow-Thin;
+  src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
+}
+
+@font-face {
   font-family: Underland;
   src: url(Library/fonts/Underland-Alternative.otf);
 }
+
 
 /* Animations */
 .kenburns-top {
@@ -558,98 +569,24 @@ html {
   margin: 2% auto 0%;
 }
 
-/*
-#about-section .about-coffee
-{
-  width: 50%;
-}
-
-#about-section .about-title
-{
-  font-size: 2.3rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-#about-section .about-description
-{
-  font-style: italic;
-  font-size: 0.8em;
-}
-
-#about-section .about-mv-description
-{
-  font-size: 0.95em;
-}
-
-#about-section .about-quote
-{
-  margin-top: 9%;
-  font-size: .63em;
-}
-
-#about-section .about-section-line
-{
-  position: absolute;
-  height: 100%;
-  width: 12%;
-  bottom: 0;
-  left: 15%;
-  background-color: #ffb24a;
-}
-
-.full-height-toggle
-{
-  height: 100%;
-}
-
-#about-section .about-more
-{
-  color: #ed1c24 !important;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-@media only screen and (min-width: 900px) {
-
-  #about-section .about-coffee
-  {
-    position: fixed;
-    left: 5%;
-    width: 30%;
-    bottom: 12%;
-  }
-
-  #about-section
-  {
-    padding: 10% 0 !important;
-  }
-
-  #about-section .about-title
-  {
-    font-size: 4.2rem !important;
-  }
-
-  #about-section .about-description
-  {
-    font-size: 1.1em;
-  }
-
-
-  #about-section .about-quote
-  {
-    margin-top: 10%;
-    font-size: 1em;
-  }
-
-} */
 
 /* Menu Section */
 
-#menu-section
+.menu-section {
+  height: 100%;
+  background-color: red;
+}
+
+/* .menu-section .row {
+  border: 5px green solid;
+}
+.menu-section .col {
+  border: 5px blue solid;
+} */
+
+
+
+/* #menu-section
 {
   padding: 15% 0;
   background-color: #f7f7f7;
@@ -763,7 +700,7 @@ html {
   }
 
 
-}
+} */
 
 /* Partners Section */
 
@@ -1148,21 +1085,8 @@ html {
 }
 
 .sidebar-heading img {
-  /* margin-top: 15%;
-  margin-left: 20%; */
-  
+  width: 60%;
 }
-
-@font-face {
-  font-family: Barlow-Regular;
-  src: url(Library/fonts/Barlow/Barlow-Regular.ttf);
-}
-
-@font-face {
-  font-family: Barlow-Thin;
-  src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
-}
-
 
 .list-group > a {
   color: white;

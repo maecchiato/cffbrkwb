@@ -1,33 +1,59 @@
 import React from 'react';
 import '../App.css';
 
-import menu1 from '../Library/img/menu/hot-latte.png';
-import menu2 from '../Library/img/menu/matcha/matcha-cappuccino.png';
-import menu3 from '../Library/img/menu/matcha/matcha-latte.png';
-import menu4 from '../Library/img/menu/hot-mocha.png';
-import menu5 from '../Library/img/menu/matcha/matcha-frappe.png';
-import menu6 from '../Library/img/menu/chocolate-traditions/ct-chococcino.png';
-import menu7 from '../Library/img/menu/chocolate-traditions/ct-hot-chocolate.png';
-import menu8 from '../Library/img/menu/chocolate-traditions/ct-iced-rich-chocolate.png';
-import menu9 from '../Library/img/menu/chocolate-traditions/ct-rich-choco-frappe.png';
-import menu10 from '../Library/img/menu/chocolate-traditions/ct-rich-choco-latte.png';
-import menu11 from '../Library/img/menu/frappe/blueberry-white-choco-frappe.png';
-import menu12 from '../Library/img/menu/frappe/caramel-macchiato-frappe.png';
-import menu13 from '../Library/img/menu/frappe/Cheesecake-White-Choco-Frappe.png';
-import menu14 from '../Library/img/menu/frappe/strawberry-white-choco-frappe.png';
-import menu15 from '../Library/img/menu/frappe/white-choco-mango-frappe.png';
-import menu16 from '../Library/img/menu/frappe/white-mocha.png';
-import menu17 from '../Library/img/menu/Smoothies/mango-mystic.png';
-import menu18 from '../Library/img/menu/Smoothies/ube.png';
-import menu19 from '../Library/img/menu/tea/iced-tea.png';
-import menu20 from '../Library/img/menu/tea/tea.png';
-import menu21 from '../Library/img/menu/americano.png';
-import menu22 from '../Library/img/menu/rich-choco-latte.png';
+import img1 from "../Library/img/menu-card-1.png";
+import img2 from "../Library/img/menu-card-2.png";
+import img3 from "../Library/img/menu-card-3.png";
+import img4 from "../Library/img/menu-card-4.png";
+import img5 from "../Library/img/menu-card-5.png";
+import img6 from "../Library/img/menu-card-6.png";
+import img7 from "../Library/img/menu-card-7.png";
+import img8 from "../Library/img/menu-card-8.png";
 
-import menuimg from '../Library/img/menu-placeholder.png';
 
 const Menu = () => (
-  <div id = "menu-section">
+  <div className="menu-section container">
+    <div className="row">
+      <div className="col-4">
+        <div className="row">
+          <div className="col-6">
+            <img src={img1} />
+          </div>
+          <div className="col-6">
+            <img src={img2} />
+          </div>
+        </div>
+        <div className="row">
+          <img src={img3} />
+        </div>
+      </div>
+      <div className="col-2">
+        <div className="row">
+          <img src={img4} />
+        </div>
+        <div className="row">
+          <img src={img5} />  
+        </div>
+        <div className="row">
+          <img src={img6} />
+        </div>
+      </div>
+      <div className="col-4">
+        <div className="row">
+          <img src={img7} />
+        </div>
+        <div className="row">
+          <img src={img8} />
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+export default Menu;
+
+
+{/* <div id = "menu-section">
     <div className = "row mx-0 h-100 py-lg-5 py-xl-0 py-4">
     <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
       <div className="nav-pills-option">
@@ -261,7 +287,4 @@ const Menu = () => (
     </div>
     </div>
 
-  </div>
-)
-
-export default Menu;
+  </div> */}
