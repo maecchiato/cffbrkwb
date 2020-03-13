@@ -32,7 +32,13 @@ class About extends React.Component {
           <img src={require("../Library/img/timeline.svg")} />
         </div>
         <div className="about-lower-section">
-          <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} />
+          {/* <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} /> */}
+          <div className="about-lower-left">
+          
+          </div>
+          <div className="about-lower-right">
+          
+          </div>
         </div>
       </div>
       
