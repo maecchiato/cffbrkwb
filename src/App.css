@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 
+
 /* Colors */
 :root {
   --gray-shadow: rgb(37, 37, 37);
@@ -11,6 +12,9 @@
   --gold-button: #F2DD86;
   --brown-black: #704800;
 }
+
+/* Components */
+
 
 /* Font Faces */
 @font-face {
@@ -128,6 +132,16 @@
 }
 
 .main-container {
+  display:flex;
+  flex:1
+}
+
+.nav-container{
+flex:1
+}
+
+.page-container{
+flex:6
 }
 
 
@@ -209,6 +223,7 @@
   width: 20%;
 }
 
+/* Change */
 #home-intro-large-text-white {
   color: white;
   font-size: 54px;
