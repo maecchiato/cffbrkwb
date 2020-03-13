@@ -47,7 +47,18 @@ class About extends React.Component {
             
           </div>
           <div className="about-lower-right">
-          
+            <p className="about-lower-right-title">
+                Our Mission
+            </p>
+            <p className="about-lower-right-text">
+            Coffeebreak Café International, Inc. commits to do the following mission:
+            </p>
+            <div className="about-lower-right-cards">
+              <img src={require("../Library/img/about-card-1.png")}/>
+              <img src={require("../Library/img/about-card-2.png")}/>
+              <img src={require("../Library/img/about-card-3.png")}/>
+              <img src={require("../Library/img/about-card-4.png")}/>
+            </div>
           </div>
         </div>
       </div>

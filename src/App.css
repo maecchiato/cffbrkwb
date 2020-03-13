@@ -118,7 +118,7 @@
 
 #social-media-icons a
 {
-  font-size: 60px;
+  font-size: 1rem;
   color: white;
 }
 
@@ -208,14 +208,14 @@
   height: auto;
   width: 20%;
 
-  border: 3px solid;
+  border: .3rem solid;
   border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
   background-color: transparent;
 }
 
 #home-intro-large-text-white {
   color: white;
-  font-size: 54px;
+  font-size: 3rem;
   font-family: 'Barlow-ExtraBold', sans-serif;
   
 }
@@ -267,7 +267,7 @@
 
 .home-bg-img-canvas {
   position: absolute;
-  right: 0px;
+  right: 0%;
   height: 100%;
   width: 100%;
 }
@@ -294,7 +294,7 @@
   height: 50%;
 
   position: relative;
-  bottom: 0px;
+  bottom: 0%;
 }
 
 html {
@@ -313,14 +313,11 @@ html {
 
 #large-text-exp {
   color: white;
-  font-size: 75px;
+  font-size: 5rem;
   font-family: 'Barlow-ExtraBold', sans-serif;
 
-  letter-spacing: 5px;
+  letter-spacing: .4rem;
 
-  top: 0px;
-  margin-top: 0px;
-  
 }
 
 #large-text-pc {
@@ -333,7 +330,7 @@ html {
   top: 3rem;
   width: 130%;
   
-  font: normal 67px 'Underland', sans-serif;
+  font: normal 4rem 'Underland', sans-serif;
 }
 
 .sub-text {
@@ -361,8 +358,7 @@ html {
 }
 
 .link-button .button-wide {
-  border: 3px solid;
-  /* #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F */
+  border: .3rem solid;
   border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
   background-color: transparent;
   padding: 5px 25px;
@@ -502,6 +498,7 @@ html {
 
   line-height: 1.3rem;
   letter-spacing: .1rem;
+  color: white;
 }
 
 .about-lower-left-subtext {
@@ -511,16 +508,43 @@ html {
   font: normal .9rem 'Barlow-Regular', sans-serif ;
   line-height: 2rem;
   letter-spacing: .1rem;
+  color: white;
 }
 
 
 .about-lower-right {
-  background-color: rgb(51, 0, 255);
   position: absolute;
   right: 0%;
   height: 100%;
   width: 50%;
   z-index: 100;
+  padding-top: 7%;
+}
+
+.about-lower-right-title {
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  text-align: left;
+
+  font: normal 2rem 'Underland', sans-serif;
+}
+
+.about-lower-right-text {
+  padding-right: 20%;
+  text-align: left;
+
+  font: normal .7rem 'Barlow-Regular', sans-serif ;
+
+  line-height: 1.3rem;
+  letter-spacing: .1rem;
+  color: white;
+}
+
+.about-lower-right-cards img {
+  margin: 2% auto 0%;
 }
 
 /*

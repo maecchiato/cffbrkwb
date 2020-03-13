@@ -43,7 +43,7 @@ class Navigation extends React.Component {
           <div className="ml-sm-4 list-group">
             <a href="/" className="mb-3 mt-1 align-middle list-group-item-action">HOME</a>
             <a href="/about-us" className="mb-3 mt-1 align-middle list-group-item-action">ABOUT US</a>
-            <a href="" className="mb-3 mt-1 align-middle list-group-item-action">MENU</a>
+            <a href="/menu" className="mb-3 mt-1 align-middle list-group-item-action">MENU</a>
             <a href="" className="mb-3 mt-1 align-middle list-group-item-action">PARTNERS</a>
             <a href="" className="mb-3 mt-1 align-middle list-group-item-action">CAREERS</a>
             <a href="" className="mb-3 mt-1 align-middle list-group-item-action">CONTACT</a>
