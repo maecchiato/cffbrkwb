@@ -3,6 +3,67 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 
+/* Colors */
+:root {
+  --gray-shadow: rgb(37, 37, 37);
+  --gray-sidebar: #333333;
+  --gray-footnote: #6C6C6C;
+  --gold-button: #F2DD86;
+  --brown-black: #704800;
+}
+
+/* Font Faces */
+@font-face {
+  font-family: Barlow-ExtraBold;
+  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: Underland;
+  src: url(Library/fonts/Underland-Alternative.otf);
+}
+
+/* Animations */
+.kenburns-top {
+	-webkit-animation: kenburns-top 20s linear infinite alternate both;
+	        animation: kenburns-top 20s linear infinite alternate both;
+}
+
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+
 /* Bootstrap Overrides */
 
 .bg-black
@@ -66,14 +127,20 @@
   color: #ffb24a!important;
 }
 
+.main-container {
+}
+
+
 /* Navigation */
 
-.navbar .dropdown-item, .navbar .dropdown-menu
+/* .navbar .dropdown-item, .navbar .dropdown-menu
 {
   background-color: black;
   color: white;
 
-}
+} */
+
+
 /* Controls Section */
 
 #controls-section .control-title
@@ -82,59 +149,346 @@
   font-size: 1.25em;
 }
 
+
+
 /* Home Section */
 
+/* Slider Classes*/
 
-@media only screen and (max-width: 768px) {
+::-webkit-scrollbar {
+  display: none;
+}
 
-  .home-section
-  {
-    display: table;
+
+.nextButton {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: url('Library/img/next-button.png') no-repeat center center / 3rem;
+  width: 5rem;
+  height: 7rem;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.slider {
+    position: absolute !important;
+    bottom: 0px !important;
     width: 100%;
-    height: 100%;
-    padding: 165px 0;
-    text-align: center;
-    color: white;
-    background: url("Library/img/home-bg-mobile.jpg") no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+    height: 100% !important;
+    overflow: hidden;
+}
+
+/* END OF SLIDER CLASSES*/
+
+
+
+.home-section {
+  width: 100%;
+  height: 200%;
+}
+
+.upper-section {
+  width: 100%;
+  height: 50%;
+}
+
+.home-intro {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  z-index: 2;
+
+  left: 23%;
+}
+
+.home-img-logo {
+  height: auto;
+  width: 20%;
+
+  border: 3px solid;
+  border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
+  background-color: transparent;
+}
+
+#home-intro-large-text-white {
+  color: white;
+  font-size: 54px;
+  font-family: 'Barlow-ExtraBold', sans-serif;
+  
+}
+
+#home-intro-large-text-gold {
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  position: relative;
+  top: -2rem;
+  
+  font: normal 50px 'Underland', sans-serif;
+}
+
+.home-intro-sub-text {
+  padding: 0 10%;
+  height: 20%;
+
+}
+
+.home-intro-sub-text p {
+  font:  normal 1rem 'Barlow-Thin', sans-serif;
+  color: white;
+
+  line-height: 2rem;
+  letter-spacing: .1rem;
+}
+
+/* for centering 
+  BS4: text-center --for container div
+    margin-left: auto;
+    margin-right: auto;
+
+    vertical-align: middle;
+*/
+
+.home-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.home-bg-img-canvas {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.home-bg-img-coffeebean {
+  position: relative;
+  left: 15%;
+  top: 5%;
+}
+
+.down-button {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 40%;
+  bottom: 5%;
+  z-index: 10;
+  background: url('Library/img/next-button.png') no-repeat center center / 2rem;
+  width: 4rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+.lower-section {
+  height: 50%;
+
+  position: relative;
+  bottom: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.large-texts {
+  width: 50%;
+  height: 20%;
+
+  position: absolute;
+  top: 18%;
+  left: 20%;
+}
+
+
+#large-text-exp {
+  color: white;
+  font-size: 75px;
+  font-family: 'Barlow-ExtraBold', sans-serif;
+
+  letter-spacing: 5px;
+
+  top: 0px;
+  margin-top: 0px;
+  
+}
+
+#large-text-pc {
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  position: absolute;
+  top: 3rem;
+  width: 130%;
+  
+  font: normal 67px 'Underland', sans-serif;
+}
+
+.sub-text {
+  width: 45%;
+  height: 20%;
+
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+
+.sub-text p {
+  font:  normal 1.1rem 'Barlow-Thin', sans-serif;
+  color: white;
+
+  line-height: 2rem;
+  letter-spacing: .1rem;
+}
+
+.link-button {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+
+}
+
+.link-button .button-wide {
+  border: 3px solid;
+  /* #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F */
+  border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
+  background-color: transparent;
+  padding: 5px 25px;
+
+  font: normal 1rem 'Barlow-Regular', sans-serif;
+  color: var(--gold-button);
+  line-height: 2rem;
+  letter-spacing: .1rem;
+
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.link-button .button-wide:hover {
+  background-color: var(--gold-button);
+  color: var(--brown-black);
+  border-image: var(--gold-button) !important;
 
 }
 
 
 
-@media only screen and (max-width: 1200px) {
-
-  .home-section
-  {
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding: 165px 0;
-    text-align: center;
-    color: white;
-    background: url("Library/img/home-bg.jpg") no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-}
 /*  About Section */
 
-#about-section
-{
-  background-color: #f7f7f7;
-  color: #1d1d1d;
-  padding: 30% 0;
+.about-section {
+  width: 100%;
+  height: 220%;
+
+  background-color: var(--gray-sidebar);
 }
 
+.about-section > div {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  padding-left: 15%;
+}
+
+.about-upper-section {
+  /* background-color: rgb(33, 80, 33); */
+  background: var(--gray-sidebar) url(Library/img/about-bg-img-gradient.png) no-repeat right;
+  background-size: cover;
+}
+
+.about-header {
+  position: absolute;
+  width: 85%;
+  height: 18%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  top: 5%;
+}
+
+.about-header > p {
+  position: absolute;
+  width: 50%;
+  line-height: 50%;
+  z-index: 3;
+}
+
+#about-header-left {
+  top: 20%;
+  left: 0px;
+  text-align: right;
+
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font: normal 3rem 'Underland', sans-serif;
+  letter-spacing: .1rem;
+}
+
+#about-header-right {
+  top: 35%;
+  right: 0px;
+  padding-left: 2%;
+
+  font:  normal 1rem 'Barlow-ExtraBold', sans-serif;
+  color: white;
+
+  letter-spacing: .4rem;
+}
+
+.about-upper-section img {
+  position: relative;
+  top: 25%;
+  left: 15%;
+}
+
+
+.about-lower-section {
+  background: #33333300;
+
+  overflow: hidden;
+}
+
+.about-bg-img-coffeebean {
+  height: 100%;
+  width: 30%;
+  position: relative;
+  /* left: -5%;
+  bottom: -7%; */
+  z-index: 0;
+}
+
+.about-lower-left {
+  background-color: rgb(0, 255, 8);
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+}
+
+.about-lower-right {
+  background-color: rgb(51, 0, 255);
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+}
+
+/*
 #about-section .about-coffee
 {
   width: 50%;
@@ -221,7 +575,7 @@
     font-size: 1em;
   }
 
-}
+} */
 
 /* Menu Section */
 
@@ -675,7 +1029,7 @@
       bottom: 0;
       right: 0;
       left: 0;
-      &::after {
+      /* &::after {
           display: block;
           content: '';
           position: absolute;
@@ -685,7 +1039,7 @@
           height: 100%;
           z-index: 1;
           background: rgba(0,0,0,0.75)
-      }
+      } */
   }
   .video-foreground,
   .video-background iframe {
@@ -703,4 +1057,66 @@
   @media (max-aspect-ratio: 16/9) {
       .video-foreground { width: 300%; left: -100%; }
   }
+}
+
+#wrapper {
+  width: 15%;
+  background-color: yellow;
+  box-shadow: 4px 0px 5px var(--gray-shadow);
+}
+
+#sidebar-wrapper {
+  background: var(--gray-sidebar);
+  width: 100%;
+}
+
+.sidebar-heading {
+  width: 100%;
+  
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-heading img {
+  /* margin-top: 15%;
+  margin-left: 20%; */
+  
+}
+
+@font-face {
+  font-family: Barlow-Regular;
+  src: url(Library/fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: Barlow-Thin;
+  src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
+}
+
+
+.list-group > a {
+  color: white;
+  font: normal 14px 'Barlow-Regular', sans-serif;
+  letter-spacing: 2px;
+}
+
+.footnote {
+  margin-top: 4rem;
+}
+
+.footnote-text {
+  color: white;
+  font: normal 10px 'Barlow-Thin', sans-serif;
+  line-height: 15px;
+}
+
+.social-media-icon {
+  font-size: 1rem;
+  color: white;
+}
+
+.footnote-signature {
+  color: var(--gray-footnote);
+  font: normal 'Barlow-Thin', sans-serif;
+  line-height: 10px;
 }
