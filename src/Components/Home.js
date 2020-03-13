@@ -47,12 +47,12 @@ class Home extends React.Component {
           </div>
           <div className = "home-intro   text-center pt-5">
             <img className="home-img-logo " src={logo}/>
-            <div className="home-intro-large-texts    text-center pt-5">
-              <h1 id = "home-intro-large-text-white">TOTALLY HOMEGROWN</h1>
-              <h1 id = "home-intro-large-text-gold">Definitely World-Class</h1>
+            <div className="text-center pt-5">
+              <div className="h2-barlow">TOTALLY HOMEGROWN</div>
+              <div className="h3-underland sec-title">Definitely World-Class</div>
             </div>
-            <div className="home-intro-sub-text   text-center">
-              <p>The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.</p>
+            <div className="body-main text-center pt-1">
+              The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
             </div>
           </div>
           <a class="down-button" href="#lower-section"></a>
@@ -64,9 +64,9 @@ class Home extends React.Component {
                 className = "slider-content"
                 style={{ background: `#6C6C6C url(${item.image}) no-repeat center / cover fixed` }}
               >
-                <div className="large-texts">
-                  <h1 id = "large-text-exp">{item.title}</h1>
-                  <h1 id = "large-text-pc">{item.subtitle}</h1>
+                <div className="heading">
+                  <div className="h1-barlow">{item.title}</div>
+                  <div className="h2-underland" id ="large-text-pc">{item.subtitle}</div>
                 </div>
                 <div className="sub-text">
                   {item.description}

@@ -11,9 +11,49 @@
   --gray-footnote: #6C6C6C;
   --gold-button: #F2DD86;
   --brown-black: #704800;
+  --ash-white: #F2F3F4;
 }
 
 /* Components */
+.h1-barlow{
+  color: white;
+  font-size: 5rem;
+  font-family: 'Barlow-ExtraBold', sans-serif;
+
+  letter-spacing: .4rem;
+}
+
+
+.h2-barlow{
+  color: var(--ash-white);
+  font-size: 3.5rem;
+  font-family: 'Barlow-ExtraBold', sans-serif;
+  letter-spacing: 0.1rem
+}
+
+.h2-underland{
+
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text; 
+  font: normal 4rem 'Underland', sans-serif;
+}
+
+.h3-underland{
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+   background-clip: text;
+  font: normal 3rem 'Underland', sans-serif;
+}
+
+.sec-title{
+  position: relative;
+  top: -2.5rem; 
+}
 
 
 /* Font Faces */
@@ -242,6 +282,7 @@ flex:6
   
 }
 
+/* Change */
 #home-intro-large-text-gold {
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
   background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
@@ -255,15 +296,10 @@ flex:6
   font: normal 50px 'Underland', sans-serif;
 }
 
-.home-intro-sub-text {
-  padding: 0 10%;
-  height: 20%;
 
-}
-
-.home-intro-sub-text p {
+.body-main{
   font:  normal 1rem 'Barlow-Thin', sans-serif;
-  color: white;
+  color: var(--ash-white);
 
   line-height: 2rem;
   letter-spacing: .1rem;
@@ -281,7 +317,6 @@ flex:6
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rebeccapurple;
   overflow: hidden;
   z-index: 1;
 }
@@ -323,45 +358,29 @@ html {
   scroll-behavior: smooth;
 }
 
-.large-texts {
-  width: 50%;
+.heading {
+  width: 180%;
   height: 20%;
 
   position: absolute;
   top: 18%;
-  left: 20%;
+  left: 10%;
 }
 
-
-#large-text-exp {
-  color: white;
-  font-size: 5rem;
-  font-family: 'Barlow-ExtraBold', sans-serif;
-
-  letter-spacing: .4rem;
-
-}
 
 #large-text-pc {
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-
   position: absolute;
-  top: 3rem;
-  width: 130%;
-  
-  font: normal 4rem 'Underland', sans-serif;
+  top: 4rem;
+  height:80%;
 }
 
 .sub-text {
-  width: 45%;
+  width: 55%;
   height: 20%;
 
   position: absolute;
-  top: 45%;
-  left: 20%;
+  top: 43%;
+  left: 10%;
 }
 
 .sub-text p {
@@ -374,8 +393,8 @@ html {
 
 .link-button {
   position: absolute;
-  top: 70%;
-  left: 20%;
+  top: 75%;
+  left: 10%;
 
 }
 
