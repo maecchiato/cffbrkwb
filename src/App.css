@@ -207,10 +207,6 @@
 .home-img-logo {
   height: auto;
   width: 20%;
-
-  border: 3px solid;
-  border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
-  background-color: transparent;
 }
 
 #home-intro-large-text-white {

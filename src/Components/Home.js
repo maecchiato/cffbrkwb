@@ -9,6 +9,7 @@ import img1 from '../Library/img/home-bg-img-1.png';
 import img2 from '../Library/img/home-bg-img-2.png';
 import img3 from '../Library/img/home-bg-img-3.png';
 import img4 from '../Library/img/home-bg-canvas.png';
+import logo from '../Library/img/logo-stroke.svg';
 
 const content = [
   {
@@ -45,7 +46,7 @@ class Home extends React.Component {
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className = "home-intro   text-center pt-5">
-            <img className="home-img-logo " src={require("../Library/img/cb-logo.png")}/>
+            <img className="home-img-logo " src={logo}/>
             <div className="home-intro-large-texts    text-center pt-5">
               <h1 id = "home-intro-large-text-white">TOTALLY HOMEGROWN</h1>
               <h1 id = "home-intro-large-text-gold">Definitely World-Class</h1>
