@@ -19,8 +19,11 @@ class App extends Component {
       <div className = "App">
         <BrowserRouter>
           <div className = "container-fluid main-container">
-            <Navigation />
-                <Switch>
+            <div className="nav-container">
+              <Navigation />
+            </div>
+            <div className="page-container">
+              <Switch>
                   <Route exact path = "/" component = {Home} />
                   <Route exact path = "/about-us" component = {About} />
                   <Route exact path = "/menu" component = {Menu} />
@@ -29,6 +32,7 @@ class App extends Component {
                   <Route exact path = "/careers" component = {Careers} />
                   <Route exact path = "/contact" component = {Contact} />
                 </Switch>
+            </div>              
             {/* <Footer /> */}
           </div>
         </BrowserRouter>
