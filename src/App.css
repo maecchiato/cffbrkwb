@@ -57,6 +57,20 @@
   letter-spacing: 0.5px;
 }
 
+.body-16-main-barlow{
+  font:  normal 1rem 'Barlow-Thin', sans-serif;
+  color: white;
+
+  line-height: 1.75rem;
+  letter-spacing: .1rem;
+}
+
+.subheadline{
+  font: 1.5rem 'Barlow-Black', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .side-title{
   color: var(--neutral-brown);
 }
@@ -81,6 +95,11 @@
 @font-face {
   font-family: Barlow-Thin;
   src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
+}
+
+@font-face {
+  font-family: Barlow-Black;
+  src: url(Library/fonts/Barlow/Barlow-Black.ttf);
 }
 
 @font-face {
@@ -202,7 +221,7 @@
 flex:1
 }
 
-.page-container{
+.mainpage-container{
 flex:6
 }
 
@@ -324,13 +343,14 @@ flex:6
     vertical-align: middle;
 */
 
-.home-bg-img {
+.bg-img-container {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
   z-index: 1;
 }
+
 
 
 .home-bg-img-canvas {
@@ -342,8 +362,8 @@ flex:6
 
 .home-bg-img-coffeebean {
   position: relative;
-  left: 15%;
   top: 5%;
+  left: 3%;
 }
 
 .down-button {
@@ -394,13 +414,13 @@ html {
   left: 10%;
 }
 
-.sub-text p {
+/* .sub-text p {
   font:  normal 1.1rem 'Barlow-Thin', sans-serif;
   color: white;
 
   line-height: 2rem;
   letter-spacing: .1rem;
-}
+} */
 
 .link-button {
   position: absolute;
@@ -455,7 +475,7 @@ html {
   background-size: cover;
 }
 
-.about-header {
+.title-header {
   position: absolute;
   width: 100%;
   height: 18%;
@@ -464,14 +484,14 @@ html {
   top: 5%;
 }
 
-.about-header > p {
+.title-header > p {
   position: absolute;
   width: 50%;
   line-height: 50%;
   z-index: 3;
 }
 
-#about-header-left {
+#title-header-left {
   top: 20%;
   left: 0%;
   text-align: right;
@@ -485,7 +505,7 @@ html {
   letter-spacing: .1rem;
 }
 
-#about-header-right {
+#title-header-right {
   top: 35%;
   right: 0px;
   padding-left: 2%;
@@ -733,9 +753,9 @@ html {
 
 #partners-section
 {
-  background-color: #f7f7f7;
+  background-color: var(--gray-black);
   color: #1d1d1d;
-  height: 100%;
+  height: 200%;
 }
 
 #partners-section .partners-background
@@ -755,6 +775,71 @@ html {
   position: relative;
 }
 
+.bg-img-container-full{
+  margin-top: 15%;
+  position: absolute;
+  z-index: 1;
+}
+
+.page-container{
+  height: 100%;
+}
+
+.partners-upper-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45%;
+  /* background-color: blueviolet; */
+}
+
+.partners-upper-box{
+  width: 75%;
+  /* background-color: blueviolet; */
+  align-self: center;
+  margin-top: 22%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#partners-title{
+  color: var(--ash-white);
+  position: absolute;
+  z-index: 2;
+  margin-top: 18%;
+  left: 17%;
+}
+
+#partners-body{
+  width: 87%;
+  margin: 7% 0 5% 6%;
+}
+
+#partners-body > p{
+  margin-bottom: 2% !important;
+}
+
+.partners-lower-section{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 45%;
+  background-color: blueviolet;
+}
+
+.lower-section-left{
+  background-color: aquamarine;
+  width: 50%;
+  height: 100%;
+}
+
+.lower-section-right{
+  background-color: coral;
+  width: 50%;
+  height: 100%;
+}
+
+
 #partners-section .partners-box
 {
   padding: 20% 0;
@@ -763,12 +848,12 @@ html {
   position: absolute;
 }
 
-#partners-section .partners-title
+/* #partners-section .partners-title
 {
   color: white;
   font-size: 2em;
   font-weight: 500;
-}
+} */
 
 #partners-section .btn-warning
 {
@@ -1151,7 +1236,7 @@ html {
 } */
 
 .footnote {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .footnote-text {

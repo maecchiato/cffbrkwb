@@ -3,9 +3,123 @@ import '../App.css';
 
 import awardsimg from '../Library/img/awards.png';
 
-const Partners = () => (
-  <div id = "partners-section">
-    <div className = "partners-background row h-100 mx-0">
+class Partners extends React.Component {
+  render(){
+    return(
+      <div id = "partners-section">
+        <div className="bg-img-container-full"><img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>   </div>
+        <div className="page-container">
+          <div className="title-header">
+            <p id="title-header-left" className="">Franchise Coffee</p>
+            <p id="title-header-right" className="">GRAB AN EXTRA <br/> BREW OF OPPORTUNITY</p>
+          </div>
+          <div className="partners-upper-section">
+            <div className="subheadline w-50" id="partners-title">You have already experienced the goodness of Coffeebreak, how about getting a franchise?</div>
+            <div className="partners-upper-box">
+            <div className="body-16-main-barlow" id="partners-body"><p>Coffeebreak has been a member of the Philippine Franchise Association since 2012. It aims to be among the top players in the franchise industry and to reach the market in other cities outside Iloilo. </p>
+              Be our partner and continue to promote the taste of local pride. As a Coffeebreak franchisee, you want your investment to be hot and brewed to perfection. And that’s exactly what you will get when you start your business with Coffeebreak.
+            </div>
+          </div>
+       </div>
+        </div>
+      </div>
+    )
+  }
+//   _onReady(event){
+//     event.target.mute();
+// }
+
+// _onEnd(event){
+//   event.target.playVideo();
+// }
+// render(){
+
+//   const videoOptions = {
+//     playerVars:
+//     {
+//       autoplay: 1,
+//       controls: 0,
+//       rel: 0,
+//       showInfo: 0
+//     }
+//   };
+
+//   return(
+//     <div className = "home-section">
+//       <div className="video-background d-none d-xl-block">
+//             <div className="video-foreground">
+//               <YouTube
+//                 videoId="GiKGJrc2VbA"
+//                 opts={videoOptions}
+//                 className="video-iframe"
+//                 onReady={this._onReady}
+//                 onEnd={this._onEnd}
+//               />
+//             </div>
+//         </div>
+//       </div>
+//     )
+//   }
+
+}
+export default Partners;
+
+// const Partners = () => (
+//   <div id = "partners-section">
+//     <div className="bg-img-container-full"><img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>   </div>
+//     <div className="page-container">
+//       <div className="title-header">
+//         <p id="title-header-left" className="">Franchise Coffee</p>
+//         <p id="title-header-right" className="">GRAB AN EXTRA <br/> BREW OF OPPORTUNITY</p>
+//       </div>
+//       <div className="partners-upper-section">
+//         <div className="subheadline w-50" id="partners-title">You have already experienced the goodness of Coffeebreak, how about getting a franchise?</div>
+//         <div className="partners-upper-box">
+//           <div className="body-16-main-barlow" id="partners-body"><p>Coffeebreak has been a member of the Philippine Franchise Association since 2012. It aims to be among the top players in the franchise industry and to reach the market in other cities outside Iloilo. </p>
+//           Be our partner and continue to promote the taste of local pride. As a Coffeebreak franchisee, you want your investment to be hot and brewed to perfection. And that’s exactly what you will get when you start your business with Coffeebreak.</div>
+//         </div>
+//       </div>
+//       {/* <div className="partners-lower-section">
+//         <div className="lower-section-left">
+
+//         </div>
+//         <div className="lower-section-right">
+
+//         </div>
+//       </div> */}
+//         <div className="partners-lower-section">
+//           <div className="lower-section-left col-xl-5 col-lg-5 col-md-7 col-xs-12 col-sm-12 pt-5">
+//             <p className="subheadline">WHAT'S NEXT FOR WAFFLE TIME?</p>
+//             <p className="body-reg-16">While the company has been a main supporter of various community-based academic and environment-related activities, including the empowerment of local producers through trade exhibits, the recently created Waffle Time Foundation is committed to be a front liner or stimulus in the continuing upliftment of the status of education, the environment and social enterprise in the local communities.</p>
+//             <p className="body-reg-16 font-weight-bold">
+//               Cheers to more years of baking freshness!
+//             </p>
+//             {/* <button className="btn-small">DISCOVER MORE</button> */}
+//           </div>
+//           <div id="foundation-video" className="lower-section-right col-xl-7 col-lg-7 col-md-5 col-xs-12 col-sm-12">
+//             <div className="mt-5 youtube-parent h-100">
+//               <div className="youtube-display pt-5 h-50 d-xl-block d-none">
+//                 <Youtube
+//                   video="mogEZnukIgM"
+//                   autoplay
+//                   muted
+//                   width="80%"
+//                   height="350px"
+//                   showInfo={false}
+//                   controls={false}
+//                   allowFullscreen={false}
+//                   showRelatedVideos={false}
+//                   annotations={false}
+//                   className="video-iframe"
+//                   onReady={this._onReady}
+//                   onEnd={this._onEnd}
+//                 />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//     </div>
+    {/* <div className = "partners-background row h-100 mx-0">
       <div className = "partners-box">
           <h1 className = "partners-title p-4 display-1">GRAB AN EXTRA BREW OF OPPORTUNITY!</h1>
           <a href = "#info" className = "btn btn-warning">Be our Partner to Success</a>
@@ -171,8 +285,6 @@ const Partners = () => (
       <div className = "col-12">
         <p className = "h6 font-weight-bold text-center pt-3 pb-3">All Rights Reserved 2018 &copy;	</p>
       </div>
-    </div>
-  </div>
-)
-
-export default Partners;
+    </div> */}
+//   </div>
+// )
