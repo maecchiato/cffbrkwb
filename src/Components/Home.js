@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import YouTube from 'react-youtube';
+
 
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
@@ -41,7 +41,7 @@ class Home extends React.Component {
 
       <div className="home-section">
         <div className="upper-section">
-          <div className="home-bg-img">
+          <div className="bg-img-container">
             <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
@@ -68,7 +68,7 @@ class Home extends React.Component {
                   <div className="h1-barlow">{item.title}</div>
                   <div className="h2-underland" id ="large-text-pc">{item.subtitle}</div>
                 </div>
-                <div className="sub-text">
+                <div className="sub-text body-16-main-barlow">
                   {item.description}
                 </div>
                 <div className="link-button">

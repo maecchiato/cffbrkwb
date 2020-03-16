@@ -46,8 +46,8 @@ class Navigation extends React.Component {
             <div className="menu-item"><a href="/" className="list-group-item-action pt-2 pb-2">HOME</a><div className="divider"></div></div>
             <div className="menu-item"><a href="/about-us" className="list-group-item-action pt-2 pb-2">ABOUT US</a><div className="divider"></div></div>
             <div className="menu-item"><a href="/menu" className="list-group-item-action pt-2 pb-2">MENU</a><div className="divider"></div></div>
-            <div className="menu-item"><a href="" className="list-group-item-action pt-2 pb-2">PARTNERS</a><div className="divider"></div></div>
-            <div className="menu-item"><a href="" className="list-group-item-action pt-2 pb-2">CAREERS</a><div className="divider"></div></div>
+            <div className="menu-item"><a href="/partners" className="list-group-item-action pt-2 pb-2">PARTNERS</a><div className="divider"></div></div>
+            <div className="menu-item"><a href="/careers" className="list-group-item-action pt-2 pb-2">CAREERS</a><div className="divider"></div></div>
             <div className="menu-item"><a href="" className="list-group-item-action pt-2 pb-2">EVENTS</a><div className="divider"></div></div>
           </div>
           <div className="footnote ml-sm-4 text-left">
@@ -60,7 +60,7 @@ class Navigation extends React.Component {
               (033) 335 - 00 - 26
             </div>
             <div className="body-12-caption-barlow side-title mt-4">FOLLOW US</div>
-            <div className="social-media-icons mt-2">
+            <div className="social-media-icons mt-1">
               <a href="https://www.facebook.com/CoffeebreakCafe/" target="_blank">
                 <i className="social-media-icon fab fa-facebook-square mr-2"></i>
               </a>

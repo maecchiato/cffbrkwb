@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Crete+Round');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+.bg-red{
+  background-color: coral;
+}
 
+.bg-blue{
+  background-color: mediumaquamarine;
+}
 
 /* Colors */
 :root {
@@ -33,6 +39,13 @@
   letter-spacing: 0.1rem
 }
 
+.h4-barlow{
+  color: var(--ash-white);
+  font: normal 2.25rem 'Barlow-ExtraBold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem
+}
+
 .h2-underland{
 
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
@@ -52,9 +65,33 @@
   font: normal 3rem 'Underland', sans-serif;
 }
 
+.h4-underland{
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+   background-clip: text;
+  font: normal 2.25rem 'Underland', sans-serif;
+
+}
+
 .body-12-caption-barlow{
   font: 0.75rem 'Barlow-Regular', sans-serif;
   letter-spacing: 0.5px;
+}
+
+.body-16-main-barlow{
+  font:  normal 1rem 'Barlow-Thin', sans-serif;
+  color: white;
+
+  line-height: 1.75rem;
+  letter-spacing: .1rem;
+}
+
+.subheadline{
+  font: 1.5rem 'Barlow-Black', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .side-title{
@@ -81,6 +118,11 @@
 @font-face {
   font-family: Barlow-Thin;
   src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
+}
+
+@font-face {
+  font-family: Barlow-Black;
+  src: url(Library/fonts/Barlow/Barlow-Black.ttf);
 }
 
 @font-face {
@@ -202,7 +244,7 @@
 flex:1
 }
 
-.page-container{
+.mainpage-container{
 flex:6
 }
 
@@ -324,13 +366,14 @@ flex:6
     vertical-align: middle;
 */
 
-.home-bg-img {
+.bg-img-container {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
   z-index: 1;
 }
+
 
 
 .home-bg-img-canvas {
@@ -342,8 +385,8 @@ flex:6
 
 .home-bg-img-coffeebean {
   position: relative;
-  left: 15%;
   top: 5%;
+  left: 3%;
 }
 
 .down-button {
@@ -394,13 +437,18 @@ html {
   left: 10%;
 }
 
-.sub-text p {
+.h4-subtext{
+  position: absolute;
+  top: 1.5rem;
+  height:80%;
+}
+/* .sub-text p {
   font:  normal 1.1rem 'Barlow-Thin', sans-serif;
   color: white;
 
   line-height: 2rem;
   letter-spacing: .1rem;
-}
+} */
 
 .link-button {
   position: absolute;
@@ -455,8 +503,8 @@ html {
   background-size: cover;
 }
 
-.about-header {
-  position: relative;
+.title-header {
+  position: absolute;
   width: 100%;
   height: 18%;
   background-color: rgba(0, 0, 0, 0.35);
@@ -464,17 +512,18 @@ html {
   top: 5%;
 }
 
-.about-header > p {
-  position: relative;
+.title-header > p {
+  position: absolute;
   width: 50%;
   top: 5%;
   
   z-index: 3;
 }
 
-#about-header-left {
-  position: relative;
-  width: 50%;
+#title-header-left {
+  top: 20%;
+  left: 0%;
+  padding-right: 3%;
   text-align: right;
 
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
@@ -486,8 +535,9 @@ html {
   letter-spacing: .1rem;
 }
 
-#about-header-right {
-  padding-left: 2%;
+#title-header-right {
+  top: 35%;
+  right: 0px;
   text-align: left;
 
   font:  normal 1rem 'Barlow-ExtraBold', sans-serif;
@@ -851,12 +901,12 @@ html {
 
 #partners-section
 {
-  background-color: #f7f7f7;
+  background-color: var(--gray-black);
   color: #1d1d1d;
-  height: 100%;
+  height: 200%;
 }
 
-#partners-section .partners-background
+/* #partners-section .partners-background
 {
   height: 100%;
   display: table;
@@ -871,7 +921,73 @@ html {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+} */
+
+.bg-img-container-full{
+  padding-top: 10%;
+  position: absolute;
+  z-index: 1;
 }
+
+.page-container{
+  height: 100%;
+}
+
+.partners-upper-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45%;
+  /* background-color: blueviolet; */
+}
+
+.partners-upper-box{
+  width: 75%;
+  /* background-color: blueviolet; */
+  align-self: center;
+  margin-top: 22%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#partners-title{
+  color: var(--ash-white);
+  position: absolute;
+  z-index: 2;
+  margin-top: 18%;
+  left: 17%;
+}
+
+#partners-body{
+  width: 87%;
+  margin: 7% 0 5% 6%;
+}
+
+#partners-body > p{
+  margin-bottom: 2% !important;
+}
+
+.partners-lower-section{
+  position: relative;
+  display: flex;
+  padding-top: 3%;
+  width: 100%;
+  height: 40%;
+  /* background-color: blueviolet; */
+}
+
+.lower-section-left{
+
+  width: 50%;
+  height: 60%;
+}
+
+.lower-section-right{
+  margin-top: 2%;
+  width: 50%;
+  height: 50%;
+}
+
 
 #partners-section .partners-box
 {
@@ -881,12 +997,12 @@ html {
   position: absolute;
 }
 
-#partners-section .partners-title
+/* #partners-section .partners-title
 {
   color: white;
   font-size: 2em;
   font-weight: 500;
-}
+} */
 
 #partners-section .btn-warning
 {
@@ -989,17 +1105,78 @@ html {
 
 #careers-section
 {
-  background-color: #f7f7f7;
+  background-color: var(--gray-black);
   color: #1d1d1d;
-  padding: 20% 0;
-  height: 0%;
+  height: 200%;
 }
 
-#careers-section .career-title-parent
+#careers-section .careers-upper-section
 {
-  background-color: #1d1d1d;
+  /* background-color: green; */
   color: #d6943f;
-  padding: 1.5% 0;
+  height: 85%;
+  padding: 15% 5% 0 10% ;
+}
+
+/* Slider Properties */
+.img-size {
+  width: 20%;
+  padding: 10px;
+}
+
+.evt:hover {
+  border-radius: 5px;
+  background-color: var(--sec-yellow);
+  color: white;
+}
+
+.evtf:hover {
+  border-radius: 5px;
+  background-color: var(--sec-red);
+  color: black !important;
+}
+
+.zoom {
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform .2s;
+  width: 3px;
+  height: 250%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  text-decoration: none !important;
+}
+
+.event-text {
+  font-family: 'Satisfy', sans-serif !important;
+  font-weight: 800
+}
+
+.overline {
+  font-family: 'Barlow-Regular';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sec-accent);
+}
+
+#careers-section .careers-lower-section
+{
+  background-color: pink;
+  color: #d6943f;
+  height: 75%;
 }
 
 #careers-section .career-title
@@ -1175,12 +1352,13 @@ html {
 
 @media only screen and (min-width: 1200px) {
     .video-background {
-      background: #000;
-      position: fixed;
+      background: transparent;
+      position: absolute;
       top: 0;
       bottom: 0;
-      right: 0;
-      left: 0;
+      right: 5%;
+      left: 15%;
+      z-index: 2;
       /* &::after {
           display: block;
           content: '';
@@ -1269,7 +1447,7 @@ html {
 } */
 
 .footnote {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .footnote-text {

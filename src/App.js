@@ -23,7 +23,7 @@ class App extends Component {
             <div className="nav-container">
               <Navigation />
             </div>
-            <div className="page-container">
+            <div className="mainpage-container">
               <Switch>
                   <Route exact path = "/" component = {Home} />
                   <Route exact path = "/about-us" component = {About} />
