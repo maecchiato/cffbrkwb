@@ -11,280 +11,373 @@ import img7 from "../Library/img/menu-card-7.png";
 import img8 from "../Library/img/menu-card-8.png";
 
 
-const Menu = () => (
-  <div className="menu-section container">
-    <div className="row">
-      <div className="col-4">
-        <div className="row">
-          <div className="col-6">
-            <img src={img1} />
+
+var index = 2;
+
+
+
+const galleries = [
+  {
+    content:  
+      <div className="menu-grid d-flex flex-row">
+            <div className="col-4 d-flex flex-column">
+              <div className="d-flex">
+                <div className="menu-card menu-card-1">
+                  <img className="menu-card-img" src={img1}/>
+                  <div className="hover-text text-center">
+                    1
+                  </div>
+                </div>
+                <div className="menu-card menu-card-2">
+                  <img className="menu-card-img" src={img2}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="menu-card menu-card-3">
+                  <img className="menu-card-img" src={img3}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="menu-middle-col col-4 d-flex flex-column">
+              <div className="d-flex">
+                <div className="menu-card menu-card-4">
+                  <img className="menu-card-img" src={img4}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="menu-card menu-card-5">
+                  <img className="menu-card-img" src={img5}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="menu-card menu-card-6">
+                  <img className="menu-card-img" src={img6}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="menu-right-col col-4 d-flex flex-column">
+              <div className="d-flex">
+                <div className="menu-card menu-card-2">
+                  <img className="menu-card-img" src={img7}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="menu-card menu-card-2">
+                  <img className="menu-card-img" src={img8}/>
+                  <div className="hover-text text-center">
+                    HELLO
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-6">
-            <img src={img2} />
+  },
+  {
+    content: 
+    <div className="menu-grid d-flex flex-row">
+      <div className="col-4 d-flex flex-column">
+       <div className="d-flex">
+        <div className="menu-card menu-card-1">
+          <img className="menu-card-img" src={img2}/>
+          <div className="hover-text text-center">
+            2
           </div>
         </div>
-        <div className="row">
-          <img src={img3} />
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img2}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
         </div>
       </div>
-      <div className="col-2">
-        <div className="row">
-          <img src={img4} />
-        </div>
-        <div className="row">
-          <img src={img5} />  
-        </div>
-        <div className="row">
-          <img src={img6} />
+      <div className="d-flex">
+        <div className="menu-card menu-card-3">
+          <img className="menu-card-img" src={img3}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
         </div>
       </div>
-      <div className="col-4">
-        <div className="row">
-          <img src={img7} />
+    </div>
+    <div className="menu-middle-col col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-4">
+          <img className="menu-card-img" src={img4}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
         </div>
-        <div className="row">
-          <img src={img8} />
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-5">
+          <img className="menu-card-img" src={img5}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-6">
+          <img className="menu-card-img" src={img6}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="menu-right-col col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img7}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img8}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
         </div>
       </div>
     </div>
   </div>
+  },
+  {
+    content:
+    <div className="menu-grid d-flex flex-row">
+    <div className="col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-1">
+          <img className="menu-card-img" src={img3}/>
+          <div className="hover-text text-center">
+            3
+          </div>
+        </div>
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img2}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-3">
+          <img className="menu-card-img" src={img3}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="menu-middle-col col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-4">
+          <img className="menu-card-img" src={img4}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-5">
+          <img className="menu-card-img" src={img5}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-6">
+          <img className="menu-card-img" src={img6}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="menu-right-col col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img7}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img8}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  },
+  {
+    content: 
+    <div className="menu-grid d-flex flex-row">
+    <div className="col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-1">
+          <img className="menu-card-img" src={img4}/>
+          <div className="hover-text text-center">
+            4
+          </div>
+        </div>
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img2}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-3">
+          <img className="menu-card-img" src={img3}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="menu-middle-col col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-4">
+          <img className="menu-card-img" src={img4}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-5">
+          <img className="menu-card-img" src={img5}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-6">
+          <img className="menu-card-img" src={img6}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="menu-right-col col-4 d-flex flex-column">
+      <div className="d-flex">
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img7}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+      <div className="d-flex">
+        <div className="menu-card menu-card-2">
+          <img className="menu-card-img" src={img8}/>
+          <div className="hover-text text-center">
+            HELLO
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+]
+
+const Menu = () => (
+  <div className="menu-section">
+    <div className="menu-header d-flex flex-row">
+      <p id="menu-header-left" className="align-self-center">Our Specialty Products</p>
+      <p id="menu-header-right" className="align-self-center">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+    </div>
+    <div className="menu-buttons d-flex justify-content-between">
+      <button className="menu-button" onClick={() => index = 0}> 
+        <a>BLENDS</a>
+      </button>
+      <button className="menu-button" onClick={() => index = 1}> 
+        <a>CAKES</a>
+      </button>
+      <button className="menu-button" onClick={() => index = 2}> 
+        <a>PASTA</a>
+      </button>
+      <button className="menu-button" onClick={() => index = 3}> 
+        <a>COOKIES</a>
+      </button>
+    </div>
+
+    {galleries[index].content}
+  </div>
+
 )
+
+
 
 export default Menu;
 
 
-{/* <div id = "menu-section">
-    <div className = "row mx-0 h-100 py-lg-5 py-xl-0 py-4">
-    <div className = "col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-      <div className="nav-pills-option">
-        <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a className="nav-link active" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all" aria-selected="true">All</a>
-          <a className="nav-link" id="v-pills-coffee-tab" data-toggle="pill" href="#v-pills-coffee" role="tab" aria-controls="v-pills-coffee" aria-selected="false">Coffee</a>
-          <a className="nav-link" id="v-pills-chocolate-tab" data-toggle="pill" href="#v-pills-chocolate" role="tab" aria-controls="v-pills-chocolate" aria-selected="false">Chocolate</a>
-          <a className="nav-link" id="v-pills-tea-tab" data-toggle="pill" href="#v-pills-tea" role="tab" aria-controls="v-pills-tea" aria-selected="false">Tea</a>
-          <a className="nav-link" id="v-pills-smoothies-tab" data-toggle="pill" href="#v-pills-smoothies" role="tab" aria-controls="v-pills-smoothies" aria-selected="false">Smoothies</a>
-          <a className="nav-link" id="v-pills-matcha-tab" data-toggle="pill" href="#v-pills-matcha" role="tab" aria-controls="v-pills-matcha" aria-selected="false">Matcha</a>
-        </div>
-      </div>
-    </div>
-    <div className = "col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 text-center pb-5">
-      <div className="tab-content" id="v-pills-tabContent">
-        <div className="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">
-          <div className = "card-deck">
-            <div className = "card container-card">
-                <img className = "card-img-top" src = {menu1} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                    <h5 className = "card-title text">Hot Latte</h5>
-                  </div>
-            </div>
-            <div className = "card container-card w-20">
-              <img className = "card-img-top" src = {menu2} alt  ="Card Image Cap" />
-              <div className = "card-body overlay">
-                <h5 className = "card-title text">Matcha Cappuccino</h5>
-                </div>
-                </div>
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu3} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Matcha Latte</h5>
-                    </div>
-              </div>
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu4} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Hot Mocha</h5>
-                    </div>
-              </div>
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu5} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Matcha Frappe</h5>
-                    </div>
-              </div>
-          </div>
-          <div className = "card-deck mt-md-5">
-            <div className = "card container-card">
-                <img className = "card-img-top" src = {menu22} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                  <h5 className = "card-title text">Rich Choco Lattee</h5>
-                  </div>
-            </div>
-            <div className = "card container-card w-20">
-              <img className = "card-img-top" src = {menu20} alt  ="Card Image Cap" />
-              <div className = "card-body overlay">
-                <h5 className = "card-title text">Tea</h5>
-                </div>
-                </div>
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu7} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Hot Chocolate</h5>
-                    </div>
-              </div>
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu6} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Chococcino</h5>
-                    </div>
-              </div>
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu12} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Caramel Macchiato Frappe</h5>
-                    </div>
-              </div>
-          </div>
-        </div>
 
-        <div className="tab-pane fade" id="v-pills-coffee" role="tabpanel" aria-labelledby="v-pills-coffee-tab">
-          <div className = "card-deck">
-          <div className = "col-lg-3">
-            <div className = "card container-card w-20">
-                <img className = "card-img-top" src = {menu1} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                  <h5 className = "card-title text">Hot Latte</h5>
-                  </div>
-            </div>
-          </div>
-          <div className = "col-lg-3">
-            <div className = "card container-card w-20">
-                <img className = "card-img-top img-fluid" src = {menu4} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                  <h5 className = "card-title text">Hot Mocha</h5>
-                  </div>
-            </div>
-          </div>
-          <div className = "col-lg-3">
-            <div className = "card container-card w-20">
-                <img className = "card-img-top img-fluid" src = {menu21} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                  <h5 className = "card-title text">Americano</h5>
-                  </div>
-            </div>
-          </div>
-        </div>
-        </div>
 
-        <div className="tab-pane fade" id="v-pills-chocolate" role="tabpanel" aria-labelledby="v-pills-chocolate-tab">
-          <div className = "card-deck">
-            <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu6} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Chococcino</h5>
-                    </div>
-              </div>
-            </div>
-            <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu7} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Hot Chocolate</h5>
-                    </div>
-              </div>
-            </div>
-            <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu8} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Iced Rich Chocolate</h5>
-                    </div>
-              </div>
-            </div>
-            <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu9} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Rich Choco Frappe</h5>
-                    </div>
-              </div>
-            </div>
-            <div className = "col-lg-3 mt-lg-4">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu22} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Rich Choco Latte</h5>
-                    </div>
-              </div>
-            </div>
 
-          </div>
-        </div>
-
-        <div className="tab-pane fade" id="v-pills-tea" role="tabpanel" aria-labelledby="v-pills-tea-tab">
-          <div className = "card-deck">
-            <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu20} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Tea</h5>
-                    </div>
-              </div>
-            </div>
-            <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top" src = {menu19} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Iced Tea</h5>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tab-pane fade" id="v-pills-smoothies" role="tabpanel" aria-labelledby="v-pills-smoothies-tab">
-        <div className = "card-deck">
-          <div className = "col-lg-3">
-            <div className = "card container-card">
-                <img className = "card-img-top" src = {menu17} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                  <h5 className = "card-title text">Mango Mystic</h5>
-                  </div>
-            </div>
-          </div>
-          <div className = "col-lg-3">
-            <div className = "card container-card">
-                <img className = "card-img-top" src = {menu18} alt  ="Card Image Cap" />
-                <div className = "card-body overlay">
-                  <h5 className = "card-title text">Ube</h5>
-                  </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="tab-pane fade" id="v-pills-matcha" role="tabpanel" aria-labelledby="v-pills-matcha-tab">
-          <div className = "card-deck">
-          <div className = "col-lg-3">
-            <div className = "card container-card">
-              <img className = "card-img-top img-fluid" src = {menu2} alt  ="Card Image Cap" />
-              <div className = "card-body overlay">
-                <h5 className = "card-title text">Matcha Cappuccino</h5>
-                </div>
-                </div>
-          </div>
-          <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top img-fluid" src = {menu3} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Matcha Latte</h5>
-                    </div>
-              </div>
-          </div>
-          <div className = "col-lg-3">
-              <div className = "card container-card">
-                  <img className = "card-img-top img-fluid" src = {menu5} alt  ="Card Image Cap" />
-                  <div className = "card-body overlay">
-                    <h5 className = "card-title text">Matcha Frappe</h5>
-                    </div>
-              </div>
-          </div>
-        </div>
-        </div>
-
-      </div>
-
-    </div>
-    </div>
-
-  </div> */}
+    // <div className="menu-section">
+    //   <div className="row">
+    //     <div className="col-4">
+    //       <div className="row">
+    //         <div className="col-6">
+    //           <img src={img1} />
+    //         </div>
+    //         <div className="col-6">
+    //           <img src={img2} />
+    //         </div>
+    //       </div>
+    //       <div className="row">
+    //         <img src={img3} />
+    //       </div>
+    //     </div>
+    //     <div className="col-2">
+    //       <div className="row">
+    //         <img src={img4} />
+    //       </div>
+    //       <div className="row">
+    //         <img src={img5} />  
+    //       </div>
+    //       <div className="row">
+    //         <img src={img6} />
+    //       </div>
+    //     </div>
+    //     <div className="col-4">
+    //       <div className="row">
+    //         <img src={img7} />
+    //       </div>
+    //       <div className="row">
+    //         <img src={img8} />
+    //       </div>
+    //     </div>
+    //   </div> 
+    // </div>

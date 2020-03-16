@@ -25,9 +25,9 @@ class About extends React.Component {
     return(
       <div className="about-section">
         <div className="about-upper-section  text-center">
-          <div className="about-header ">
-            <p id="about-header-left" className="">Our Coffee Story</p>
-            <p id="about-header-right" className="">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</p>
+          <div className="about-header d-flex flex-row">
+            <p id="about-header-left" className="align-self-center">Our Coffee Story</p>
+            <p id="about-header-right" className="align-self-center">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</p>
           </div>
           <img src={require("../Library/img/timeline.svg")} />
         </div>
