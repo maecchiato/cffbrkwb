@@ -313,10 +313,14 @@ const galleries = [
 
 const Menu = () => (
   <div className="menu-section">
-    <div className="menu-header d-flex flex-row">
+    {/* <div className="menu-header d-flex flex-row">
       <p id="menu-header-left" className="align-self-center">Our Specialty Products</p>
       <p id="menu-header-right" className="align-self-center">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
-    </div>
+    </div> */}
+    <div className="title-header">
+        <p id="title-header-left" className="">Our Specialty Products</p>
+        <p id="title-header-right" className="">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+      </div>
     <div className="menu-buttons d-flex justify-content-between">
       <button className="menu-button" onClick={() => index = 0}> 
         <a>BLENDS</a>
