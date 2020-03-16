@@ -33,6 +33,13 @@
   letter-spacing: 0.1rem
 }
 
+.h4-barlow{
+  color: var(--ash-white);
+  font: normal 2.25rem 'Barlow-ExtraBold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem
+}
+
 .h2-underland{
 
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
@@ -50,6 +57,16 @@
   -webkit-background-clip: text;
    background-clip: text;
   font: normal 3rem 'Underland', sans-serif;
+}
+
+.h4-underland{
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+   background-clip: text;
+  font: normal 2.25rem 'Underland', sans-serif;
+
 }
 
 .body-12-caption-barlow{
@@ -414,6 +431,11 @@ html {
   left: 10%;
 }
 
+.h4-subtext{
+  position: absolute;
+  top: 1.5rem;
+  height:80%;
+}
 /* .sub-text p {
   font:  normal 1.1rem 'Barlow-Thin', sans-serif;
   color: white;
@@ -758,7 +780,7 @@ html {
   height: 200%;
 }
 
-#partners-section .partners-background
+/* #partners-section .partners-background
 {
   height: 100%;
   display: table;
@@ -773,10 +795,10 @@ html {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-}
+} */
 
 .bg-img-container-full{
-  margin-top: 15%;
+  padding-top: 10%;
   position: absolute;
   z-index: 1;
 }
@@ -822,21 +844,22 @@ html {
 .partners-lower-section{
   position: relative;
   display: flex;
+  padding-top: 3%;
   width: 100%;
-  height: 45%;
-  background-color: blueviolet;
+  height: 40%;
+  /* background-color: blueviolet; */
 }
 
 .lower-section-left{
-  background-color: aquamarine;
+
   width: 50%;
-  height: 100%;
+  height: 60%;
 }
 
 .lower-section-right{
-  background-color: coral;
+  margin-top: 2%;
   width: 50%;
-  height: 100%;
+  height: 50%;
 }
 
 
@@ -1142,12 +1165,13 @@ html {
 
 @media only screen and (min-width: 1200px) {
     .video-background {
-      background: #000;
-      position: fixed;
+      background: transparent;
+      position: absolute;
       top: 0;
       bottom: 0;
-      right: 0;
-      left: 0;
+      right: 5%;
+      left: 15%;
+      z-index: 2;
       /* &::after {
           display: block;
           content: '';
