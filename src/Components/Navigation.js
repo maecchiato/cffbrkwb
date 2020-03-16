@@ -47,7 +47,7 @@ class Navigation extends React.Component {
             <div className="menu-item"><a href="/about-us" className="list-group-item-action pt-2 pb-2">ABOUT US</a><div className="divider"></div></div>
             <div className="menu-item"><a href="/menu" className="list-group-item-action pt-2 pb-2">MENU</a><div className="divider"></div></div>
             <div className="menu-item"><a href="/partners" className="list-group-item-action pt-2 pb-2">PARTNERS</a><div className="divider"></div></div>
-            <div className="menu-item"><a href="" className="list-group-item-action pt-2 pb-2">CAREERS</a><div className="divider"></div></div>
+            <div className="menu-item"><a href="/careers" className="list-group-item-action pt-2 pb-2">CAREERS</a><div className="divider"></div></div>
             <div className="menu-item"><a href="" className="list-group-item-action pt-2 pb-2">EVENTS</a><div className="divider"></div></div>
           </div>
           <div className="footnote ml-sm-4 text-left">

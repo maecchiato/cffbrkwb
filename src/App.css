@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Crete+Round');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+.bg-red{
+  background-color: coral;
+}
 
+.bg-blue{
+  background-color: mediumaquamarine;
+}
 
 /* Colors */
 :root {
@@ -516,6 +522,7 @@ html {
 #title-header-left {
   top: 20%;
   left: 0%;
+  padding-right: 3%;
   text-align: right;
 
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
@@ -530,7 +537,6 @@ html {
 #title-header-right {
   top: 35%;
   right: 0px;
-  padding-left: 2%;
   text-align: left;
 
   font:  normal 1rem 'Barlow-ExtraBold', sans-serif;
@@ -979,17 +985,78 @@ html {
 
 #careers-section
 {
-  background-color: #f7f7f7;
+  background-color: var(--gray-black);
   color: #1d1d1d;
-  padding: 20% 0;
-  height: 0%;
+  height: 200%;
 }
 
-#careers-section .career-title-parent
+#careers-section .careers-upper-section
 {
-  background-color: #1d1d1d;
+  /* background-color: green; */
   color: #d6943f;
-  padding: 1.5% 0;
+  height: 85%;
+  padding: 15% 5% 0 10% ;
+}
+
+/* Slider Properties */
+.img-size {
+  width: 20%;
+  padding: 10px;
+}
+
+.evt:hover {
+  border-radius: 5px;
+  background-color: var(--sec-yellow);
+  color: white;
+}
+
+.evtf:hover {
+  border-radius: 5px;
+  background-color: var(--sec-red);
+  color: black !important;
+}
+
+.zoom {
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform .2s;
+  width: 3px;
+  height: 250%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  text-decoration: none !important;
+}
+
+.event-text {
+  font-family: 'Satisfy', sans-serif !important;
+  font-weight: 800
+}
+
+.overline {
+  font-family: 'Barlow-Regular';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sec-accent);
+}
+
+#careers-section .careers-lower-section
+{
+  background-color: pink;
+  color: #d6943f;
+  height: 75%;
 }
 
 #careers-section .career-title
