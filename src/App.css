@@ -456,7 +456,7 @@ html {
 }
 
 .about-header {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 18%;
   background-color: rgba(0, 0, 0, 0.35);
@@ -465,15 +465,16 @@ html {
 }
 
 .about-header > p {
-  position: absolute;
+  position: relative;
   width: 50%;
-  line-height: 50%;
+  top: 5%;
+  
   z-index: 3;
 }
 
 #about-header-left {
-  top: 20%;
-  left: 0%;
+  position: relative;
+  width: 50%;
   text-align: right;
 
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
@@ -486,8 +487,6 @@ html {
 }
 
 #about-header-right {
-  top: 35%;
-  right: 0px;
   padding-left: 2%;
   text-align: left;
 
@@ -502,7 +501,7 @@ html {
   top: 25%;
   left: 15%; */
   display: inline-block;
-  margin-top: 18%;
+  margin-top: 5%;
 }
 
 
@@ -600,17 +599,136 @@ html {
 /* Menu Section */
 
 .menu-section {
-  height: 100%;
-  background-color: red;
+  width: 100%;
+  height: 140%;
+  background-color: var(--gray-black);
+
+  background: var(--gray-black) url("Library//img/menu-bg-img.png") no-repeat center / cover ;
+
+  overflow: hidden;
 }
 
-/* .menu-section .row {
-  border: 5px green solid;
-}
-.menu-section .col {
-  border: 5px blue solid;
-} */
 
+.menu-buttons {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  top: 8%;
+}
+
+.menu-button {
+  border: .3rem solid;
+  border-image: linear-gradient(95deg, #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F) 1;
+  background-color: transparent;
+  padding: 0px 25px;
+
+  font: normal 1rem 'Barlow-Regular', sans-serif;
+  color: var(--gold-button);
+  line-height: 2rem;
+  letter-spacing: .1rem;
+
+  width: 20%;
+
+  cursor: pointer;
+
+}
+
+.menu-button:hover {
+  
+  background-color: var(--gold-button);
+  color: var(--brown-black);
+  border-image: var(--gold-button) !important;
+}
+
+.menu-grid {
+  width: 70%;
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+}
+
+.menu-card {
+  margin: 0 .5rem .5rem 0;
+  position: relative;
+  /* height: 10%;
+  width: 10%; */
+}
+
+.menu-middle-col{
+  margin-left: 2.7em;
+  margin-right: -7.2rem;
+}
+
+.hover-text {
+  position: absolute;
+  width: 100%;
+  padding: 1%;
+  top: 48%;
+  
+  font:  normal 1rem 'Barlow-Regular', sans-serif;
+  color: white;
+  
+  transition: .5s ease;
+  opacity: 0;
+
+}
+
+.menu-card:hover .menu-card-img {
+  opacity: 0.3;
+}
+
+.menu-card:hover .hover-text {
+  opacity: 1;
+}
+
+
+.menu-card-img {
+  opacity: 1;
+  transition: .5s ease;
+  /* backface-visibility: hidden; */
+}
+
+.menu-header {
+  position: relative;
+  width: 100%;
+  height: 18%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  top: 5%;
+}
+
+.menu-header > p {
+  position: relative;
+  width: 50%;
+  top: 5%;
+  left: 5%;
+  
+  z-index: 3;
+}
+
+#menu-header-left {
+  position: relative;
+  width: 50%;
+  text-align: right;
+
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font: normal 3rem 'Underland', sans-serif;
+  letter-spacing: .1rem;
+}
+
+#menu-header-right {
+  padding-left: 2%;
+  text-align: left;
+
+  font:  normal 1rem 'Barlow-ExtraBold', sans-serif;
+  color: white;
+
+  letter-spacing: .4rem;
+}
 
 
 /* #menu-section
@@ -1151,7 +1269,7 @@ html {
 } */
 
 .footnote {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .footnote-text {
