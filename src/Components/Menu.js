@@ -340,8 +340,8 @@ class Menu extends React.Component {
             <a>COOKIES</a>
           </button>
         </div>
-
-        {galleries[this.state.index].content}
+          {galleries[this.state.index].content}
+          
       </div>
     )
   }

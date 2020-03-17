@@ -137,9 +137,19 @@
 	        animation: kenburns-top 20s linear infinite alternate both;
 }
 
-.fadein {
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  animation: fadein 2s;
+.fade-out{
+  opacity:0;
+  width:0;
+  height:0;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fade-in{
+  opacity:1;
+  width:100px;
+  height:100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
 }
 
 /**
@@ -174,23 +184,6 @@
     -webkit-transform-origin: top;
             transform-origin: top;
   }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }
 
 
@@ -573,7 +566,7 @@ html {
   top: 25%;
   left: 15%; */
   display: inline-block;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 
@@ -712,6 +705,8 @@ html {
   border-image: var(--gold-button) !important;
 }
 
+
+
 .menu-grid {
   width: 70%;
   position: relative;
@@ -766,7 +761,7 @@ html {
 
 .menu-header {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 18%;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 2;
