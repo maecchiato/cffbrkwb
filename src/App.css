@@ -90,6 +90,12 @@
   letter-spacing: .1rem;
 }
 
+.overline-16{
+  font: 1rem 'Barlow-Bold', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .subheadline{
   font: 1.5rem 'Barlow-Black', sans-serif;
   letter-spacing: 3px;
@@ -1239,6 +1245,27 @@ html {
 #careers-section .info-card:hover .front {
   -webkit-transform: rotateY(180deg);
 }
+
+#events-section{
+  background-color: var(--gray-black);
+  height: 100%;
+  padding-top: 15%;
+}
+
+.gold-rec{
+  height: 3px;
+  width: 100px;
+background-color: var(--gold-button);
+}
+
+.events-box{
+  height: 50%;
+}
+
+.events-name{
+  color: var(--ash-white);
+}
+
 
 @media only screen and (min-width: 600px) {
 

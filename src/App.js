@@ -11,7 +11,7 @@ import Menu from './Components/Menu.js';
 import StoreLocator from './Components/StoreLocator.js';
 import Partners from './Components/Partners.js';
 import Careers from './Components/Careers.js';
-import Contact from './Components/Contact.js';
+import Events from './Components/Events.js';
 
 class App extends Component {
   
@@ -31,7 +31,7 @@ class App extends Component {
                   <Route exact path = "/store-locator" component = {StoreLocator} />
                   <Route exact path = "/partners" component = {Partners} />
                   <Route exact path = "/careers" component = {Careers} />
-                  <Route exact path = "/contact" component = {Contact} />
+                  <Route exact path = "/events" component = {Events} />
                 </Switch>
             </div>              
             {/* <Footer /> */}
