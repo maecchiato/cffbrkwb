@@ -1287,86 +1287,26 @@ html {
 
 /*  Contact Section */
 
-#contact-section
+#events-section
 {
-  background-color: #f7f7f7;
-  color: black;
+  background-color: var(--gray-black);
   height: 100%;
   padding-top: 15%;
 }
 
-
-#contact-section .contact-sideimg{
-  height: 100%;
-  width: 80%;
-  display: inline-block;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.gold-rec{
+  height: 3px;
+  width: 100px;
+background-color: var(--gold-button);
 }
 
-#contact-section .contact-card {
-  display: inline-block;
-  -webkit-perspective: 800px;
-  padding: 10% 0;
+.events-box{
+  height: 50%;
+  
 }
 
-#contact-section .card-front, #contact-section .card-back{
-  border-radius: 10px;
-  transition: -webkit-transform 1s;
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-}
-
-#contact-section .card-front{
-  background-color: #721c24;
-  overflow: hidden;
-  width: 90%;
-  height: 80%;
-  position: absolute;
-  z-index: 1;
-  color: #dfd1c8;
-  padding: 15px;
-}
-
-#contact-section .card-back
-{
-  background-color: #ffb24a;
-  padding: 10px;
-  width:  90%;
-  height: 80%;
-  -webkit-transform: rotateY(-180deg);
-  overflow: hidden;
-}
-#contact-section .contact-card:hover .card-front{
-  -webkit-transform: rotateY(-180deg);
-}
-#contact-section .contact-card:hover .card-back {
-  -webkit-transform: rotateY(0);
-}
-
-#contact-section .contact-title
-{
-  font-size: 2.5rem !important;
-  font-weight: 400;
-}
-
-#contact-section .contact-semi-title{
-  font-size: 2rem !important;
-  font-family: 'Oswald', Open Sans !important;
-}
-
-#contact-section .contact-description{
-  font-size: 1rem !important;
-  font-weight: 600;
-  font-style: italic;
-}
-
-#contact-section .contact-back-description
-{
-  font-size: 0.85rem !important;
-  font-weight: 500;
+.events-name{
+  color: var(--ash-white);
 }
 
 @media only screen and (min-width: 769px) {
