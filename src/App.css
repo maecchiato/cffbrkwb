@@ -76,8 +76,10 @@
 }
 
 .body-12-caption-barlow{
-  font: 0.75rem 'Barlow-Regular', sans-serif;
+  font: 0.75rem 'Barlow-Thin', sans-serif;
   letter-spacing: 0.5px;
+  color: white;
+  line-height: 1.5rem;
 }
 
 .body-16-main-barlow{
@@ -94,6 +96,13 @@
   text-transform: uppercase;
 }
 
+.subheadline-24{
+  font: 1.5rem 'Barlow-Bold', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+}
+
 .side-title{
   color: var(--neutral-brown);
 }
@@ -103,11 +112,24 @@
   top: -2.5rem; 
 }
 
+.large-card-title{
+  color: var(--neutral-brown);
+  
+}
+
+.large-card-caption{
+  width: 85%;
+}
 
 /* Font Faces */
 @font-face {
   font-family: Barlow-ExtraBold;
   src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: Barlow-Bold;
+  src: url(Library/fonts/Barlow/Barlow-Bold.ttf)
 }
 
 @font-face {
@@ -1134,77 +1156,32 @@ html {
 #careers-section
 {
   background-color: var(--gray-black);
-  color: #1d1d1d;
-  height: 200%;
 }
 
 #careers-section .careers-upper-section
 {
-  /* background-color: green; */
-  color: #d6943f;
   height: 85%;
   padding: 15% 5% 0 10% ;
 }
 
-/* Slider Properties */
-.img-size {
-  width: 20%;
-  padding: 10px;
-}
-
-.evt:hover {
-  border-radius: 5px;
-  background-color: var(--sec-yellow);
-  color: white;
-}
-
-.evtf:hover {
-  border-radius: 5px;
-  background-color: var(--sec-red);
-  color: black !important;
-}
-
-.zoom {
-  padding: 10px;
-  box-sizing: border-box;
-  transition: transform .2s;
-  width: 3px;
-  height: 250%;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.5);
-  /* IE 9 */
-  -webkit-transform: scale(1.5);
-  /* Safari 3-8 */
-  transform: scale(1.1);
-  text-decoration: none !important;
-}
-
-.event-text {
-  font-family: 'Satisfy', sans-serif !important;
-  font-weight: 800
-}
-
-.overline {
-  font-family: 'Barlow-Regular';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 11px;
-  line-height: 16px;
-  /* identical to box height, or 133% */
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--sec-accent);
-}
-
 #careers-section .careers-lower-section
 {
-  background-color: pink;
-  color: #d6943f;
-  height: 75%;
+  background-color: var(--gray-black);
+  /* color: #d6943f; */
+
+}
+
+.careers-q-mt{
+  background: var(--gray-black) url(Library/img/card/q-bg-mt.svg) no-repeat ;
+  width: 35%;
+  background-size: cover;
+}
+
+.careers-q-dp{
+  background: var(--gray-black) url(Library/img/card/q-bg-dp.svg) no-repeat ;
+  width: 35%;
+  background-size: cover;
+
 }
 
 #careers-section .career-title
