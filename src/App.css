@@ -1253,9 +1253,10 @@ html {
 }
 
 .gold-rec{
-  height: 3px;
+  height: 4px;
   width: 100px;
-background-color: var(--gold-button);
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+
 }
 
 .events-box{
