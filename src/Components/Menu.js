@@ -12,83 +12,79 @@ import img8 from "../Library/img/menu-card-8.png";
 
 
 
-var index = 2;
-
-
-
 const galleries = [
   {
     content:  
       <div className="menu-grid d-flex flex-row">
-            <div className="col-4 d-flex flex-column">
-              <div className="d-flex">
-                <div className="menu-card menu-card-1">
-                  <img className="menu-card-img" src={img1}/>
-                  <div className="hover-text text-center">
-                    1
-                  </div>
-                </div>
-                <div className="menu-card menu-card-2">
-                  <img className="menu-card-img" src={img2}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="menu-card menu-card-3">
-                  <img className="menu-card-img" src={img3}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
+        <div className="col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-1">
+              <img className="menu-card-img" src={img1}/>
+              <div className="hover-text text-center">
+                1
               </div>
             </div>
-            <div className="menu-middle-col col-4 d-flex flex-column">
-              <div className="d-flex">
-                <div className="menu-card menu-card-4">
-                  <img className="menu-card-img" src={img4}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="menu-card menu-card-5">
-                  <img className="menu-card-img" src={img5}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="menu-card menu-card-6">
-                  <img className="menu-card-img" src={img6}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="menu-right-col col-4 d-flex flex-column">
-              <div className="d-flex">
-                <div className="menu-card menu-card-2">
-                  <img className="menu-card-img" src={img7}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="menu-card menu-card-2">
-                  <img className="menu-card-img" src={img8}/>
-                  <div className="hover-text text-center">
-                    HELLO
-                  </div>
-                </div>
+            <div className="menu-card menu-card-2">
+              <img className="menu-card-img" src={img2}/>
+              <div className="hover-text text-center">
+                HELLO
               </div>
             </div>
           </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-3">
+              <img className="menu-card-img" src={img3}/>
+              <div className="hover-text text-center">
+                HELLO
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="menu-middle-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-4">
+              <img className="menu-card-img" src={img4}/>
+              <div className="hover-text text-center">
+                HELLO
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-5">
+              <img className="menu-card-img" src={img5}/>
+              <div className="hover-text text-center">
+                HELLO
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-6">
+              <img className="menu-card-img" src={img6}/>
+              <div className="hover-text text-center">
+                HELLO
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="menu-right-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-2">
+              <img className="menu-card-img" src={img7}/>
+              <div className="hover-text text-center">
+                HELLO
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-2">
+              <img className="menu-card-img" src={img8}/>
+              <div className="hover-text text-center">
+                HELLO
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   },
   {
     content: 
@@ -169,7 +165,7 @@ const galleries = [
     <div className="col-4 d-flex flex-column">
       <div className="d-flex">
         <div className="menu-card menu-card-1">
-          <img className="menu-card-img" src={img3}/>
+          <img className="menu-card-img" src={img6}/>
           <div className="hover-text text-center">
             3
           </div>
@@ -311,35 +307,45 @@ const galleries = [
   }
 ]
 
-const Menu = () => (
-  <div className="menu-section">
-    {/* <div className="menu-header d-flex flex-row">
-      <p id="menu-header-left" className="align-self-center">Our Specialty Products</p>
-      <p id="menu-header-right" className="align-self-center">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
-    </div> */}
-    <div className="title-header">
-        <p id="title-header-left" className="">Our Specialty Products</p>
-        <p id="title-header-right" className="">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {index: 0};
+  }
+
+
+  render () {
+    return (
+      
+      <div className="menu-section">
+        {/* <div className="menu-header d-flex flex-row">
+          <p id="menu-header-left" className="align-self-center">Our Specialty Products</p>
+          <p id="menu-header-right" className="align-self-center">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+        </div> */}
+        <div className="title-header">
+          <p id="title-header-left" className="">Our Specialty Products</p>
+          <p id="title-header-right" className="">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+        </div>
+        <div className="menu-buttons d-flex justify-content-between">
+          <button className="menu-button" onClick={() => this.setState({index: 0})}> 
+            <a>BLENDS</a>
+          </button>
+          <button className="menu-button" onClick={() => this.setState({index: 1})}> 
+            <a>CAKES</a>
+          </button>
+          <button className="menu-button" onClick={() => this.setState({index: 2})}> 
+            <a>PASTA</a>
+          </button>
+          <button className="menu-button" onClick={() => this.setState({index: 3})}> 
+            <a>COOKIES</a>
+          </button>
+        </div>
+
+        {galleries[this.state.index].content}
       </div>
-    <div className="menu-buttons d-flex justify-content-between">
-      <button className="menu-button" onClick={() => index = 0}> 
-        <a>BLENDS</a>
-      </button>
-      <button className="menu-button" onClick={() => index = 1}> 
-        <a>CAKES</a>
-      </button>
-      <button className="menu-button" onClick={() => index = 2}> 
-        <a>PASTA</a>
-      </button>
-      <button className="menu-button" onClick={() => index = 3}> 
-        <a>COOKIES</a>
-      </button>
-    </div>
-
-    {galleries[index].content}
-  </div>
-
-)
+    )
+  }
+}
 
 
 
