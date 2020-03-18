@@ -32,14 +32,11 @@ class Slide extends React.Component{
     var settings = {
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 60000,
+      autoplaySpeed: 10000,
       centerMode: true,
       className: 'careers-slider',
       pauseOnFocus: true,
       pauseOnHover: true,
-      
-
-
       dots: true,
       infinite: true,
       speed: 500,
@@ -47,15 +44,21 @@ class Slide extends React.Component{
       slidesToScroll: 1
     }
     return(
-        <div className="slider-main" >
-            <Slider {...settings} style={{width:"20%"}}>
+        <div className="d-flex justify-content-center slider-main bg-red" >
+          <div className="d-flex w-75 h-100 bg-blue">
+            <Slider {...settings}>
                 <div>
                     <img src={img1}/>
                 </div>
                 <div>
                     <img src={img2}/>
                 </div>
+                <div>
+                    <img src={img2}/>
+                </div>
             </Slider>
+          </div>
+            
         </div>
     )
   }
