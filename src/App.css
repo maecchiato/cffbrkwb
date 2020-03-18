@@ -48,17 +48,17 @@
 
 .h2-underland{
 
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
-  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
   font: normal 4rem 'Underland', sans-serif;
 }
 
 .h3-underland{
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
-  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
    background-clip: text;
@@ -66,8 +66,8 @@
 }
 
 .h4-underland{
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
-  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
    background-clip: text;
@@ -115,12 +115,12 @@
 
 .sec-title{
   position: relative;
-  top: -2.5rem; 
+  top: -2.5rem;
 }
 
 .large-card-title{
   color: var(--neutral-brown);
-  
+
 }
 
 .large-card-caption{
@@ -375,20 +375,20 @@ flex:6
   color: white;
   font-size: 3rem;
   font-family: 'Barlow-ExtraBold', sans-serif;
-  
+
 }
 
 /* Change */
 #home-intro-large-text-gold {
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
-  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
+  background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
 
   position: relative;
   top: -2rem;
-  
+
   font: normal 50px 'Underland', sans-serif;
 }
 
@@ -401,7 +401,7 @@ flex:6
   letter-spacing: .1rem;
 }
 
-/* for centering 
+/* for centering
   BS4: text-center --for container div
     margin-left: auto;
     margin-right: auto;
@@ -561,7 +561,7 @@ html {
   position: absolute;
   width: 50%;
   top: 5%;
-  
+
   z-index: 3;
 }
 
@@ -571,7 +571,7 @@ html {
   padding-right: 3%;
   text-align: right;
 
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -623,7 +623,7 @@ html {
 }
 
 .about-lower-left-title {
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -648,7 +648,7 @@ html {
 .about-lower-left-subtext {
   padding: 10% 25% 0%;
   text-align: left;
-  
+
   font: normal .9rem 'Barlow-Regular', sans-serif ;
   line-height: 2rem;
   letter-spacing: .1rem;
@@ -665,7 +665,7 @@ html {
 }
 
 .about-lower-right-title {
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -761,10 +761,10 @@ html {
   width: 100%;
   padding: 1%;
   top: 48%;
-  
+
   font:  normal 1rem 'Barlow-Regular', sans-serif;
   color: white;
-  
+
   transition: .5s ease;
   opacity: 0;
 
@@ -803,7 +803,7 @@ html {
   width: 50%;
   top: 5%;
   left: 5%;
-  
+
   z-index: 3;
 }
 
@@ -812,7 +812,7 @@ html {
   width: 50%;
   text-align: right;
 
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1258,7 +1258,7 @@ html {
 .gold-rec{
   height: 4px;
   width: 100px;
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
 
 }
 
@@ -1309,13 +1309,13 @@ html {
 .gold-rec{
   height: 4px;
   width: 100px;
-  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);     
+  background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
 
 }
 
 .events-box{
   height: 50%;
-  
+
 }
 
 .events-name{
@@ -1388,7 +1388,7 @@ html {
 
 .sidebar-heading {
   width: 100%;
-  
+
   padding-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -1466,7 +1466,9 @@ justify-content: center;
 .slider-main {
   width: 100%;
   height: 100%;
+  
 }
+
 
 .slick-slider.careers-slider.slick-initialized {
   flex: 1;
@@ -1474,6 +1476,10 @@ justify-content: center;
   height: auto;
 }
 
+.slick-prev:before, .slick-next:before {
+  color: var(--gold-dark) !important;
+}
+
 .careers-slider {
-  width: 100%;
+  width: 350px;
 }
