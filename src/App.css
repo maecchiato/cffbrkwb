@@ -1249,11 +1249,10 @@ html {
   -webkit-transform: rotateY(180deg);
 }
 
-#events-section{
-  background-color: var(--gray-black);
-  height: 100%;
+/* #events-section{
+  background-color: var(--gold-dark);
   padding-top: 15%;
-}
+} */
 
 .gold-rec{
   height: 4px;
@@ -1298,8 +1297,7 @@ html {
 #events-section
 {
   background-color: var(--gray-black);
-  height: 100%;
-  padding-top: 15%;
+  padding: 15% 0 5% 0;
 }
 
 .gold-rec{
