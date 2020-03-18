@@ -1165,7 +1165,7 @@ html {
 #careers-section .careers-upper-section
 {
   height: 85%;
-  padding: 15% 5% 0 10% ;
+  padding: 20% 5% 0 10% ;
 }
 
 #careers-section .careers-lower-section
@@ -1271,9 +1271,16 @@ html {
   height: 100%;
 }
 
+.slick-slider.careers-slider.slick-initialized {
+  flex: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: var(--gold-dark) !important;
+}
+
 .careers-slider {
-  width: 100%;
-  height: 100%;
+  width: 350px;
 }
 
 
@@ -1459,23 +1466,5 @@ justify-content: center;
   width: 100%;
 }
 
-/* .slider-main {
-  width: 100%;
-  
-  
-} */
 
 
-.slick-slider.careers-slider.slick-initialized {
-  flex: 1;
-  /* width: 100%; */
-  height: auto;
-}
-
-.slick-prev:before, .slick-next:before {
-  color: var(--gold-dark) !important;
-}
-
-.careers-slider {
-  width: 350px;
-}
