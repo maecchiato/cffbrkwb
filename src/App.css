@@ -1262,10 +1262,6 @@ html {
 
 }
 
-.events-box{
-  height: 50%;
-}
-
 .events-name{
   color: var(--ash-white);
 }
@@ -1463,11 +1459,11 @@ justify-content: center;
   width: 100%;
 }
 
-.slider-main {
+/* .slider-main {
   width: 100%;
-  height: 100%;
   
-}
+  
+} */
 
 
 .slick-slider.careers-slider.slick-initialized {
