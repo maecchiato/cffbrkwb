@@ -40,12 +40,12 @@ class Slide extends React.Component{
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 5,
       slidesToScroll: 1
     }
     return(
         <div className="d-flex justify-content-center slider-main bg-red" >
-          <div className="d-flex w-75 h-100 bg-blue">
+          <div className="d-flex w-75 h-25 bg-blue">
             <Slider {...settings}>
                 <div>
                     <img src={img1}/>
@@ -56,9 +56,17 @@ class Slide extends React.Component{
                 <div>
                     <img src={img2}/>
                 </div>
+                <div>
+                    <img src={img1}/>
+                </div>
+                <div>
+                    <img src={img2}/>
+                </div>
+                <div>
+                    <img src={img2}/>
+                </div>
             </Slider>
-          </div>
-            
+          </div>      
         </div>
     )
   }
