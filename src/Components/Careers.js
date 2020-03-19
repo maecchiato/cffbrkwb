@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import ReactDOM from 'react-dom';
 import '../App.css';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import img_mt from '../Library/img/card/q-bg-mt.svg';
 import img_dp from '../Library/img/card/q-bg-dp.svg';
 import events3 from '../Library/img/careers/avatar-03.png';
@@ -10,8 +13,39 @@ import events4 from '../Library/img/careers/avatar-03.png';
 import events5 from '../Library/img/careers/avatar-03.png';
 import cbDP from '../Library/img/careers/avatar-06.png';
 
+import img1 from '../Library/img/menu-card-1.png';
+import img2 from '../Library/img/menu-card-2.png';
+
+const content = [
+  {
+    date: "March 15, 2020",
+    image: img1
+  },
+  {
+    date: "April 14, 2020",
+    image: img2
+  }
+]
+
 class Careers extends React.Component{
   render(){
+    var settings = {
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 60000,
+      centerMode: true,
+      className: 'careers-slider',
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      
+
+
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
     return(
     <div id = "careers-section">
       <div className="title-header">
@@ -27,9 +61,15 @@ class Careers extends React.Component{
           If you have the heart to own and be one of the Coffeebreak brand, you're the one we are looking for!
           </div>
         </div>
-        {/* <div id="event-slider" className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center bg-blue">
-        
-        </div> */}
+        <div id="event-slider" className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center bg-blue">
+          {/* <Slider {...settings}>
+            <div>
+              <div>
+                <img src={img1}/>
+              </div>
+            </div>
+          </Slider> */}
+        </div>
   
       </div>
       <div className="careers-lower-section">
