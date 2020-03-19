@@ -63,28 +63,27 @@ class Careers extends React.Component{
           </div>
         </div>
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
-          <div className="d-flex h-100 justify-content-center w-100 m-auto" >
-            <div className="d-flex pt-4 w-75 m-auto">
+          <div className="d-flex h-100 justify-content-center w-100 m-auto" >                      
+            <div className=" d-flex pt-4 w-75 m-auto">
               <Slider {...settings}>
-                <div>
-                  <img src={img1}/>
+                
+                <div className="event-card row bg-blue">
+                  <a href="https://www.facebook.com/WaffleTimeInc/posts/10157447168432726" target="_blank" rel=" noreferrer noopener">
+                    <div className="">
+                      <img src={img1}/>
+                    </div>
+                  </a>
                 </div>
-                <div>
-                  <img src={img2}/>
+                
+                <div className="event-card row bg-blue">
+                  <a href="https://www.facebook.com/WaffleTimeInc/posts/10157447168432726" target="_blank" rel=" noreferrer noopener">
+                    <div className="">
+                      <img src={img2}/>
+                    </div>
+                  </a>
                 </div>
-                <div>
-                  <img src={img2}/>
-                </div>
-                <div>
-                  <img src={img1}/>
-                </div>
-                <div>
-                    <img src={img2}/>
-                </div>
-                <div>
-                    <img src={img2}/>
-                </div>
-              </Slider>
+
+                </Slider>
             </div>      
           </div>
         </div>

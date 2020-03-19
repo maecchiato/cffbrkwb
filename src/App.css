@@ -1269,6 +1269,11 @@ html {
 
 }
 
+.event-card{
+  background-color: var(--gold-dark);
+  padding: 8px;
+}
+
 .events-name{
   color: var(--ash-white);
 }
