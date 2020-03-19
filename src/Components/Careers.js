@@ -15,6 +15,7 @@ import cbDP from '../Library/img/careers/avatar-06.png';
 
 import img1 from '../Library/img/menu-card-1.png';
 import img2 from '../Library/img/menu-card-2.png';
+import img3 from '../Library/img/about-card-1.png';
 
 const content = [
   {
@@ -28,24 +29,24 @@ const content = [
 ]
 
 class Careers extends React.Component{
-  render(){
+  render() {
     var settings = {
-      adaptiveHeight: true,
+      // adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 60000,
+      autoplaySpeed: 3000,
       centerMode: true,
+      centerPadding: '100px',
       className: 'careers-slider',
       pauseOnFocus: true,
       pauseOnHover: true,
-      
-
-
-      dots: true,
       infinite: true,
-      speed: 500,
+      speed: 1500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      dots: false,
+      // variableWidth: true
     }
+    
     return(
     <div id = "careers-section">
       <div className="title-header">
@@ -61,18 +62,34 @@ class Careers extends React.Component{
           If you have the heart to own and be one of the Coffeebreak brand, you're the one we are looking for!
           </div>
         </div>
-        <div id="event-slider" className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center bg-blue">
-          {/* <Slider {...settings}>
-            <div>
-              <div>
-                <img src={img1}/>
-              </div>
-            </div>
-          </Slider> */}
+        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+          <div className="d-flex h-100 justify-content-center w-100 m-auto" >
+            <div className="d-flex pt-4 w-75 m-auto">
+              <Slider {...settings}>
+                <div>
+                  <img src={img1}/>
+                </div>
+                <div>
+                  <img src={img2}/>
+                </div>
+                <div>
+                  <img src={img2}/>
+                </div>
+                <div>
+                  <img src={img1}/>
+                </div>
+                <div>
+                    <img src={img2}/>
+                </div>
+                <div>
+                    <img src={img2}/>
+                </div>
+              </Slider>
+            </div>      
+          </div>
         </div>
-  
       </div>
-      <div className="careers-lower-section">
+      <div className="careers-lower-section mt-5">
         <div className="h4-barlow text-center">Qualifications</div>
         <div className="d-flex justify-content-center pt-5">
           <div className="careers-q-mt pb-5 mb-4 mr-3">
