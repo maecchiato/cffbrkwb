@@ -319,7 +319,15 @@ flex:6
 ::-webkit-scrollbar {
   display: none;
 }
+ .upper-section-left{
+  position: relative;
+  z-index: 2;
+ }
 
+ .upper-section-right{
+  position: relative;
+  z-index: 3;
+ }
 
 .nextButton {
   position: absolute;
@@ -361,8 +369,8 @@ flex:6
   width: 70%;
   height: 100%;
   z-index: 2;
-
-  left: 23%;
+/* 
+  left: 23%; */
 }
 
 .home-img-logo {
@@ -435,8 +443,8 @@ flex:6
 .down-button {
   transform: rotate(90deg);
   position: absolute;
-  right: 40%;
-  bottom: 5%;
+  right: 10%;
+  bottom: 10%;
   z-index: 10;
   background: url('Library/img/next-button.png') no-repeat center center / 2rem;
   width: 4rem;

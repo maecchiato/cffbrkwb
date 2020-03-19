@@ -40,12 +40,17 @@ class Home extends React.Component {
     return(
 
       <div className="home-section">
-        <div className="upper-section">
+        <div className="upper-section bg-blue">
           <div className="bg-img-container">
             <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
-          <div className = "home-intro   text-center pt-5">
+          <div className="upper-section-left h-100 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">a</div>
+          <div className="upper-section-right h-100 bg-blue col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">b
+          <a class="down-button" href="#lower-section"></a>
+        </div>
+          </div>
+          {/* <div className = "home-intro   text-center pt-5">
             <img className="home-img-logo " src={logo}/>
             <div className="text-center pt-5">
               <div className="h2-barlow">TOTALLY HOMEGROWN</div>
@@ -54,9 +59,8 @@ class Home extends React.Component {
             <div className="body-main text-center pt-1">
               The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
             </div>
-          </div>
-          <a class="down-button" href="#lower-section"></a>
-        </div>
+          </div> */}
+         
         <div className = "lower-section" id="lower-section">
           <Slider autoplay="7000" previousButton="" >
             {content.map((item, index) => (
