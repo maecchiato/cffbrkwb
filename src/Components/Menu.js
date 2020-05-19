@@ -21,13 +21,13 @@ const galleries = [
             <div className="menu-card menu-card-1">
               <img className="menu-card-img" src={img1}/>
               <div className="hover-text text-center">
-                1
+                {/*  */}
               </div>
             </div>
             <div className="menu-card menu-card-2">
               <img className="menu-card-img" src={img2}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ const galleries = [
             <div className="menu-card menu-card-3">
               <img className="menu-card-img" src={img3}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ const galleries = [
             <div className="menu-card menu-card-4">
               <img className="menu-card-img" src={img4}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ const galleries = [
             <div className="menu-card menu-card-5">
               <img className="menu-card-img" src={img5}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ const galleries = [
             <div className="menu-card menu-card-6">
               <img className="menu-card-img" src={img6}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const galleries = [
             <div className="menu-card menu-card-2">
               <img className="menu-card-img" src={img7}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ const galleries = [
             <div className="menu-card menu-card-2">
               <img className="menu-card-img" src={img8}/>
               <div className="hover-text text-center">
-                HELLO
+                {/* HELLO */}
               </div>
             </div>
           </div>
@@ -94,13 +94,13 @@ const galleries = [
         <div className="menu-card menu-card-1">
           <img className="menu-card-img" src={img2}/>
           <div className="hover-text text-center">
-            2
+            {/* 2 */}
           </div>
         </div>
         <div className="menu-card menu-card-2">
           <img className="menu-card-img" src={img2}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ const galleries = [
         <div className="menu-card menu-card-3">
           <img className="menu-card-img" src={img3}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ const galleries = [
         <div className="menu-card menu-card-4">
           <img className="menu-card-img" src={img4}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@ const galleries = [
         <div className="menu-card menu-card-5">
           <img className="menu-card-img" src={img5}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@ const galleries = [
         <div className="menu-card menu-card-6">
           <img className="menu-card-img" src={img6}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@ const galleries = [
         <div className="menu-card menu-card-2">
           <img className="menu-card-img" src={img7}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -152,7 +152,7 @@ const galleries = [
         <div className="menu-card menu-card-2">
           <img className="menu-card-img" src={img8}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -167,13 +167,13 @@ const galleries = [
         <div className="menu-card menu-card-1">
           <img className="menu-card-img" src={img6}/>
           <div className="hover-text text-center">
-            3
+            {/* 3 */}
           </div>
         </div>
         <div className="menu-card menu-card-2">
           <img className="menu-card-img" src={img2}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@ const galleries = [
         <div className="menu-card menu-card-3">
           <img className="menu-card-img" src={img3}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@ const galleries = [
         <div className="menu-card menu-card-4">
           <img className="menu-card-img" src={img4}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@ const galleries = [
         <div className="menu-card menu-card-5">
           <img className="menu-card-img" src={img5}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -207,7 +207,7 @@ const galleries = [
         <div className="menu-card menu-card-6">
           <img className="menu-card-img" src={img6}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -217,7 +217,7 @@ const galleries = [
         <div className="menu-card menu-card-2">
           <img className="menu-card-img" src={img7}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>
@@ -225,7 +225,7 @@ const galleries = [
         <div className="menu-card menu-card-2">
           <img className="menu-card-img" src={img8}/>
           <div className="hover-text text-center">
-            HELLO
+            {/* HELLO */}
           </div>
         </div>
       </div>

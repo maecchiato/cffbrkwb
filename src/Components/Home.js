@@ -10,6 +10,7 @@ import img2 from '../Library/img/home-bg-img-2.png';
 import img3 from '../Library/img/home-bg-img-3.png';
 import img4 from '../Library/img/home-bg-canvas.png';
 import logo from '../Library/img/logo-stroke.svg';
+import VerticalSlider from './VerticalSlider';
 
 const content = [
   {
@@ -37,6 +38,23 @@ const content = [
 
 class Home extends React.Component {
   render(){
+    var settings = {
+      // adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      centerMode: true,
+      centerPadding: '100px',
+      className: 'careers-slider',
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      infinite: true,
+      speed: 1500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      vertical: true
+      // variableWidth: true
+    }
     return(
 
       <div className="home-section">
@@ -45,21 +63,26 @@ class Home extends React.Component {
             <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
-          <div className="upper-section-left h-100 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">a</div>
-          <div className="upper-section-right h-100 bg-blue col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">b
-          <a class="down-button" href="#lower-section"></a>
-        </div>
+          <div className="row h-100 w-100">
+            <div className="upper-section-left h-100 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-5">
+              <VerticalSlider/>
+            </div>
+            <div className="upper-section-right h-100 col-xl-7 col-lg-5 col-md-7 col-sm-12 col-7">
+              <div className = "home-intro pt-5">
+                <img className="home-img-logo pt-5" src={logo}/>
+                <div className="pt-5">
+                  <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>
+                  <div className="h3-underland sec-title-gold">Definitely World-Class</div>
+                </div>
+                <div className="body-main pt-1">
+                  The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
+                </div>
+              </div>
+              <a class="down-button" href="#lower-section"></a>
+            </div>
           </div>
-          {/* <div className = "home-intro   text-center pt-5">
-            <img className="home-img-logo " src={logo}/>
-            <div className="text-center pt-5">
-              <div className="h2-barlow">TOTALLY HOMEGROWN</div>
-              <div className="h3-underland sec-title">Definitely World-Class</div>
-            </div>
-            <div className="body-main text-center pt-1">
-              The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
-            </div>
-          </div> */}
+        </div>
+          
          
         <div className = "lower-section" id="lower-section">
           <Slider autoplay="7000" previousButton="" >

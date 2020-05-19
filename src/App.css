@@ -113,7 +113,12 @@
   color: var(--neutral-brown);
 }
 
-.sec-title{
+.sec-title-white {
+  width: 130%;
+}
+
+.sec-title-gold{
+  width: 110%;
   position: relative;
   top: -2.5rem;
 }
@@ -291,6 +296,12 @@ flex:1
 flex:6
 }
 
+.careers-slider div img {
+  max-height: 10rem;
+  max-width: 10rem;
+  margin: 0 auto;
+}
+
 
 /* Navigation */
 
@@ -320,12 +331,14 @@ flex:6
   display: none;
 }
  .upper-section-left{
-  position: relative;
+  position: absolute;
   z-index: 2;
+  top: 0;
+  padding-top: 20%;
  }
 
  .upper-section-right{
-  position: relative;
+  position: absolute;
   z-index: 3;
  }
 
@@ -375,7 +388,7 @@ flex:6
 
 .home-img-logo {
   height: auto;
-  width: 20%;
+  width: 30%;
 }
 
 /* Change */
@@ -533,6 +546,18 @@ html {
 
 }
 
+.home-section .upper-section .upper-section-left .slick-slider {
+  left: -20%;
+}
+
+.home-section .upper-section .upper-section-left .slick-slider .slick-arrow {
+  position: absolute;
+  left: 77%;
+}
+
+.home-section .upper-section .upper-section-left .slick-slider .slick-next {
+  top: 110%;
+}
 
 
 /*  About Section */
@@ -1257,6 +1282,7 @@ html {
   -webkit-transform: rotateY(180deg);
 }
 
+
 /* #events-section{
   background-color: var(--gold-dark);
   padding-top: 15%;
@@ -1285,15 +1311,49 @@ html {
 
 .slick-slider.careers-slider.slick-initialized {
   flex: 1;
+  margin: 0 auto;
 }
 
 .slick-prev:before, .slick-next:before {
   color: var(--gold-dark) !important;
+  
+}
+
+.upper-section-left .careers-slider .slick-arrow.slick-prev, .upper-section-left .careers-slider .slick-arrow.slick-next{
+  display: block;
+  position: relative;
+  left: 48%;
+  transform: rotate(90deg);
+}
+
+
+.upper-section-left .careers-slider .slick-arrow.slick-prev {
+  top: -15%;
+}
+
+
+.upper-section-left .careers-slider .slick-arrow.slick-next {
+  top: 20%;
+}
+
+.upper-section-left .careers-slider {
+  top: -30%;
+  height: 90%;
+}
+
+.upper-section-left .careers-slider .slick-list {
+  height: 100% !important;
 }
 
 .careers-slider {
   width: 350px;
 }
+
+.upper-section-left .careers-slider .slick-list {
+  position: relative;
+  left: 30%;
+}
+
 
 
 /* @media only screen and (min-width: 600px) {
