@@ -67,7 +67,7 @@ class Careers extends React.Component{
             <div className="d-flex pt-4 w-75 m-auto">
               <Slider {...settings}>
                 <div>
-                  <img src={img1}/>
+                  <img src={cbDP}/>
                 </div>
                 <div>
                   <img src={img2}/>
