@@ -19,7 +19,7 @@ const galleries = [
         <div className="col-4 d-flex flex-column">
           <div className="d-flex">
             <div className="menu-card menu-card-1">
-              <img className="menu-card-img" src={img1}/>
+              <img className="menu-card-img" src={img8}/>
               <div className="hover-text text-center">
                 {/*  */}
               </div>
@@ -68,7 +68,7 @@ const galleries = [
         </div>
         <div className="menu-right-col col-4 d-flex flex-column">
           <div className="d-flex">
-            <div className="menu-card menu-card-2">
+            <div className="menu-card menu-card-7">
               <img className="menu-card-img" src={img7}/>
               <div className="hover-text text-center">
                 {/* HELLO */}
@@ -76,7 +76,7 @@ const galleries = [
             </div>
           </div>
           <div className="d-flex">
-            <div className="menu-card menu-card-2">
+            <div className="menu-card menu-card-8">
               <img className="menu-card-img" src={img8}/>
               <div className="hover-text text-center">
                 {/* HELLO */}
@@ -141,7 +141,7 @@ const galleries = [
     </div>
     <div className="menu-right-col col-4 d-flex flex-column">
       <div className="d-flex">
-        <div className="menu-card menu-card-2">
+        <div className="menu-card menu-card-7">
           <img className="menu-card-img" src={img7}/>
           <div className="hover-text text-center">
             {/* HELLO */}
@@ -149,7 +149,7 @@ const galleries = [
         </div>
       </div>
       <div className="d-flex">
-        <div className="menu-card menu-card-2">
+        <div className="menu-card menu-card-8">
           <img className="menu-card-img" src={img8}/>
           <div className="hover-text text-center">
             {/* HELLO */}
@@ -214,7 +214,7 @@ const galleries = [
     </div>
     <div className="menu-right-col col-4 d-flex flex-column">
       <div className="d-flex">
-        <div className="menu-card menu-card-2">
+        <div className="menu-card menu-card-7">
           <img className="menu-card-img" src={img7}/>
           <div className="hover-text text-center">
             {/* HELLO */}
@@ -222,7 +222,7 @@ const galleries = [
         </div>
       </div>
       <div className="d-flex">
-        <div className="menu-card menu-card-2">
+        <div className="menu-card menu-card-8">
           <img className="menu-card-img" src={img8}/>
           <div className="hover-text text-center">
             {/* HELLO */}

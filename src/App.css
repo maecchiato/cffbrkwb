@@ -784,6 +784,24 @@ html {
   width: 10%; */
 }
 
+.menu-card-1, .menu-card-2, .menu-card-4, .menu-card-5, .menu-card-6 {
+  max-height: 15rem;
+  max-width: 15rem;
+  overflow: hidden;
+}
+
+.menu-card-3, .menu-card-7 {
+  max-height: 20rem;
+  max-width: 20rem;
+  overflow: hidden;
+}
+
+.menu-card-8 {
+  max-height: 10rem;
+  max-width: 20rem;
+  overflow: hidden;
+}
+
 .menu-middle-col{
   margin-left: 2.7em;
   margin-right: -7.2rem;
@@ -817,6 +835,7 @@ html {
   transition: .5s ease;
   /* backface-visibility: hidden; */
 }
+
 
 /* .hover-text {
   background-color: red;
