@@ -296,6 +296,11 @@ flex:1
 flex:6
 }
 
+.careers-slider div img {
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
 
 /* Navigation */
 
@@ -1264,6 +1269,7 @@ html {
   -webkit-transform: rotateY(180deg);
 }
 
+
 /* #events-section{
   background-color: var(--gold-dark);
   padding-top: 15%;
@@ -1329,6 +1335,8 @@ html {
   position: relative;
   left: 30%;
 }
+
+.
 
 
 /* @media only screen and (min-width: 600px) {
