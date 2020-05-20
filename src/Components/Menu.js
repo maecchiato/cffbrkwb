@@ -26,7 +26,7 @@ const blends = [
   {
     src: b_img1,
     width: 1,
-    height: 1
+    height: 1,
   },
   {
     src: img2,
@@ -260,11 +260,11 @@ class Menu extends React.Component {
           <button className="menu-button" onClick={() => this.setState({index: 1})}> 
             <a>CAKES</a>
           </button>
-          <button className="menu-button" onClick={() => this.setState({index: 2})}> 
+          {/* <button className="menu-button" onClick={() => this.setState({index: 2})}> 
             <a>PASTA</a>
-          </button>
+          </button> */}
           <button className="menu-button" onClick={() => this.setState({index: 3})}> 
-            <a>COOKIES</a>
+            <a>PASTRIES</a>
           </button>
         </div>
         {/* orignal: */}
