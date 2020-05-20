@@ -13,9 +13,12 @@ import events4 from '../Library/img/careers/avatar-03.png';
 import events5 from '../Library/img/careers/avatar-03.png';
 import cbDP from '../Library/img/careers/avatar-06.png';
 
-import img1 from '../Library/img/menu-card-1.png';
-import img2 from '../Library/img/menu-card-2.png';
-import img3 from '../Library/img/about-card-1.png';
+import img1 from '../Library/img/careers-carousel/careers_carousel-1.JPG';
+import img2 from '../Library/img/careers-carousel/careers_carousel-2.JPG';
+import img3 from '../Library/img/careers-carousel/careers_carousel-3.JPG';
+import img4 from '../Library/img/careers-carousel/careers_carousel-4.JPG';
+import img5 from '../Library/img/careers-carousel/careers_carousel-5.JPG';
+import img6 from '../Library/img/careers-carousel/careers_carousel-6.JPG';
 
 const content = [
   {
@@ -35,7 +38,7 @@ class Careers extends React.Component{
       autoplay: true,
       autoplaySpeed: 3000,
       centerMode: true,
-      centerPadding: '100px',
+      centerPadding: '75px',
       className: 'careers-slider',
       pauseOnFocus: true,
       pauseOnHover: true,
@@ -66,21 +69,37 @@ class Careers extends React.Component{
           <div className="d-flex h-100 justify-content-center w-100 m-auto" >                      
             <div className=" d-flex pt-4 w-75 m-auto">
               <Slider {...settings}>
-                
-                <div className="event-card row bg-blue">
-                  <a href="https://www.facebook.com/WaffleTimeInc/posts/10157447168432726" target="_blank" rel=" noreferrer noopener">
-                    <div className="">
-                      <img src={img1}/>
-                    </div>
-                  </a>
+                <div className="careers-slider-content row">
+                  {/* <a href="https://www.facebook.com/WaffleTimeInc/posts/10157447168432726" target="_blank" rel=" noreferrer noopener"> */}
+                  <div className="">
+                    <img src={img1}/>
+                  </div>
+                  {/* </a> */}
                 </div>
-                
-                <div className="event-card row bg-blue">
-                  <a href="https://www.facebook.com/WaffleTimeInc/posts/10157447168432726" target="_blank" rel=" noreferrer noopener">
-                    <div className="">
-                      <img src={img2}/>
-                    </div>
-                  </a>
+                <div className="careers-slider-content row">
+                  <div className="">
+                    <img src={img2}/>
+                  </div>
+                </div>
+                <div className="careers-slider-content row">
+                  <div className="">
+                    <img src={img3}/>
+                  </div>
+                </div>
+                <div className="careers-slider-content row">
+                  <div className="">
+                    <img src={img4}/>
+                  </div>
+                </div>
+                <div className="careers-slider-content row">
+                  <div className="">
+                    <img src={img5}/>
+                  </div>
+                </div>
+                <div className="careers-slider-content row">
+                  <div className="">
+                    <img src={img6}/>
+                  </div>
                 </div>
 
                 </Slider>

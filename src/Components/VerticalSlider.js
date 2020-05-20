@@ -5,9 +5,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from '../Library/img/menu-card-1.png';
-import img2 from '../Library/img/menu-card-2.png';
-import img3 from '../Library/img/menu-card-3.png';
+import img1 from '../Library/img/home-ads/home-ads-1.jpg';
+import img2 from '../Library/img/home-ads/home-ads-2.jpg';
+import img3 from '../Library/img/home-ads/home-ads-3.jpg';
 
 class VerticalSlider extends React.Component {
     render() {
@@ -29,24 +29,28 @@ class VerticalSlider extends React.Component {
         }
         return (
             <Slider {...settings}>
-                <div>
-                    <img src={img1}/>
+                <div className="home_ads">
+                  <a href="https://www.facebook.com/100669194685868/photos/a.107605737325547/178751446877642/?type=3&theater" target="_blank" rel=" noreferrer noopener">
+                    <div className="">
+                        <img src={img1}/>
+                    </div>
+                  </a>
                 </div>
-                <div>
-                    <img src={img2}/>
+                <div className="home_ads">
+                  <a href="https://www.facebook.com/100669194685868/photos/a.107605737325547/152313069521480/?type=3&theater" target="_blank" rel=" noreferrer noopener">
+                    <div className="">
+                        <img src={img2}/>
+                    </div>
+                  </a>
                 </div>
-                <div>
-                    <img src={img2}/>
+                <div className="home_ads">
+                  <a href="https://www.facebook.com/permalink.php?story_fbid=152313582854762&id=100669194685868" target="_blank" rel=" noreferrer noopener">
+                    <div className="">
+                        <img src={img3}/>
+                    </div>
+                  </a>
                 </div>
-                <div>
-                    <img src={img1}/>
-                </div>
-                <div>
-                    <img src={img2}/>
-                </div>
-                <div>
-                    <img src={img2}/>
-                </div>
+                
             </Slider>
         ) 
     }

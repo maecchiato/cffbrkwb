@@ -11,7 +11,9 @@ import img7 from "../Library/img/menu-card-7.png";
 import img8 from "../Library/img/menu-card-8.png";
 
 
+import Gallery from "react-photo-gallery";
 
+/*
 const galleries = [
   {
     content:  
@@ -21,13 +23,13 @@ const galleries = [
             <div className="menu-card menu-card-1">
               <img className="menu-card-img" src={img1}/>
               <div className="hover-text text-center">
-                {/*  */}
+                .
               </div>
             </div>
             <div className="menu-card menu-card-2">
               <img className="menu-card-img" src={img2}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
@@ -35,7 +37,7 @@ const galleries = [
             <div className="menu-card menu-card-3">
               <img className="menu-card-img" src={img3}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
@@ -45,7 +47,7 @@ const galleries = [
             <div className="menu-card menu-card-4">
               <img className="menu-card-img" src={img4}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
@@ -53,7 +55,7 @@ const galleries = [
             <div className="menu-card menu-card-5">
               <img className="menu-card-img" src={img5}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
@@ -61,25 +63,25 @@ const galleries = [
             <div className="menu-card menu-card-6">
               <img className="menu-card-img" src={img6}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
         </div>
         <div className="menu-right-col col-4 d-flex flex-column">
           <div className="d-flex">
-            <div className="menu-card menu-card-2">
+            <div className="menu-card menu-card-7">
               <img className="menu-card-img" src={img7}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
           <div className="d-flex">
-            <div className="menu-card menu-card-2">
+            <div className="menu-card menu-card-8">
               <img className="menu-card-img" src={img8}/>
               <div className="hover-text text-center">
-                {/* HELLO */}
+                
               </div>
             </div>
           </div>
@@ -87,225 +89,270 @@ const galleries = [
       </div>
   },
   {
-    content: 
-    <div className="menu-grid d-flex flex-row">
-      <div className="col-4 d-flex flex-column">
-       <div className="d-flex">
-        <div className="menu-card menu-card-1">
-          <img className="menu-card-img" src={img2}/>
-          <div className="hover-text text-center">
-            {/* 2 */}
+    content:  
+      <div className="menu-grid d-flex flex-row">
+        <div className="col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-1">
+              <img className="menu-card-img" src={img1}/>
+              <div className="hover-text text-center">
+                .
+              </div>
+            </div>
+            <div className="menu-card menu-card-2">
+              <img className="menu-card-img" src={img2}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-3">
+              <img className="menu-card-img" src={img3}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
           </div>
         </div>
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img2}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
+        <div className="menu-middle-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-4">
+              <img className="menu-card-img" src={img4}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-5">
+              <img className="menu-card-img" src={img5}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-6">
+              <img className="menu-card-img" src={img6}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="menu-right-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-7">
+              <img className="menu-card-img" src={img7}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-8">
+              <img className="menu-card-img" src={img8}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-3">
-          <img className="menu-card-img" src={img3}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="menu-middle-col col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-4">
-          <img className="menu-card-img" src={img4}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-5">
-          <img className="menu-card-img" src={img5}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-6">
-          <img className="menu-card-img" src={img6}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="menu-right-col col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img7}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img8}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   },
   {
-    content:
-    <div className="menu-grid d-flex flex-row">
-    <div className="col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-1">
-          <img className="menu-card-img" src={img6}/>
-          <div className="hover-text text-center">
-            {/* 3 */}
+    content:  
+      <div className="menu-grid d-flex flex-row">
+        <div className="col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-1">
+              <img className="menu-card-img" src={img1}/>
+              <div className="hover-text text-center">
+                .
+              </div>
+            </div>
+            <div className="menu-card menu-card-2">
+              <img className="menu-card-img" src={img2}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-3">
+              <img className="menu-card-img" src={img3}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
           </div>
         </div>
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img2}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
+        <div className="menu-middle-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-4">
+              <img className="menu-card-img" src={img4}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-5">
+              <img className="menu-card-img" src={img5}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-6">
+              <img className="menu-card-img" src={img6}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="menu-right-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-7">
+              <img className="menu-card-img" src={img7}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-8">
+              <img className="menu-card-img" src={img8}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-3">
-          <img className="menu-card-img" src={img3}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="menu-middle-col col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-4">
-          <img className="menu-card-img" src={img4}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-5">
-          <img className="menu-card-img" src={img5}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-6">
-          <img className="menu-card-img" src={img6}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="menu-right-col col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img7}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img8}/>
-          <div className="hover-text text-center">
-            {/* HELLO */}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   },
   {
-    content: 
-    <div className="menu-grid d-flex flex-row">
-    <div className="col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-1">
-          <img className="menu-card-img" src={img4}/>
-          <div className="hover-text text-center">
-            4
+    content:  
+      <div className="menu-grid d-flex flex-row">
+        <div className="col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-1">
+              <img className="menu-card-img" src={img1}/>
+              <div className="hover-text text-center">
+                .
+              </div>
+            </div>
+            <div className="menu-card menu-card-2">
+              <img className="menu-card-img" src={img2}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-3">
+              <img className="menu-card-img" src={img3}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
           </div>
         </div>
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img2}/>
-          <div className="hover-text text-center">
-            HELLO
+        <div className="menu-middle-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-4">
+              <img className="menu-card-img" src={img4}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-5">
+              <img className="menu-card-img" src={img5}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-6">
+              <img className="menu-card-img" src={img6}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="menu-right-col col-4 d-flex flex-column">
+          <div className="d-flex">
+            <div className="menu-card menu-card-7">
+              <img className="menu-card-img" src={img7}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div className="menu-card menu-card-8">
+              <img className="menu-card-img" src={img8}/>
+              <div className="hover-text text-center">
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-3">
-          <img className="menu-card-img" src={img3}/>
-          <div className="hover-text text-center">
-            HELLO
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="menu-middle-col col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-4">
-          <img className="menu-card-img" src={img4}/>
-          <div className="hover-text text-center">
-            HELLO
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-5">
-          <img className="menu-card-img" src={img5}/>
-          <div className="hover-text text-center">
-            HELLO
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-6">
-          <img className="menu-card-img" src={img6}/>
-          <div className="hover-text text-center">
-            HELLO
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="menu-right-col col-4 d-flex flex-column">
-      <div className="d-flex">
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img7}/>
-          <div className="hover-text text-center">
-            HELLO
-          </div>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="menu-card menu-card-2">
-          <img className="menu-card-img" src={img8}/>
-          <div className="hover-text text-center">
-            HELLO
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   }
 ]
+*/
+
+const photos = [
+  {
+    src: img1,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img2,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img3,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img4,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img5,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img6,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img7,
+    width: 1,
+    height: 1
+  },
+  {
+    src: img8,
+    width: 2,
+    height: 1
+  }
+]
+
 
 class Menu extends React.Component {
   constructor(props) {
@@ -340,8 +387,12 @@ class Menu extends React.Component {
             <a>COOKIES</a>
           </button>
         </div>
-          {galleries[this.state.index].content}
-          
+        {/* orignal: */}
+        {/* {galleries[this.state.index].content} */}
+
+        {/* attempt: */}
+        <Gallery photos={photos} margin={5} />
+        {/* amo ni ang link: https://github.com/neptunian/react-photo-gallery */}
       </div>
     )
   }
