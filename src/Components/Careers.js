@@ -18,8 +18,6 @@ import img2 from '../Library/img/careers-carousel/careers_carousel-2.JPG';
 import img3 from '../Library/img/careers-carousel/careers_carousel-3.JPG';
 import img4 from '../Library/img/careers-carousel/careers_carousel-4.JPG';
 import img5 from '../Library/img/careers-carousel/careers_carousel-5.JPG';
-import img6 from '../Library/img/careers-carousel/careers_carousel-6.JPG';
-
 const content = [
   {
     date: "March 15, 2020",
@@ -77,31 +75,23 @@ class Careers extends React.Component{
                   {/* </a> */}
                 </div>
                 <div className="careers-slider-content row">
+                  <img className="careers-img" src={img2}/>
+                </div>
+                <div className="careers-slider-content row">
                   <div className="">
-                    <img src={img2}/>
+                    <img className="careers-img" src={img3}/>
                   </div>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img src={img3}/>
+                    <img className="careers-img" src={img4}/>
                   </div>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img src={img4}/>
+                    <img className="careers-img" src={img5}/>
                   </div>
                 </div>
-                <div className="careers-slider-content row">
-                  <div className="">
-                    <img src={img5}/>
-                  </div>
-                </div>
-                <div className="careers-slider-content row">
-                  <div className="">
-                    <img src={img6}/>
-                  </div>
-                </div>
-
                 </Slider>
             </div>      
           </div>
@@ -110,8 +100,8 @@ class Careers extends React.Component{
       <div className="careers-lower-section mt-5">
         <div className="h4-barlow text-center">Qualifications</div>
         <div className="d-flex justify-content-center pt-5">
-          <div className="careers-q-mt pb-5 mb-4 mr-3">
-            <div className="large-card-title subheadline-24 w-75 pt-5 pl-5">Management Trainee</div>
+          <div className=" careers-q careers-q-mt pb-5 mb-4 mr-3">
+          <a href="https://www.facebook.com/163120115107442" target="_blank" rel=" noreferrer noopener"><div className="large-card-title subheadline-24 w-75 pt-5 pl-5">Management Trainee</div></a>
             <div className="large-card-caption body-12-caption-barlow pt-3 pl-5">
               -- Candidate must possess a Bachelor's Degree in Hotel and Restaurant Management, Hospitality Management, Business Administration/Management or equivalent <br/>
               -- Confident, honest, trustworthy and dependable <br/>
@@ -121,8 +111,8 @@ class Careers extends React.Component{
               -- Experience in managing store operations is and advantage <br/>
               -- Fresh graduates are welcome to apply</div>
           </div>
-          <div className="careers-q-dp pb-5 mb-4 ml-3">
-            <div className="large-card-title subheadline-24 w-75 pt-5 pl-5">Barista / Dining Personnel</div>
+          <div className="careers-q careers-q-dp pb-5 mb-4 ml-3">
+            <a href="https://www.facebook.com/152313069521480" target="_blank" rel=" noreferrer noopener"><div className="large-card-title subheadline-24 w-75 pt-5 pl-5">Barista / Dining Personnel</div></a>
             <div className="large-card-caption body-12-caption-barlow pt-3 pl-5">
             -- Candidate should be at least college level or HRM or any food service related course
             Honest, trustworthy, responsible and dependable <br/>

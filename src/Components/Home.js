@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-
+import { HashLink as Link } from 'react-router-hash-link';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
@@ -18,6 +18,7 @@ const content = [
     subtitle: "Premium Blends",
     description: <p>At Coffeebreak, every coffee served is more than just a cup of delight. A product of finely roasted beans, blended to perfection.<br/> The passion the brand holds for coffee translates to a warm experience beyond comparison.</p>,
     button: 'DISCOVER COFEEBREAK',
+    hlink: "/menu/#our-specialty",
     image: img2
   },
   {
@@ -25,6 +26,7 @@ const content = [
     subtitle: "Our Coffee Story",
     description: <p>In 2004, Coffeebreak opened its first outlet in a quiet corner of Timawa, Iloilo City. Since then, Coffeebreak mushroomed, offering metro Iloilo a brand new café experience and maintained a formidable corporate background that has stood ground. </p>,
     button: 'LEARN MORE',
+    hlink: "/about-us/#about",
     image: img1
   },
   {
@@ -32,6 +34,7 @@ const content = [
     subtitle: "Brew of Opportunity",
     description: <p>Be our partner and continue to promote the taste of local pride. As a Coffeebreak franchisee, you want your investment to be hot and brewed to perfection. And that’s exactly what you will get when you start your business with Coffeebreak.</p>,
     button: 'BE OUR SUCCESS PARTNER',
+    hlink: "/partners/#franchisenow",
     image: img3
   }
 ]
@@ -58,7 +61,7 @@ class Home extends React.Component {
     return(
 
       <div className="home-section">
-        <div className="upper-section bg-blue">
+        <div className="upper-section">
           <div className="bg-img-container">
             <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
@@ -99,12 +102,10 @@ class Home extends React.Component {
                   {item.description}
                 </div>
                 <div className="link-button">
-                  <button className="button-wide"> 
-                    <a>{item.button}</a>
-                  </button>
+                <Link to={item.hlink}>
+                  <button className="button-wide">{item.button}</button>
+                </Link>  
                 </div>
-                
-
               </div>
             ))}
           </Slider>

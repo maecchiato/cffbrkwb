@@ -10,6 +10,11 @@
   background-color: mediumaquamarine;
 }
 
+.bg-default{
+  background-color: var(--gray-black);
+  height: 100%;
+}
+
 /* Colors */
 :root {
   --gray-shadow: rgb(37, 37, 37);
@@ -297,8 +302,8 @@
 }
 
 .careers-slider div img {
-  max-height: 10rem;
-  max-width: 10rem;
+  max-height: 12rem;
+  max-width: 12rem;
   margin: 0 auto;
 }
 
@@ -307,13 +312,13 @@
 }
 
 .home-section .slick-slide div img {
-  border: var(--gold-button) .4rem solid;
+  border: .5rem solid;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 .home-section .slick-slide:hover {
   transform: scale(2);
 }
-
 
 
 /* .careers-upper-section .text-center .d-flex .d-flex, .careers-upper-section .text-center .d-flex, .careers-upper-section .text-center {
@@ -563,7 +568,7 @@ html {
 .link-button .button-wide:hover {
   background-color: var(--gold-button);
   color: var(--brown-black);
-  border-image: var(--gold-button) !important;
+  border: .3rem solid var(--gold-button);
 
 }
 
@@ -789,6 +794,12 @@ html {
   border-image: var(--gold-button) !important;
 }
 
+.menu-button:focus {
+  border: 0;
+  background-color: var(--gold-button);
+  color: var(--brown-black);
+  border-image: var(--gold-button) !important;
+}
 
 
 .menu-grid {
@@ -1022,7 +1033,7 @@ html {
 
 /* Partners Section */
 
-#partners-section
+.partners-section
 {
   background-color: var(--gray-black);
   color: #1d1d1d;
@@ -1258,6 +1269,10 @@ html {
 
 }
 
+.careers-q:hover{
+  transform: scale(1.1);
+}
+
 #careers-section .career-title
 {
   font-size: 3em;
@@ -1320,6 +1335,8 @@ html {
 }
 
 
+
+
 /* #events-section{
   background-color: var(--gold-dark);
   padding-top: 15%;
@@ -1375,7 +1392,7 @@ html {
 
 .upper-section-left .careers-slider {
   top: -30%;
-  height: 90%;
+  height: 100%;
 }
 
 .upper-section-left .careers-slider .slick-list {
@@ -1386,8 +1403,11 @@ html {
   width: 350px;
 }
 
-.careers-slider-content div img{
-  border: .2rem solid var(--gold-button) ;
+
+.careers-slider-content img{
+  border: .5rem solid black ;
+  width: 500px;
+  align-items: center;
 }
 
 .upper-section-left .careers-slider .slick-list {
@@ -1578,5 +1598,8 @@ justify-content: center;
   width: 100%;
 }
 
+.img-ads{
+  background-color: aquamarine;
+}
 
 
