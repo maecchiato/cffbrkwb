@@ -58,7 +58,7 @@ class Home extends React.Component {
     return(
 
       <div className="home-section">
-        <div className="upper-section bg-blue">
+        <div className="upper-section">
           <div className="bg-img-container">
             <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
@@ -103,8 +103,6 @@ class Home extends React.Component {
                     <a>{item.button}</a>
                   </button>
                 </div>
-                
-
               </div>
             ))}
           </Slider>

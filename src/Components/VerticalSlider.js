@@ -52,7 +52,7 @@ class VerticalSlider extends React.Component {
                   </a>
                 </div>
                 <div className="home-ads">
-                  <a href="https://www.facebook.com/permalink.php?story_fbid=152313582854762&id=100669194685868" target="_blank" rel=" noreferrer noopener">
+                  <a href="https://www.facebook.com/10158386889185956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
                         <img src={img4}/>
                     </div>
