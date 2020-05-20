@@ -23,7 +23,7 @@ class About extends React.Component {
   }
   render() {
     return(
-      <div className="about-section">
+      <div id="about" className="about-section">
         <div className="about-upper-section  text-center">
           <div className="title-header ">
             <p id="title-header-left" className="">Our Coffee Story</p>

@@ -25,7 +25,7 @@ class Partners extends React.Component {
     }
   };
   return(
-    <div id = "partners-section">
+    <div id="franchisenow" class="partners-section">
       {/* <div className="bg-img-container-full">
         <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>   
       </div> */}

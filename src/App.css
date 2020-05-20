@@ -563,7 +563,7 @@ html {
 .link-button .button-wide:hover {
   background-color: var(--gold-button);
   color: var(--brown-black);
-  border-image: var(--gold-button) !important;
+  border: .3rem solid var(--gold-button);
 
 }
 
@@ -1022,7 +1022,7 @@ html {
 
 /* Partners Section */
 
-#partners-section
+.partners-section
 {
   background-color: var(--gray-black);
   color: #1d1d1d;

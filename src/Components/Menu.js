@@ -364,7 +364,7 @@ class Menu extends React.Component {
   render () {
     return (
       
-      <div className="menu-section">
+      <div id="our-specialty" className="menu-section">
         {/* <div className="menu-header d-flex flex-row">
           <p id="menu-header-left" className="align-self-center">Our Specialty Products</p>
           <p id="menu-header-right" className="align-self-center">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
