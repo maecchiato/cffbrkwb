@@ -789,6 +789,12 @@ html {
   border-image: var(--gold-button) !important;
 }
 
+.menu-button:focus {
+  border: 0;
+  background-color: var(--gold-button);
+  color: var(--brown-black);
+  border-image: var(--gold-button) !important;
+}
 
 
 .menu-grid {
