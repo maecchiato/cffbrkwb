@@ -7,48 +7,37 @@ import c_img3 from "../Library/img/menu/cakes/caramel.jpg"
 import c_img4 from "../Library/img/menu/cakes/Kitkat.jpg"
 import c_img5 from "../Library/img/menu/cakes/red-velvet.jpg"
 
-import ck_img1 from "../Library/img/menu/muffins/blueberry.jpg"
-import ck_img2 from "../Library/img/menu/muffins/carrot.jpg"
-import ck_img3 from "../Library/img/menu/muffins/choco banana.jpg"
+import ck_img1 from "../Library/img/menu/Muffins/blueberry.jpg"
+import ck_img2 from "../Library/img/menu/Muffins/carrot.jpg"
+import ck_img3 from "../Library/img/menu/Muffins/choco banana.jpg"
 
 
 import b_c_img1 from "../Library/img/menu/coffee/capp.jpg";
 import b_c_img2 from "../Library/img/menu/coffee/cppucino.jpg";
-import b_f_img3 from "../Library/img/menu/frappe/blueberry-white-choco-frappe.png";
-import b_f_img4 from "../Library/img/menu/frappe/caramel-macchiato-frappe.png";
-import b_f_img5 from "../Library/img/menu/frappe/Cheesecake-White-Choco-Frappe.png";
-import b_f_img6 from "../Library/img/menu/frappe/strawberry-white-choco-frappe.png";
-import b_f_img7 from "../Library/img/menu/frappe/white-choco-mango-frappe.png";
-import b_f_img8 from "../Library/img/menu/frappe/white-mocha.png";
 import b_f_img9 from "../Library/img/menu/frappe/caramel-mac.jpg";
 import b_f_img10 from "../Library/img/menu/frappe/Espresso Crumble.jpg";
 import b_f_img11 from "../Library/img/menu/frappe/iriah-creme.jpg";
 import b_f_img12 from "../Library/img/menu/frappe/mocha.jpg";
-// import b_f_img13 from "../Library/img/menu/frappe/white-mocha.jpg";
-import b_ct_img14 from "../Library/img/menu/chocolate-traditions/ct-chococcino.png";
-import b_ct_img15 from "../Library/img/menu/chocolate-traditions/ct-hot-chocolate.png";
-import b_ct_img16 from "../Library/img/menu/chocolate-traditions/ct-iced-rich-chocolate.png";
-import b_ct_img17 from "../Library/img/menu/chocolate-traditions/ct-rich-choco-frappe.png";
-import b_ct_img18 from "../Library/img/menu/chocolate-traditions/ct-rich-choco-latte.png";
-
+import b_f_img13 from "../Library/img/menu/frappe/white-mocha.jpg";
 import b_m_img19 from "../Library/img/menu/matcha/almond.jpg";
 import b_m_img20 from "../Library/img/menu/matcha/frappe.jpg";
 import b_m_img21 from "../Library/img/menu/matcha/latte.jpg";
-import b_m_img22 from "../Library/img/menu/matcha/matcha-cappuccino.png";
-import b_m_img23 from "../Library/img/menu/matcha/matcha-frappe.png";
-import b_m_img24 from "../Library/img/menu/matcha/matcha-latte.png";
+import b_mt_img25 from "../Library/img/menu/Milktea/matcha.jpg";
+import b_mt_img26 from "../Library/img/menu/Milktea/taro.jpg";
+import b_mt_img27 from "../Library/img/menu/Milktea/Wintermelon.jpg";
 
-import b_mt_img25 from "../Library/img/menu/milktea/matcha.jpg";
-import b_mt_img26 from "../Library/img/menu/milktea/taro.jpg";
-import b_mt_img27 from "../Library/img/menu/milktea/wintermelon.jpg";
-
-import b_s_img28 from "../Library/img/menu/smoothies/mango-mystic.png";
-import b_s_img29 from "../Library/img/menu/smoothies/ube.png";
-import b_s_img30 from "../Library/img/menu/smoothies/strawberry.jpg";
+import b_s_img30 from "../Library/img/menu/smoothies/Strawberry.jpg";
 import b_s_img31 from "../Library/img/menu/smoothies/banana.jpg";
 
-import b_t_img32 from "../Library/img/menu/tea/iced-tea.png";
-import b_t_img33 from "../Library/img/menu/tea/tea.png";
+import b_img_32 from "../Library/img/menu-card-1.png";
+import b_img_33 from "../Library/img/menu-card-2.png";
+import b_img_34 from "../Library/img/menu-card-3.png";
+import b_img_35 from "../Library/img/menu-card-4.png";
+import b_img_36 from "../Library/img/menu-card-5.png";
+import b_img_37 from "../Library/img/menu-card-6.png";
+import b_img_38 from "../Library/img/menu-card-7.png";
+import b_img_39 from "../Library/img/menu-card-8.png";
+
 
 
 import Gallery from "react-photo-gallery";
@@ -61,36 +50,6 @@ const blends = [
   },
   {
     src: b_c_img2,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_f_img3,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_f_img4,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_f_img5,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_f_img6,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_f_img7,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_f_img8,
     width: 1,
     height: 1
   },
@@ -115,31 +74,6 @@ const blends = [
     height: 1
   },
   {
-    src: b_ct_img14,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_ct_img15,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_ct_img16,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_ct_img17,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_ct_img18,
-    width: 1,
-    height: 1
-  },
-  {
     src: b_m_img19,
     width: 1,
     height: 1
@@ -151,21 +85,6 @@ const blends = [
   },
   {
     src: b_m_img21,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_m_img22,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_m_img23,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_m_img24,
     width: 1,
     height: 1
   },
@@ -185,16 +104,6 @@ const blends = [
     height: 1
   },
   {
-    src: b_s_img28,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_s_img29,
-    width: 1,
-    height: 1
-  },
-  {
     src: b_s_img30,
     width: 1,
     height: 1
@@ -204,16 +113,46 @@ const blends = [
     width: 1,
     height: 1
   },
-  {
-    src: b_t_img32,
-    width: 1,
-    height: 1
-  },
-  {
-    src: b_t_img33,
-    width: 1,
-    height: 1
-  }
+  // {
+  //   src: b_img_32,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_33,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_34,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_35,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_36,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_37,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_38,
+  //   width: 1,
+  //   height: 1
+  // },
+  // {
+  //   src: b_img_39,
+  //   width: 2,
+  //   height: 1
+  // }
   
 ]
 
@@ -277,7 +216,7 @@ const galleries = [
   
   {
     content:
-    <Gallery photos={blends} margin={5} direction="column" columns={4} />
+    <Gallery photos={blends} margin={5} />
   },
   {
     content:

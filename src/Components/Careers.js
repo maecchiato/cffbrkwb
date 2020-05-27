@@ -34,7 +34,7 @@ class Careers extends React.Component{
     var settings = {
       // adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       centerMode: true,
       centerPadding: '75px',
       className: 'careers-slider',
