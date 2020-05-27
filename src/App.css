@@ -858,7 +858,11 @@ html {
   top: 20%;
   margin: 0 auto;
   margin-bottom: 2rem;
+  overflow-y: scroll;
+  padding-bottom: 10%;
+
 }
+
 
 
 
