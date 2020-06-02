@@ -68,11 +68,7 @@ class Careers extends React.Component{
             <div className=" d-flex pt-4 w-75 m-auto">
               <Slider {...settings}>
                 <div className="careers-slider-content row">
-                  {/* <a href="https://www.facebook.com/WaffleTimeInc/posts/10157447168432726" target="_blank" rel=" noreferrer noopener"> */}
-                  <div className="">
                     <img src={img1}/>
-                  </div>
-                  {/* </a> */}
                 </div>
                 <div className="careers-slider-content row">
                   <img className="careers-img" src={img2}/>

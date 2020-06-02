@@ -1453,6 +1453,7 @@ html {
 {
   background-color: var(--gray-black);
   padding: 15% 0 5% 0;
+  height: 140%;
 }
 
 .gold-rec{
@@ -1463,13 +1464,24 @@ html {
 }
 
 .events-box{
-  height: 50%;
-
+  padding-bottom: 2rem;
 }
 
 .events-name{
   color: var(--ash-white);
 }
+
+/* #events-section .events-box .slick-slider .slick-list .slick-track .slick-slide .events-slider-content */
+
+.events-slider-content img {
+  border: .5rem solid black ;
+  position: relative;
+  max-height: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
 
 @media only screen and (min-width: 769px) {
 
