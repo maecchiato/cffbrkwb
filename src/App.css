@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Crete+Round');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+/* General */
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+/* Quick BG Colors */
 .bg-red{
   background-color: coral;
 }
@@ -264,7 +275,6 @@
   color: #ffb24a;
 }
 
-/* General */
 
 .link-deco-none
 {
@@ -349,7 +359,7 @@
 
 
 
-/* Home Section */
+/* ================= Home Section =================*/
 
 /* Slider Classes*/
 
@@ -498,11 +508,7 @@
   bottom: 0%;
 }
 
-html {
-  scroll-behavior: smooth;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 
 .heading {
   width: 180%;
@@ -586,7 +592,7 @@ html {
 }
 
 
-/*  About Section */
+/* ================== About Section ================ */
 
 .about-section {
   width: 100%;
@@ -750,7 +756,7 @@ html {
 }
 
 
-/* Menu Section */
+/* ====================== Menu Section ======================= */
 
 .menu-section {
   width: 100%;
@@ -874,11 +880,6 @@ html {
   padding-bottom: 10%;
 
 }
-
-
-
-
-
 
 /* .hover-text {
   background-color: red;
@@ -1045,7 +1046,7 @@ html {
 
 } */
 
-/* Partners Section */
+/* ==================== Partners Section =================== */
 
 .partners-section
 {
@@ -1447,13 +1448,14 @@ html {
 
 } */
 
-/*  Events Section */
+/* ================= Events Section =================== */
 
 #events-section
 {
   background-color: var(--gray-black);
   padding: 15% 0 5% 0;
-  height: 140%;
+  height: 250%;
+  width: 100%;
 }
 
 .gold-rec{

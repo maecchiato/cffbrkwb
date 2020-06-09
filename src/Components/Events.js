@@ -1,36 +1,62 @@
 import React from 'react';
 import '../App.css';
 
-import img1 from '../Library/img/menu-card-1.png';
-import img2 from '../Library/img/menu-card-2.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import cd_1 from "../Library/img/events/Cup Design/_MG_4742.JPG";
-import cd_2 from "../Library/img/events/Cup Design/_MG_4752.JPG";
-import cd_3 from "../Library/img/events/Cup Design/_MG_4923.JPG";
-import cd_4 from "../Library/img/events/Cup Design/_MG_4944.JPG";
-import cd_5 from "../Library/img/events/Cup Design/_MG_4951.JPG";
-import cd_6 from "../Library/img/events/Cup Design/_MG_4970.JPG";
-import cd_7 from "../Library/img/events/Cup Design/_MG_4990.JPG";
-import cd_8 from "../Library/img/events/Cup Design/_MG_4997.JPG";
-import cd_9 from "../Library/img/events/Cup Design/_MG_5213.JPG";
-import cd_10 from "../Library/img/events/Cup Design/_MG_5225.JPG";
-import cd_11 from "../Library/img/events/Cup Design/_MG_5231.JPG";
+import cd_1 from "../Library/img/Events/Cup Design/_MG_4742.JPG";
+import cd_2 from "../Library/img/Events/Cup Design/_MG_4752.JPG";
+import cd_3 from "../Library/img/Events/Cup Design/_MG_4923.JPG";
+import cd_4 from "../Library/img/Events/Cup Design/_MG_4944.JPG";
+import cd_5 from "../Library/img/Events/Cup Design/_MG_4951.JPG";
+import cd_6 from "../Library/img/Events/Cup Design/_MG_4970.JPG";
+import cd_7 from "../Library/img/Events/Cup Design/_MG_4990.JPG";
+import cd_8 from "../Library/img/Events/Cup Design/_MG_4997.JPG";
+import cd_9 from "../Library/img/Events/Cup Design/_MG_5213.JPG";
+import cd_10 from "../Library/img/Events/Cup Design/_MG_5225.JPG";
+import cd_11 from "../Library/img/Events/Cup Design/_MG_5231.JPG";
 
-import gla_1 from "../Library/img/events/Grand Latte Art/_MG_3125.JPG";
-import gla_2 from "../Library/img/events/Grand Latte Art/_MG_3188_edited.jpg";
-import gla_3 from "../Library/img/events/Grand Latte Art/_MG_3440.JPG";
-import gla_4 from "../Library/img/events/Grand Latte Art/_MG_3534_edited.jpg";
-import gla_5 from "../Library/img/events/Grand Latte Art/_MG_3575.JPG";
-import gla_6 from "../Library/img/events/Grand Latte Art/_MG_3628.JPG";
-import gla_7 from "../Library/img/events/Grand Latte Art/_MG_4479_edited.jpg";
-import gla_8 from "../Library/img/events/Grand Latte Art/_MG_4533_edited.jpg";
-import gla_9 from "../Library/img/events/Grand Latte Art/group5.jpg";
-import gla_10 from "../Library/img/events/Grand Latte Art/group6.jpg";
-import gla_11 from "../Library/img/events/Grand Latte Art/jacob vincent.jpg";
-import gla_12 from "../Library/img/events/Grand Latte Art/jj2.jpg";
+import gla_1 from "../Library/img/Events/Grand Latte Art/_MG_3125.JPG";
+import gla_2 from "../Library/img/Events/Grand Latte Art/_MG_3188_edited.jpg";
+import gla_3 from "../Library/img/Events/Grand Latte Art/_MG_3440.JPG";
+import gla_4 from "../Library/img/Events/Grand Latte Art/_MG_3534_edited.jpg";
+import gla_5 from "../Library/img/Events/Grand Latte Art/_MG_3575.JPG";
+import gla_6 from "../Library/img/Events/Grand Latte Art/_MG_3628.JPG";
+import gla_7 from "../Library/img/Events/Grand Latte Art/_MG_4479_edited.jpg";
+import gla_8 from "../Library/img/Events/Grand Latte Art/_MG_4533_edited.jpg";
+import gla_9 from "../Library/img/Events/Grand Latte Art/group5.jpg";
+import gla_10 from "../Library/img/Events/Grand Latte Art/group6.jpg";
+import gla_11 from "../Library/img/Events/Grand Latte Art/jacob vincent.jpg";
+import gla_12 from "../Library/img/Events/Grand Latte Art/jj2.jpg";
+
+import sd_18_1 from "../Library/img/Events/Speed dating/2018/IMG_0437.JPG";
+import sd_18_2 from "../Library/img/Events/Speed dating/2018/IMG_0438.JPG";
+import sd_18_3 from "../Library/img/Events/Speed dating/2018/IMG_0472.JPG";
+import sd_18_4 from "../Library/img/Events/Speed dating/2018/IMG_0475.JPG";
+import sd_18_5 from "../Library/img/Events/Speed dating/2018/IMG_0477.JPG";
+import sd_18_6 from "../Library/img/Events/Speed dating/2018/IMG_0479.JPG";
+import sd_18_7 from "../Library/img/Events/Speed dating/2018/IMG_0480.JPG";
+import sd_18_8 from "../Library/img/Events/Speed dating/2018/IMG_8087.JPG";
+
+import sd_19_1 from "../Library/img/Events/Speed dating/2019/IMG_0199.JPG";
+import sd_19_2 from "../Library/img/Events/Speed dating/2019/IMG_0233.JPG";
+import sd_19_3 from "../Library/img/Events/Speed dating/2019/IMG_0268.JPG";
+import sd_19_4 from "../Library/img/Events/Speed dating/2019/IMG_0329.JPG";
+import sd_19_5 from "../Library/img/Events/Speed dating/2019/IMG_0423.JPG";
+import sd_19_6 from "../Library/img/Events/Speed dating/2019/IMG_0432.JPG";
+
+import icd_1 from "../Library/img/Events/ICD/MG_4447.jpg";
+import icd_2 from "../Library/img/Events/ICD/MG_4467.jpg";
+import icd_3 from "../Library/img/Events/ICD/MG_4528.jpg";
+import icd_4 from "../Library/img/Events/ICD/MG_4605.jpg";
+import icd_5 from "../Library/img/Events/ICD/MG_4632.jpg";
+import icd_6 from "../Library/img/Events/ICD/MG_4670.jpg";
+
+import cbmc_1 from "../Library/img/Events/CB Music Cafe/IMG_9574.JPG";
+import cbmc_2 from "../Library/img/Events/CB Music Cafe/IMG_9580.JPG";
+import cbmc_3 from "../Library/img/Events/CB Music Cafe/IMG_9581.JPG";
+
 
 class Events extends React.Component {
     render(){
@@ -49,10 +75,12 @@ class Events extends React.Component {
       }
       return (
         <div id = "events-section" className="bg-default">
+
           <div className="title-header">
             <p id="title-header-left" className="">Special Events</p>
             <p id="title-header-right" className="">WE DO OUT OF THE STORE <br/> EXPERIENCE TOO!</p>
           </div>
+
           <div className="d-flex events-box flex-column align-items-center">
             <div className="d-flex align-items-center pt-4 ">
               <div className="gold-rec"></div>
@@ -148,8 +176,130 @@ class Events extends React.Component {
               </div>      
             </div>
           </div>
-        
+          <div className="d-flex events-box flex-column align-items-center">
+            <div className="d-flex align-items-center pt-4 ">
+              <div className="gold-rec"></div>
+              <div className="events-name overline-16 pl-3 pr-3">Speed Dating 2018</div>
+              <div className="gold-rec"></div>
+            </div>
+            <div className="d-flex h-75 justify-content-center w-100" >
+              <div className="d-flex pt-4 w-75">
+                <Slider {...settings}>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_1}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_2}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_3}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_4}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_5}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_6}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_7}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_18_8}/>
+                  </div>
+                </Slider>
+              </div>      
+            </div>
+          </div>
+          <div className="d-flex events-box flex-column align-items-center">
+            <div className="d-flex align-items-center pt-4 ">
+              <div className="gold-rec"></div>
+              <div className="events-name overline-16 pl-3 pr-3">Speed Dating 2019</div>
+              <div className="gold-rec"></div>
+            </div>
+            <div className="d-flex h-75 justify-content-center w-100" >
+              <div className="d-flex pt-4 w-75">
+                <Slider {...settings}>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_19_1}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_19_2}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_19_3}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_19_4}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_19_5}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={sd_19_6}/>
+                  </div>
+                </Slider>
+              </div>      
+            </div>
+          </div>
+          <div className="d-flex events-box flex-column align-items-center">
+            <div className="d-flex align-items-center pt-4 ">
+              <div className="gold-rec"></div>
+              <div className="events-name overline-16 pl-3 pr-3">ICD</div>
+              <div className="gold-rec"></div>
+            </div>
+            <div className="d-flex h-75 justify-content-center w-100" >
+              <div className="d-flex pt-4 w-75">
+                <Slider {...settings}>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={icd_1}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={icd_2}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={icd_3}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={icd_4}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={icd_5}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={icd_6}/>
+                  </div>
+                </Slider>
+              </div>      
+            </div>
+          </div>
+          <div className="d-flex events-box flex-column align-items-center">
+            <div className="d-flex align-items-center pt-4 ">
+              <div className="gold-rec"></div>
+              <div className="events-name overline-16 pl-3 pr-3">CB Music Cafe</div>
+              <div className="gold-rec"></div>
+            </div>
+            <div className="d-flex h-75 justify-content-center w-100" >
+              <div className="d-flex pt-4 w-75">
+                <Slider {...settings}>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={cbmc_1}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={cbmc_2}/>
+                  </div>
+                  <div className="events-slider-content row">
+                    <img className="events-img" src={cbmc_3}/>
+                  </div>
+                </Slider>
+              </div>      
+            </div>
+          </div>
+
         </div>
+        
       )
     }
   }
