@@ -1,0 +1,69 @@
+@media only screen and (max-width: 991.98px) {
+    /* MAINPAGE (comtains all the pages but contained inside main-container)  */
+    .mainpage-container {
+        flex: 12;
+    }
+
+
+    /* ============ NAVIGATION =========== */
+    .nav-container {
+        flex: none;
+    }
+    
+    #wrapper {
+        display: none;
+    }
+
+
+    /* ============ HOME =============== */
+    .upper-section-left {
+        display: none;
+    }
+
+    .sec-title-white {
+        width: 100%;
+    }
+
+    .sec-title-gold {
+        width: 100%;
+    }
+
+    .down-button {
+        right: 50%;
+        margin-right: -48px;
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import '../App-mobile.css';
 
 // attempt-f
 import PropTypes from 'prop-types';

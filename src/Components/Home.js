@@ -67,10 +67,10 @@ class Home extends React.Component {
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className="row h-100 w-100">
-            <div className="upper-section-left h-100 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-5">
+            <div className="upper-section-left h-100 col-xl-5 col-lg-5 col-md-0 col-sm-0">
               <VerticalSlider/>
             </div>
-            <div className="upper-section-right h-100 col-xl-7 col-lg-5 col-md-7 col-sm-12 col-7">
+            <div className="upper-section-right d-flex justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-sm-center text-xl-left text-lg-left text-md-center text-sm-center h-100 col-xl-7 col-lg-7 col-md-12 col-sm-12">
               <div className = "home-intro pt-5">
                 <img className="home-img-logo pt-5" src={logo}/>
                 <div className="pt-5">

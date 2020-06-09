@@ -339,14 +339,13 @@ html {
   overflow-y: visible;
 } */
 
-/* Navigation */
-
-/* .navbar .dropdown-item, .navbar .dropdown-menu
-{
-  background-color: black;
-  color: white;
-
-} */
+/* ============= Navigation ============== */
+#wrapper {
+  width: 15%;
+  height: -webkit-fill-available;
+  background-color: var(--gray-black);
+  box-shadow: 4px 0px 5px var(--gray-shadow);
+}
 
 
 /* Controls Section */
@@ -1535,12 +1534,7 @@ html {
   }
 }
 
-#wrapper {
-  width: 15%;
-  height: -webkit-fill-available;
-  background-color: var(--gray-black);
-  box-shadow: 4px 0px 5px var(--gray-shadow);
-}
+
 
 #sidebar-wrapper {
   display: flex;

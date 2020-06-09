@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import '../App-mobile.css';
 
 
 import { Link } from 'react-router-dom';
@@ -35,7 +36,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <div className="d-flex fixed-top" id="wrapper">
+      <div className="fixed-top wrapper" id="wrapper">
         <div id="sidebar-wrapper">
           <div className="text-center sidebar-heading">
             <Link to = "/">
