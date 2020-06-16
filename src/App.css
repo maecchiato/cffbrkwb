@@ -100,7 +100,7 @@ html {
 
 .body-16-main-barlow{
   font:  normal 1rem 'Barlow-Thin', sans-serif;
-  color: white;
+  color: var(--ash-white);
 
   line-height: 1.75rem;
   letter-spacing: .1rem;
@@ -300,15 +300,15 @@ html {
 
 .main-container {
   display:flex;
-  flex:1
+  flex:1;
 }
 
 .nav-container{
-  flex:1
+  flex:1;
 }
 
 .mainpage-container{
-  flex:6
+  flex:6;
 }
 
 .careers-slider div img {
@@ -360,7 +360,7 @@ html {
 
 /* ================= Home Section =================*/
 
-/* Slider Classes*/
+/* Slider Class (lower-section) */
 
 ::-webkit-scrollbar {
   display: none;
@@ -449,14 +449,6 @@ html {
 }
 
 
-.body-main{
-  font:  normal 1rem 'Barlow-Thin', sans-serif;
-  color: var(--ash-white);
-
-  line-height: 2rem;
-  letter-spacing: .1rem;
-}
-
 /* for centering
   BS4: text-center --for container div
     margin-left: auto;
@@ -474,7 +466,6 @@ html {
 }
 
 
-
 .home-bg-img-canvas {
   position: absolute;
   right: 0%;
@@ -488,9 +479,25 @@ html {
   left: 3%;
 }
 
+.upper-section .slick-slider:not(.slick-vertical) {
+  display: none;
+}
+
 .down-button {
   transform: rotate(90deg);
-  position: absolute;
+  position: relative;
+  /* top: 80%;
+  left: 80%; */
+  bottom: -75%;
+  right: -85%;
+  background: url('Library/img/next-button.png') no-repeat center center / 2rem;
+  width: 4rem;
+  height: 6rem;
+  cursor: pointer;
+}
+/* .down-button {
+  transform: rotate(90deg);
+  position: relative;
   right: 10%;
   bottom: 10%;
   z-index: 10;
@@ -498,7 +505,7 @@ html {
   width: 4rem;
   height: 6rem;
   cursor: pointer;
-}
+} */
 
 .lower-section {
   height: 50%;

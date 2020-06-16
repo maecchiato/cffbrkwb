@@ -1,4 +1,56 @@
 @media only screen and (max-width: 991.98px) {
+    /* =========== GENERAL ============ */
+    html {
+        overflow-x: hidden;
+    }
+
+    
+    /* ========= ANIMATIONS ========= */
+    .kenburns-top {
+        /* disable */
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    /* =========== COMPONENTS =========== */
+    .h2-barlow{
+        color: var(--ash-white);
+        font-size: 1rem;
+        font-family: 'Barlow-ExtraBold', sans-serif;
+        letter-spacing: 0.1rem
+      }
+
+      .h3-underland{
+        background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
+        background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font: normal 1.2rem 'Underland', sans-serif;
+      }
+
+      .body-16-main-barlow{
+        font:  normal .7rem 'Barlow-Thin', sans-serif;
+        color: var(--ash-white);
+      
+        line-height: 1rem;
+        letter-spacing: .1rem;
+      }
+
+
+
+    
+    .sec-title-white {
+        width: 100%;
+    }
+
+    .sec-title-gold {
+        width: 100%;
+        position: relative;
+        margin-top: 9%;
+    }
+
+
     /* MAINPAGE (comtains all the pages but contained inside main-container)  */
     .mainpage-container {
         flex: 12;
@@ -16,21 +68,63 @@
 
 
     /* ============ HOME =============== */
+    .home-bg-img-canvas {
+        position: absolute;
+        right: 0%;
+        height: 100%;
+        width: 100%;
+    }
+
+
     .upper-section-left {
         display: none;
     }
 
-    .sec-title-white {
+    .home-intro {
         width: 100%;
+        top: 5%;
     }
 
-    .sec-title-gold {
-        width: 100%;
+    .home-img-logo {
+        width: 30%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
+
+    .home-intro-sub {
+        text-align: center;
+    }
+
+    .body-main {
+        position: relative;
+        margin-top: -10%;
+        text-align: center;
+    }
+
+    .home-section .upper-section .slick-slider:not(.slick-vertical) {
+        display: block;
+      
+        position: relative;
+        height: 20rem;
+        transform: scale(0.7);
+
+        
+    }
+    .home-section .slick-slide:hover {
+        transform: none;
+    }
+
+    .home-section .upper-section .slick-slider:not(.slick-vertical) .slick-prev, .home-section .upper-section .slick-slider:not(.slick-vertical) .slick-next {
+        top: 30%;
+    }
+
+
 
     .down-button {
-        right: 50%;
-        margin-right: -48px;
+        right: -50%;
+        bottom: -85%;
+        transform: translateX(-25%) rotate(90deg) ;
     }
 
 

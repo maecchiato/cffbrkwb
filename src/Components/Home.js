@@ -11,6 +11,8 @@ import img3 from '../Library/img/home-bg-img-3.png';
 import img4 from '../Library/img/home-bg-canvas.png';
 import logo from '../Library/img/logo-stroke.svg';
 import VerticalSlider from './VerticalSlider';
+import HorizontalSlider from './HorizontalSlider';
+// link: https://kenwheeler.github.io/slick/
 
 const content = [
   {
@@ -67,20 +69,23 @@ class Home extends React.Component {
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className="row h-100 w-100">
-            <div className="upper-section-left h-100 col-xl-5 col-lg-5 col-md-0 col-sm-0">
+            <div className="upper-section-left w-100 h-100 col-lg-5">
               <VerticalSlider/>
             </div>
-            <div className="upper-section-right d-flex justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-sm-center text-xl-left text-lg-left text-md-center text-sm-center h-100 col-xl-7 col-lg-7 col-md-12 col-sm-12">
-              <div className = "home-intro pt-5">
-                <img className="home-img-logo pt-5" src={logo}/>
-                <div className="pt-5">
+            <div className="upper-section-right d-flex justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-xs-center text-xl-left text-lg-left text-md-center text-xs-center h-100 col-xl-7 col-lg-7 col-xs-12">
+              <div className = "home-intro pt-lg-5">
+                <img className="home-img-logo pt-lg-5" src={logo}/>
+                <div className="home-intro-sub pt-3 pt-lg-5">
                   <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>
                   <div className="h3-underland sec-title-gold">Definitely World-Class</div>
                 </div>
-                <div className="body-main pt-1">
+                <div className="body-main  body-16-main-barlow pt-lg-5 pt-0 mx-5 mx-lg-0">
                   The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
                 </div>
+                
+                <HorizontalSlider/>
               </div>
+              
               <a class="down-button" href="#lower-section"></a>
             </div>
           </div>
