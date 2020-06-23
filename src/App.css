@@ -366,15 +366,13 @@ html {
   display: none;
 }
  .upper-section-left{
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 0;
   padding-top: 20%;
  }
 
  .upper-section-right{
-  position: absolute;
-  z-index: 3;
+    z-index: 3;
  }
 
 .nextButton {
@@ -410,10 +408,14 @@ html {
 .upper-section {
   width: 100%;
   height: 50%;
+  padding-bottom: 3rem;
+  position: relative;
 }
 
 .home-intro {
   position: absolute;
+  top: 50%;
+  transform: translateY(-25%);
   width: 70%;
   height: 100%;
   z-index: 2;
@@ -488,7 +490,7 @@ html {
   position: relative;
   /* top: 80%;
   left: 80%; */
-  bottom: -75%;
+  bottom: -85%;
   right: -85%;
   background: url('Library/img/next-button.png') no-repeat center center / 2rem;
   width: 4rem;
@@ -507,7 +509,7 @@ html {
   cursor: pointer;
 } */
 
-.lower-section {
+#lower-section {
   height: 50%;
 
   position: relative;
@@ -527,8 +529,8 @@ html {
 
 
 #large-text-pc {
-  position: absolute;
-  top: 4rem;
+  position: relative;
+  top: -3.5rem;
   height:80%;
 }
 
@@ -536,7 +538,7 @@ html {
   width: 55%;
   height: 20%;
 
-  position: absolute;
+  position: relative;
   top: 43%;
   left: 10%;
 }
@@ -584,9 +586,6 @@ html {
 
 }
 
-.home-section .upper-section .upper-section-left .slick-slider {
-  left: -20%;
-}
 
 .home-section .upper-section .upper-section-left .slick-slider .slick-arrow {
   position: absolute;
@@ -1408,12 +1407,14 @@ html {
 
 
 .upper-section-left .careers-slider .slick-arrow.slick-next {
-  top: 20%;
+  top: 25%;
 }
 
 .upper-section-left .careers-slider {
-  top: -30%;
-  height: 100%;
+  position: absolute;
+  bottom: -20%;
+  transform: translateY(-50%);
+  height: 70%;
 }
 
 .upper-section-left .careers-slider .slick-list {

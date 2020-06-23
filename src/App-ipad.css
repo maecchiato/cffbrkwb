@@ -1,0 +1,55 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* ============ COMPONENTS ============ */
+
+    .h1-barlow{
+        font-size: 4rem;
+    }
+
+    .h2-underland{
+        font: normal 3.2rem 'Underland', sans-serif;
+    }
+
+
+    
+    /* ============ HOME SECTION =========== */
+
+    .home-intro {
+        top: 50%;
+        transform: translateY(-25%);
+    }
+
+    .home-section .upper-section .upper-section-left .slick-slider {
+        left: -70%;
+        height: 70%;
+    }
+
+    .home-section .slick-slide:hover {
+        transform: none;
+    }
+
+    .upper-section-left .careers-slider .slick-arrow.slick-prev {
+       top: -13%;
+    }
+
+    #large-text-pc {
+        top: -3rem;
+    }
+
+    
+
+}
+
+/* IPAD PRO */
+@media only screen and (min-width: 1024px) and (max-width: 1100px) {
+    /* ========== HOME SECTION ========== */
+
+    .home-section .upper-section .upper-section-left .slick-slider {
+        left: -30%;
+        height: 70%;
+    }
+
+    .home-section .slick-slide:hover {
+        transform: none;
+    }
+
+}

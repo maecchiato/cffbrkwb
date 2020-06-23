@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     /* =========== GENERAL ============ */
     html {
         overflow-x: hidden;
@@ -13,29 +13,29 @@
     }
 
     /* =========== COMPONENTS =========== */
+    .h1-barlow{
+        font-size: 2rem;
+    }
+
     .h2-barlow{
-        color: var(--ash-white);
-        font-size: 1rem;
-        font-family: 'Barlow-ExtraBold', sans-serif;
+        font-size: 1.1rem;
         letter-spacing: 0.1rem
-      }
+    }
 
-      .h3-underland{
-        background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
-        background-image: -webkit-linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
-        color:transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
+
+    .h2-underland{
+        font: normal 1.6rem 'Underland', sans-serif;
+    }
+
+    .h3-underland{
         font: normal 1.2rem 'Underland', sans-serif;
-      }
+    }
 
-      .body-16-main-barlow{
+    .body-16-main-barlow{
         font:  normal .7rem 'Barlow-Thin', sans-serif;
-        color: var(--ash-white);
-      
         line-height: 1rem;
         letter-spacing: .1rem;
-      }
+    }
 
 
 
@@ -47,7 +47,7 @@
     .sec-title-gold {
         width: 100%;
         position: relative;
-        margin-top: 9%;
+        top: -.7rem;
     }
 
 
@@ -83,6 +83,7 @@
     .home-intro {
         width: 100%;
         top: 5%;
+        padding-top: 50%;
     }
 
     .home-img-logo {
@@ -99,17 +100,21 @@
     .body-main {
         position: relative;
         text-align: center;
+        top: 2rem;;
+        width: 80%;
+        margin: 0 auto;
     }
 
-    .home-section .upper-section .slick-slider:not(.slick-vertical) {
+    .home-section .upper-section .slick-slider:not(.slick-vertical).careers-slider.slick-initialized {
         display: block;
       
         position: relative;
+        top: 3rem;
         height: 20rem;
         transform: scale(0.7);
 
-        
     }
+
     .home-section .slick-slide:hover {
         transform: none;
     }
@@ -122,8 +127,33 @@
 
     .down-button {
         right: -50%;
-        bottom: -85%;
+        bottom: -95%;
         transform: translateX(-25%) rotate(90deg) ;
+    }
+
+
+
+    #large-text-pc {
+        top: -1.3rem;
+    }
+
+    .sub-text {
+        width: 50%;
+        top: 40%;
+    }
+
+    .nextButton {
+        width: 2rem;
+        height: 4rem;
+        background-size: 2rem;
+    }
+
+    .link-button .button-wide {
+        padding: 0px 5px;
+    }
+
+    .lower-section .slider-content {
+        background-position: center center;
     }
 
 

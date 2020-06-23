@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import '../App-mobile.css';
+import '../App-ipad.css';
 
 import { HashLink as Link } from 'react-router-hash-link';
 import Slider from 'react-animated-slider';
@@ -18,7 +20,7 @@ const content = [
   {
     title: 'EXPERIENCE',
     subtitle: "Premium Blends",
-    description: <p>At Coffeebreak, every coffee served is more than just a cup of delight. A product of finely roasted beans, blended to perfection.<br/> The passion the brand holds for coffee translates to a warm experience beyond comparison.</p>,
+    description: <p>At Coffeebreak, every coffee served is more than just a cup of delight. A product of finely roasted beans, blended to perfection.<br/> <br/> The passion the brand holds for coffee translates to a warm experience beyond comparison.</p>,
     button: 'DISCOVER COFEEBREAK',
     hlink: "/menu/#our-specialty",
     image: img2
@@ -69,17 +71,17 @@ class Home extends React.Component {
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className="row h-100 w-100">
-            <div className="upper-section-left w-100 h-100 col-lg-5">
+            <div className="upper-section-left w-100 h-100 col-md-3 col-xs-0">
               <VerticalSlider/>
             </div>
-            <div className="upper-section-right d-flex justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-xs-center text-xl-left text-lg-left text-md-center text-xs-center h-100 col-xl-7 col-lg-7 col-xs-12">
-              <div className = "home-intro pt-lg-5">
-                <img className="home-img-logo pt-lg-5" src={logo}/>
-                <div className="home-intro-sub pt-3 pt-lg-5">
+            <div className="upper-section-right d-flex justify-content-md-start justify-content-xs-center text-md-left text-xs-center h-100 offset-md-2 col-md-7 col-xs-12">
+              <div className = "home-intro">
+                <img className="home-img-logo" src={logo}/>
+                <div className="home-intro-sub">
                   <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>
                   <div className="h3-underland sec-title-gold">Definitely World-Class</div>
                 </div>
-                <div className="body-main  body-16-main-barlow pt-lg-5 pt-0 mx-5 mx-lg-0">
+                <div className="body-main  body-16-main-barlow pt-lg-5 mx-lg-0 w-xs-75">
                   The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
                 </div>
                 
@@ -92,7 +94,7 @@ class Home extends React.Component {
         </div>
           
          
-        <div className = "lower-section" id="lower-section">
+        <div id="lower-section">
           <Slider autoplay="7000" previousButton="" >
             {content.map((item, index) => (
               <div key={index}
