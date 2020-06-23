@@ -1,8 +1,7 @@
 import React from 'react';
 import '../App.css';
-
-import coffeevideo from '../Library/img/about-coffee.mp4';
-import coffee from '../Library/img/menu/americano.png';
+import '../App-mobile.css';
+import '../App-ipad.css';
 
 class About extends React.Component {
   constructor()
@@ -25,11 +24,12 @@ class About extends React.Component {
     return(
       <div id="about" className="about-section">
         <div className="about-upper-section text-center">
-          <div className="title-header">
-            <p id="title-header-left" className="">Our Coffee Story</p>
+          <div className="title-header d-flex flex-xl-row justify-content-xl-center align-items-xl-center">
+            <p id="title-header-left" className="h3-underland mr-xl-5">Our Coffee Story</p>
             <p id="title-header-right" className="">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</p>
           </div>
-          <img src={require("../Library/img/timeline.svg")} />
+          <img className="about-timeline-img" src={require("../Library/img/timeline.svg")} />
+          <img className="about-timeline-img-mobile" src={require("../Library/img/timeline-mobile.svg")} />
         </div>
         <div className="about-lower-section">
           <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} />

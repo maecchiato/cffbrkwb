@@ -619,54 +619,42 @@ html {
 }
 
 .title-header {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 18%;
+  height: 15%;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 2;
   top: 5%;
 }
 
-.title-header > p {
-  position: absolute;
-  width: 50%;
-  top: 5%;
-
-  z-index: 3;
-}
 
 #title-header-left {
-  top: 20%;
-  left: 0%;
-  padding-right: 3%;
-  text-align: right;
-
+  /* can be removed if tapos na tanan nga pages */
   background-image: linear-gradient(to right,  #AD802F, #F2DD86, #AD802F, #F2DD86, #AD802F);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
 
   font: normal 3rem 'Underland', sans-serif;
+  /* asta diri */
+  
   letter-spacing: .1rem;
 }
 
 #title-header-right {
-  top: 35%;
-  right: 0px;
-  text-align: left;
-
   font:  normal 1rem 'Barlow-ExtraBold', sans-serif;
   color: white;
 
   letter-spacing: .4rem;
 }
 
-.about-upper-section img {
-  /* position: relative;
-  top: 25%;
-  left: 15%; */
-  display: inline-block;
-  margin-top: 15%;
+.about-timeline-img {
+  position: relative;
+  margin-top: 10%;
+}
+
+.about-timeline-img-mobile {
+  display: none;
 }
 
 

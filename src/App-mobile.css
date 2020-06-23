@@ -158,8 +158,23 @@
 
 
 
-    
+    /* =========== ABOUT ============ */
+    .about-section {
+        overflow-x: hidden;
+    }
 
+    .about-timeline-img {
+        display: none;
+    }
+    
+    .about-timeline-img-mobile {
+        display: block;
+        height: 90%;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 20%;
+    }
 
 
 
