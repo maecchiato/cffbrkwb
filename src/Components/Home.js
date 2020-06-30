@@ -71,11 +71,11 @@ class Home extends React.Component {
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className="row h-100 w-100">
-            <div className="upper-section-left w-100 h-100 col-md-3 col-xs-0">
+            <div className="upper-section-left w-100 h-100 col-md-3 col-0">
               <VerticalSlider/>
             </div>
             <div className="upper-section-right d-flex justify-content-md-start justify-content-xs-center text-md-left text-xs-center h-100 offset-md-2 col-md-7 col-xs-12">
-              <div className = "home-intro pr-xs-5 pr-md-0">
+              <div className ="home-intro pr-xs-5 pr-md-0">
                 <img className="home-img-logo" src={logo}/>
                 <div className="home-intro-sub">
                   <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>

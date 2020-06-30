@@ -111,18 +111,19 @@
         position: fixed;
         width: 36px;
         height: 30px;
-        left: 36px;
-        top: 36px;
+        left: 10px;
+        top: 10px;
     }
     
     /* Color/shape of burger icon bars */
     .bm-burger-bars {
-        background: var(--gray-light);
+        background: rgba(108, 108, 108, 0.4)
     }
     
     /* Color/shape of burger icon bars on hover*/
     .bm-burger-bars-hover {
         /* background: #a90000; */
+        
     }
     
     /* Position and sizing of clickable cross button */
@@ -189,9 +190,10 @@
 
     .home-intro {
         width: 100%;
-        top: 5%;
-        padding-top: 50%;
+        top: 40%;
     }
+    
+
 
     .home-img-logo {
         width: 30%;
@@ -270,6 +272,23 @@
         overflow-x: hidden;
     }
 
+    .title-header {
+        top: 3rem;
+        height: 4rem;
+    }
+
+    #title-header-left {
+        /* width:  50%; */
+        font-size: 1.1rem;
+        letter-spacing: 0rem;
+    }
+
+    #title-header-right {
+        /* width: 50%; */
+        font-size: 0.5rem;
+        letter-spacing: 0.2rem;
+    }
+
     .about-timeline-img {
         display: none;
     }
@@ -280,9 +299,10 @@
         width: 90%;
         position: relative;
         left: 5%;
-        top: 20%;
+        top: 1rem;
     }
 
+    
 
 
 
@@ -311,4 +331,33 @@
 
 
 
+}
+
+
+@media only screen and (max-width: 320px) {
+    /* iphone 5 */
+    .h1-barlow{
+        font-size: 1.7rem;
+    }
+
+    .h2-underland{
+        font-size: 1.5rem ;
+    }
+    
+
+    .home-intro {
+        top: 30%;
+    }
+
+    .home-section .slick-slider:not(.slick-vertical) {
+        left: -5%;
+    }
+
+    .toggle-navigation-wrapper .bm-menu{
+        padding-top: 1rem;
+    }
+
+    .footnote {
+        margin-top: 1rem;
+    }
 }
