@@ -75,7 +75,7 @@ class Home extends React.Component {
               <VerticalSlider/>
             </div>
             <div className="upper-section-right d-flex justify-content-md-start justify-content-xs-center text-md-left text-xs-center h-100 offset-md-2 col-md-7 col-xs-12">
-              <div className = "home-intro">
+              <div className = "home-intro pr-xs-5 pr-md-0">
                 <img className="home-img-logo" src={logo}/>
                 <div className="home-intro-sub">
                   <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>
@@ -95,7 +95,7 @@ class Home extends React.Component {
           
          
         <div id="lower-section">
-          <Slider autoplay="7000" previousButton="" >
+          <Slider autoplay="7000" previousButton="" touchDisabled="true">
             {content.map((item, index) => (
               <div key={index}
                 className = "slider-content"

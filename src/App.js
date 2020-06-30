@@ -4,6 +4,7 @@ import './App.css';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Navigation from './Components/Navigation.js';
+import ToggleNavigation from './Components/ToggleNavigation.js';
 import Footer from './Components/Footer.js';
 import Home from './Components/Home.js';
 import About from './Components/About.js';
@@ -22,6 +23,7 @@ class App extends Component {
           <div className = "container-fluid main-container">
             <div className="nav-container">
               <Navigation />
+              <ToggleNavigation />
             </div>
             <div className="mainpage-container">
               <Switch>
