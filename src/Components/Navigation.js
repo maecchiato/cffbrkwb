@@ -36,7 +36,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <div className="fixed-top wrapper" id="wrapper">
+      <div className="fixed-top wrapper" id="navigation-wrapper">
         <div id="sidebar-wrapper">
           <div className="text-center sidebar-heading">
             <Link to = "/">

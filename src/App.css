@@ -340,11 +340,15 @@ html {
 } */
 
 /* ============= Navigation ============== */
-#wrapper {
+#navigation-wrapper {
   width: 15%;
   height: -webkit-fill-available;
   background-color: var(--gray-black);
   box-shadow: 4px 0px 5px var(--gray-shadow);
+}
+
+.toggle-navigation-wrapper {
+  display: none;
 }
 
 
