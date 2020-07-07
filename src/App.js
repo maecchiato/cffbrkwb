@@ -23,6 +23,8 @@ class App extends Component {
           <div className = "container-fluid main-container">
             <div className="nav-container">
               <Navigation />
+            </div>
+            <div className="togglenav-container">            
               <ToggleNavigation />
             </div>
             <div className="mainpage-container">

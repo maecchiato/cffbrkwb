@@ -30,9 +30,9 @@ class Partners extends React.Component {
         <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>   
       </div> */}
       <div className="page-container">
-        <div className="title-header">
-          <p id="title-header-left" className="">Franchise Coffee</p>
-          <p id="title-header-right" className="">GRAB AN EXTRA <br/> BREW OF OPPORTUNITY</p>
+        <div className="title-header d-flex flex-row justify-content-center align-items-center">
+          <div id="title-header-left" className="mr-md-5 mr-3">Franchise Coffee</div>
+          <div id="title-header-right" className="">GRAB AN EXTRA <br/> BREW OF OPPORTUNITY</div>
         </div>
         <div className="partners-upper-section">
           <div className="subheadline w-50" id="partners-title">You have already experienced the goodness of Coffeebreak, how about getting a franchise?</div>
@@ -44,6 +44,7 @@ class Partners extends React.Component {
         </div>
         <div className="partners-lower-section">
           <div className="lower-section-left col-xl-6 col-lg-5 col-md-7 col-xs-12 col-sm-12">
+            {/* REMOVE D-NONEEEEEEE !!!!!!!!!!!!! */}
             <div className="video-background d-none d-xl-block">
               <YouTube
               videoId="GiKGJrc2VbA"

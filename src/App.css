@@ -12,6 +12,7 @@ html {
 
 
 
+
 /* Quick BG Colors */
 .bg-red{
   background-color: coral;
@@ -307,6 +308,10 @@ html {
   flex:1;
 }
 
+.togglenav-container {
+  display: none;
+}
+
 .mainpage-container{
   flex:6;
 }
@@ -342,7 +347,7 @@ html {
 /* ============= Navigation ============== */
 #navigation-wrapper {
   width: 15%;
-  height: -webkit-fill-available;
+  height: 100%;
   background-color: var(--gray-black);
   box-shadow: 4px 0px 5px var(--gray-shadow);
 }
@@ -418,7 +423,7 @@ html {
 
 .home-intro {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-25%);
   width: 70%;
   height: 100%;
@@ -605,7 +610,7 @@ html {
 
 .about-section {
   width: 100%;
-  height: 200%;
+  height: 200vh;
 
   background-color: var(--gray-black);
   overflow: hidden;
@@ -626,7 +631,7 @@ html {
 .title-header {
   position: relative;
   width: 100%;
-  height: 15%;
+  height: 8rem;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 2;
   top: 5%;
@@ -655,7 +660,7 @@ html {
 
 .about-timeline-img {
   position: relative;
-  margin-top: 10%;
+  top: 3rem;
 }
 
 .about-timeline-img-mobile {
@@ -757,7 +762,7 @@ html {
   width: 50%;
   position: relative;
   margin: 0 auto;
-  top: 18%;
+  top: 7rem;
 }
 
 .menu-button {
@@ -792,56 +797,8 @@ html {
 }
 
 
-.menu-grid {
-  width: 70%;
-  position: relative;
-  top: 20%;
-  margin: 0 auto;
-}
 
-.menu-card {
-  margin: 0 .5rem .5rem 0;
-  position: relative;
-  /* height: 10%;
-  width: 10%; */
-}
-
-
-.menu-middle-col{
-  margin-left: 2.7em;
-  margin-right: -7.2rem;
-}
-
-.hover-text {
-  position: absolute;
-  width: 100%;
-  padding: 1%;
-  top: 48%;
-
-  font:  normal 1rem 'Barlow-Regular', sans-serif;
-  color: white;
-
-  transition: .5s ease;
-  opacity: 0;
-
-}
-
-.menu-card:hover .menu-card-img {
-  opacity: 0.3;
-}
-
-.menu-card:hover .hover-text {
-  opacity: 1;
-}
-
-.menu-card-img {
-  opacity: 1;
-  transition: .5s ease;
-  /* backface-visibility: hidden; */
-}
-
-
-.react-photo-gallery--gallery {
+/* .react-photo-gallery--gallery {
   position: relative;
   width: 70%;
   max-height: 80%;
@@ -851,13 +808,13 @@ html {
   overflow-y: scroll;
   padding-bottom: 10%;
 
-}
+} */
 
 .ReactGridGallery {
   position: relative;
   width: 70%;
-  max-height: 80%;
-  top: 23%;
+  max-height: 70%;
+  top: 10rem;
   margin: 0 auto;
   margin-bottom: 2rem;
   overflow-y: scroll;
@@ -878,14 +835,6 @@ html {
   top: 5%;
 }
 
-.menu-header > p {
-  position: relative;
-  width: 50%;
-  top: 5%;
-  left: 5%;
-
-  z-index: 3;
-}
 
 #menu-header-left {
   position: relative;
@@ -911,124 +860,7 @@ html {
   letter-spacing: .4rem;
 }
 
-.menu-grid:h
 
-
-/* #menu-section
-{
-  padding: 15% 0;
-  background-color: #f7f7f7;
-  color: #1d1d1d;
-  height: 100%;
-}
-
-#menu-section .tab-content
-{
-  background-color: #f7f7f7;
-}
-
-#menu-section .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #721c24;
-}
-
-#menu-section .container-card:hover .overlay {
-  opacity: .9;
-  cursor: default;
-}
-
-#menu-section .text {
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-#menu-section .card {
-  background-color: #f7f7f7;
-  border: 0px !important;
-}
-
-#menu-section .card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 0.3rem;
-}
-
-#menu-section .nav-pills-option
-{
-  background-color: #e7e7e7;
-}
-
-#menu-section .card-footer
-{
-  position: absolute;
-  bottom: 0;
-  color: white;
-}
-
-#menu-section a
-{
-  color: #1d1d1d;
-  font-size: 1em;
-}
-
-#menu-section .card-title {
-    font-weight: bold;
-    color: white;
-    letter-spacing: .6px;
-}
-
-#menu-section .menu-title-box
-{
-  background-color: #ffb24a!important;
-  padding: 45px 0px;
-  position: relative;
-  border-radius: 30px 0px 0px 30px;
-}
-
-#menu-section .menu-title
-{
-  position: absolute;
-  right:0;
-  bottom: 0;
-  color: white;
-  word-spacing: 3px;
-  letter-spacing: 1px;
-}
-
-
-#menu-section .nav-pills .nav-link.active, #menu-section .nav-pills .show>.nav-link
-{
-  background-color: #721c24;
-  color: white;
-}
-
-@media only screen and (min-width: 769px) {
-
-  #menu-section
-  {
-      padding: 7% 0;
-  }
-
-  #menu-section .text {
-    font-size: 20px;
-  }
-
-
-} */
 
 /* ==================== Partners Section =================== */
 
@@ -1036,34 +868,13 @@ html {
 {
   background-color: var(--gray-black);
   color: #1d1d1d;
+  height: 200%;
 }
-
-/* #partners-section .partners-background
-{
-  height: 100%;
-  display: table;
-  width: 100%;
-  padding-top: 30%;
-  text-align: center;
-  color: white;
-  background: url("Library/img/partners-bg.jpg") no-repeat bottom center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-} */
-
-/* .bg-img-container-full{
-  padding-top: 10%;
-  position: absolute;
-  z-index: 1;
-} */
 
 .page-container{
   height: 100%;
   background: var(--gray-black) url("Library/img/partners-bg.png") no-repeat center / cover ;  background-size: cover;
+  background-position: bottom -10rem left 1rem;
 
 }
 
@@ -1077,30 +888,29 @@ html {
   /* background-color: blueviolet; */
 }
 
-.partners-upper-box{
-  width: 75%;
-  /* background-color: blueviolet; */
-  align-self: center;
-  margin-top: 22%;
-  background: rgba(0, 0, 0, 0.75);
-}
-
 #partners-title{
   color: var(--ash-white);
   position: absolute;
   z-index: 2;
-  margin-top: 18%;
+  top: 7rem;
   left: 17%;
 }
+
+.partners-upper-box{
+  width: 75%;
+  /* background-color: blueviolet; */
+  align-self: center;
+  position: relative;
+  top: 10rem;
+  background: rgba(0, 0, 0, 0.75);
+}
+
 
 #partners-body{
   width: 87%;
   margin: 7% 0 5% 6%;
 }
 
-#partners-body > p{
-  margin-bottom: 2% !important;
-}
 
 .partners-lower-section{
   position: relative;

@@ -102,11 +102,11 @@ class Menu extends React.Component {
     return (
       
       <div id="our-specialty" className="menu-section">
-        <div className="title-header">
-          <p id="title-header-left" className="">Our Specialty Products</p>
-          <p id="title-header-right" className="">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+        <div className="title-header d-flex flex-row justify-content-center align-items-center">
+          <div id="title-header-left" className="text-right ">Our Specialty Products</div>
+          <div id="title-header-right" className="ml-3">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</div>
         </div>
-        <div className="menu-buttons d-flex justify-content-between">
+        <div className="menu-buttons d-flex justify-md-content-between justify-content-around">
           <button className="menu-button" onClick={() => this.setState({images: this.props.blends})}> 
             <a>BLENDS</a>
           </button>
@@ -303,20 +303,6 @@ Menu.defaultProps = {
           thumbnailWidth: 1,
           thumbnailHeight: 1,
           caption: "Banana Smoothie"
-      },
-      {
-          src: placeholder,
-          thumbnail: placeholder,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: ""
-      },
-      {
-          src: placeholder,
-          thumbnail: placeholder,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: ""
       }
   ]),
   cakes: ([

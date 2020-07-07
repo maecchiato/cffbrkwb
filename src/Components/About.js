@@ -25,14 +25,14 @@ class About extends React.Component {
       <div id="about" className="about-section">
         <div className="about-upper-section text-center">
           <div className="title-header d-flex flex-md-row flex-row justify-content-md-center justify-content-center align-items-md-center align-items-center">
-            <div id="title-header-left" className="h3-underland mr-md-5 align-middle flex-fill">Our Coffee Story</div>
+            <div id="title-header-left" className="h3-underland text-right mr-md-5 mr-3 align-middle flex-fill">Our Coffee Story</div>
             <div id="title-header-right" className="text-left flex-fill">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</div>
           </div>
           <img className="about-timeline-img" src={require("../Library/img/timeline.svg")} />
           <img className="about-timeline-img-mobile" src={require("../Library/img/timeline-mobile.svg")} />
         </div>
 
-        <div className="about-lower-section d-flex flex-row">
+        <div className="about-lower-section d-flex flex-md-row flex-column">
           <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} />
           <div className="about-lower-left text-center d-flex flex-column flex-fill">
             <div className="about-lower-left-title">

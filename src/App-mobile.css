@@ -4,6 +4,10 @@
         overflow-x: hidden;
     }
 
+    .togglenav-container {
+        display: initial;
+    }
+
     /* Colors */
     :root {
         --gray-shadow: rgb(37, 37, 37);
@@ -270,7 +274,17 @@
     /* =========== ABOUT ============ */
     .about-section {
         overflow-x: hidden;
+        height: 260%;
     }
+
+    .about-section > div {
+        height: initial;
+    }
+
+    .about-upper-section {
+        /* height: 50%; */
+    }
+
 
     .title-header {
         top: 3rem;
@@ -295,16 +309,80 @@
     
     .about-timeline-img-mobile {
         display: block;
-        height: 90%;
         width: 90%;
         position: relative;
         left: 5%;
-        top: 1rem;
+        top: 5em;
     }
 
+
+    .about-lower-section {
+        /* height: 66%; */
+        padding-top: 5rem;
+    }
+
+   .about-bg-img-coffeebean {
+       width: 80%;
+       height: 70%;
+       left: 40%;
+   }
+
+   .about-lower-left {
+       padding-left: 5%;
+   }
+
+   
+    .about-lower-left-title {
+        padding-left: 0%;
+    }
+
+    .about-lower-left-text {
+        padding: 0% 0%;
+        padding-top: 5%;
+    }
+
+    .about-lower-left-subtext {
+        padding: 5%;
+        line-height: 1.5rem;
+    }
     
+    .about-lower-right {
+        padding-left: 5%;
+        padding-top: 5rem;
+    }
+
+    .about-lower-right-text {
+        padding-top: 5%;
+    }
+
+    .about-lower-right-cards {
+        padding-top: 5%;
+    }
+
+    .about-lower-right-cards img {
+        width: 95%;
+    }
 
 
+
+    /* ========= MENU ========== */
+    .menu-section {
+        height: 130%;
+    }
+
+    .menu-buttons {
+        width: 90%;
+        top: 6rem;
+    }    
+
+    .menu-button {
+        width: 35%;
+    }
+
+    .ReactGridGallery {
+        top: 8rem;
+        width: 90%;
+    }
 
 
 
@@ -360,4 +438,21 @@
     .footnote {
         margin-top: 1rem;
     }
+
+    /* ============== ABOUT ============== */
+    .about-section {
+        overflow-x: hidden;
+        height: 300%;
+    }
+
+    .about-bg-img-coffeebean {
+        width: 80%;
+        height: 70%;
+        left: 50%;
+    }
+
+    .about-timeline-img-mobile {
+        top: 5rem;
+    }
+
 }
