@@ -551,6 +551,11 @@ html {
   top: 1.5rem;
   height:80%;
 }
+
+.careers-h4-subtext {
+  position: relative;
+  margin-top: -1.2rem;
+}
 /* .sub-text p {
   font:  normal 1.1rem 'Barlow-Thin', sans-serif;
   color: white;
@@ -1047,18 +1052,22 @@ html {
 
 /* ============= CAREERS SECTION ============= */
 
-#careers-section
+.careers-section
 {
   background-color: var(--gray-black);
 }
 
-#careers-section .careers-upper-section
+.careers-upper-section
 {
   height: 85%;
   padding: 10% ;
 }
 
-#careers-section .careers-lower-section
+.careers-upper-left-section {
+  margin-right: 6rem;
+}
+
+.careers-lower-section
 {
   background-color: var(--gray-black);
   /* color: #d6943f; */
@@ -1254,12 +1263,13 @@ html {
 
 /* ================= Events Section =================== */
 
-#events-section
+.events-section
 {
   background-color: var(--gray-black);
   /* padding: 15% 0 5% 0; */
   height: 250%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .gold-rec{
@@ -1269,8 +1279,15 @@ html {
 
 }
 
+.events-box-group {
+  position: relative;
+  top: 5rem;
+}
+
 .events-box{
+  /* margin-top: 1rem; */
   padding-bottom: 2rem;
+  position: relative;
 }
 
 .events-name{

@@ -74,211 +74,211 @@ class Events extends React.Component {
         slidesToScroll: 3
       }
       return (
-        <div id = "events-section" className="bg-default">
+        <div className = "events-section bg-default">
 
-          <div className="title-header">
-            <p id="title-header-left" className="">Special Events</p>
-            <p id="title-header-right" className="">WE DO OUT OF THE STORE <br/> EXPERIENCE TOO!</p>
+          <div className="title-header d-flex flex-row justify-content-center align-items-center">
+            <div id="title-header-left" className="mr-md-5 mr-3">Special Events</div>
+            <div id="title-header-right" className="">WE DO OUT OF THE STORE <br/> EXPERIENCE TOO!</div>
           </div>
-
-          <div className="d-flex events-box flex-column align-items-center">
+          <div className="events-box-group">
+            <div className="d-flex events-box flex-column align-items-center">
+              <div className="d-flex align-items-center pt-4 ">
+                <div className="gold-rec"></div>
+                <div className="events-name overline-16 px-3">Cup Design Competition</div>
+                <div className="gold-rec"></div>
+              </div>
+              <div className="d-flex h-75 justify-content-center w-100" >
+                <div className="d-flex pt-4 w-75">
+                  <Slider {...settings}>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_1}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_2}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_3}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_4}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_5}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_6}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_7}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_8}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_9}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_10}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={cd_11}/>
+                    </div>
+                  </Slider>
+                </div>      
+              </div>
+            </div>
+            <div className="d-flex events-box flex-column align-items-center">
+              <div className="d-flex align-items-center pt-4 ">
+                <div className="gold-rec"></div>
+                <div className="events-name overline-16 px-3">Grand Latte Art Competition</div>
+                <div className="gold-rec"></div>
+              </div>
+              <div className="d-flex h-75 justify-content-center w-100" >
+                <div className="d-flex pt-4 w-75">
+                  <Slider {...settings}>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_1}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_2}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_3}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_4}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_5}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_6}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_7}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_8}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_9}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_10}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_11}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={gla_12}/>
+                    </div>
+                  </Slider>
+                </div>      
+              </div>
+            </div>
+            <div className="d-flex events-box flex-column align-items-center">
+              <div className="d-flex align-items-center pt-4 ">
+                <div className="gold-rec"></div>
+                <div className="events-name overline-16 px-3">Speed Dating 2018</div>
+                <div className="gold-rec"></div>
+              </div>
+              <div className="d-flex h-75 justify-content-center w-100" >
+                <div className="d-flex pt-4 w-75">
+                  <Slider {...settings}>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_1}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_2}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_3}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_4}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_5}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_6}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_7}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_18_8}/>
+                    </div>
+                  </Slider>
+                </div>      
+              </div>
+            </div>
+            <div className="d-flex events-box flex-column align-items-center">
+              <div className="d-flex align-items-center pt-4 ">
+                <div className="gold-rec"></div>
+                <div className="events-name overline-16 px-3">Speed Dating 2019</div>
+                <div className="gold-rec"></div>
+              </div>
+              <div className="d-flex h-75 justify-content-center w-100" >
+                <div className="d-flex pt-4 w-75">
+                  <Slider {...settings}>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_19_1}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_19_2}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_19_3}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_19_4}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_19_5}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={sd_19_6}/>
+                    </div>
+                  </Slider>
+                </div>      
+              </div>
+            </div>
+            <div className="d-flex events-box flex-column align-items-center">
+              <div className="d-flex align-items-center pt-4 ">
+                <div className="gold-rec"></div>
+                <div className="events-name overline-16 px-3">ICD</div>
+                <div className="gold-rec"></div>
+              </div>
+              <div className="d-flex h-75 justify-content-center w-100" >
+                <div className="d-flex pt-4 w-75">
+                  <Slider {...settings}>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={icd_1}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={icd_2}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={icd_3}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={icd_4}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={icd_5}/>
+                    </div>
+                    <div className="events-slider-content row">
+                      <img className="events-img" src={icd_6}/>
+                    </div>
+                  </Slider>
+                </div>      
+              </div>
+            </div>
+            <div className="d-flex events-box flex-column align-items-center">
             <div className="d-flex align-items-center pt-4 ">
               <div className="gold-rec"></div>
-              <div className="events-name overline-16 pl-3 pr-3">Cup Design Competition</div>
-              <div className="gold-rec"></div>
-            </div>
-            <div className="d-flex h-75 justify-content-center w-100" >
-              <div className="d-flex pt-4 w-75">
-                <Slider {...settings}>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_1}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_2}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_3}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_4}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_5}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_6}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_7}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_8}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_9}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_10}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={cd_11}/>
-                  </div>
-                </Slider>
-              </div>      
-            </div>
-          </div>
-          <div className="d-flex events-box flex-column align-items-center">
-            <div className="d-flex align-items-center pt-4 ">
-              <div className="gold-rec"></div>
-              <div className="events-name overline-16 pl-3 pr-3">Grand Latte Art Competition</div>
-              <div className="gold-rec"></div>
-            </div>
-            <div className="d-flex h-75 justify-content-center w-100" >
-              <div className="d-flex pt-4 w-75">
-                <Slider {...settings}>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_1}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_2}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_3}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_4}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_5}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_6}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_7}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_8}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_9}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_10}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_11}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={gla_12}/>
-                  </div>
-                </Slider>
-              </div>      
-            </div>
-          </div>
-          <div className="d-flex events-box flex-column align-items-center">
-            <div className="d-flex align-items-center pt-4 ">
-              <div className="gold-rec"></div>
-              <div className="events-name overline-16 pl-3 pr-3">Speed Dating 2018</div>
-              <div className="gold-rec"></div>
-            </div>
-            <div className="d-flex h-75 justify-content-center w-100" >
-              <div className="d-flex pt-4 w-75">
-                <Slider {...settings}>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_1}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_2}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_3}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_4}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_5}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_6}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_7}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_18_8}/>
-                  </div>
-                </Slider>
-              </div>      
-            </div>
-          </div>
-          <div className="d-flex events-box flex-column align-items-center">
-            <div className="d-flex align-items-center pt-4 ">
-              <div className="gold-rec"></div>
-              <div className="events-name overline-16 pl-3 pr-3">Speed Dating 2019</div>
-              <div className="gold-rec"></div>
-            </div>
-            <div className="d-flex h-75 justify-content-center w-100" >
-              <div className="d-flex pt-4 w-75">
-                <Slider {...settings}>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_19_1}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_19_2}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_19_3}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_19_4}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_19_5}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={sd_19_6}/>
-                  </div>
-                </Slider>
-              </div>      
-            </div>
-          </div>
-          <div className="d-flex events-box flex-column align-items-center">
-            <div className="d-flex align-items-center pt-4 ">
-              <div className="gold-rec"></div>
-              <div className="events-name overline-16 pl-3 pr-3">ICD</div>
-              <div className="gold-rec"></div>
-            </div>
-            <div className="d-flex h-75 justify-content-center w-100" >
-              <div className="d-flex pt-4 w-75">
-                <Slider {...settings}>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={icd_1}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={icd_2}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={icd_3}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={icd_4}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={icd_5}/>
-                  </div>
-                  <div className="events-slider-content row">
-                    <img className="events-img" src={icd_6}/>
-                  </div>
-                </Slider>
-              </div>      
-            </div>
-          </div>
-          <div className="d-flex events-box flex-column align-items-center">
-            <div className="d-flex align-items-center pt-4 ">
-              <div className="gold-rec"></div>
-              <div className="events-name overline-16 pl-3 pr-3">CB Music Cafe</div>
+              <div className="events-name overline-16 px-3">CB Music Cafe</div>
               <div className="gold-rec"></div>
             </div>
             <div className="d-flex h-75 justify-content-center w-100" >
@@ -297,7 +297,7 @@ class Events extends React.Component {
               </div>      
             </div>
           </div>
-
+          </div>
         </div>
         
       )

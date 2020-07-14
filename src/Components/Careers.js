@@ -34,38 +34,34 @@ class Careers extends React.Component{
     var settings = {
       // adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       centerMode: true,
-      centerPadding: '75px',
+      centerPadding: '70px',
       className: 'careers-slider',
-      pauseOnFocus: true,
-      pauseOnHover: true,
       infinite: true,
       speed: 1500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: false,
-      // variableWidth: true
+      dots: false
     }
     
     return(
-    <div id = "careers-section">
+    <div className = "careers-section">
       <div className="title-header d-flex flex-row justify-content-center align-items-center">
         <div id="title-header-left" className="mr-md-5 mr-3">Be One of Us</div>
         <div id="title-header-right" className="">FIND YOUR PASSION <br/> AT COFFEEBREAK</div>
       </div>
-      <div className="careers-upper-section row">
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+      <div className="careers-upper-section d-flex flex-md-row flex-column">
+        <div className="careers-upper-left-section text-center text-md-left">
           <div className="h4-barlow">Fuel Your</div>
-          <div className="h4-underland h4-subtext">Coffee Passion</div>
-          <div className="body-16-main-barlow mt-5">
-          Join us at Coffeebreak. Be part of our groundbreaking company for the years to come!
-          If you have the heart to own and be one of the Coffeebreak brand, you're the one we are looking for!
+          <div className="h4-underland careers-h4-subtext">Coffee Passion</div>
+          <div className="body-16-main-barlow ">
+            Join us at Coffeebreak. Be part of our groundbreaking company for the years to come!
+            If you have the heart to own and be one of the Coffeebreak brand, you're the one we are looking for!
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
-          <div className="d-flex h-100 justify-content-center w-100 m-auto" >                      
-            <div className=" d-flex pt-4 w-75 m-auto">
+        <div className="careers-upper-section-slider">
+          
               <Slider {...settings}>
                 <div className="careers-slider-content row">
                     <img src={img1}/>
@@ -89,14 +85,12 @@ class Careers extends React.Component{
                   </div>
                 </div>
                 </Slider>
-            </div>      
-          </div>
         </div>
       </div>
-      <div className="careers-lower-section mt-5">
+      <div className="careers-lower-section">
         <div className="h4-barlow text-center">Qualifications</div>
-        <div className="d-flex justify-content-center pt-5">
-          <div className=" careers-q careers-q-mt pb-5 mb-4 mr-3">
+        <div className="d-flex flex-column flex-md-row justify-content-center pt-5">
+          <div className=" careers-q careers-q-mt pb-md-5 mb-md-4 mr-md-3">
             <a href="https://www.facebook.com/163120115107442" target="_blank" rel=" noreferrer noopener"><div className="large-card-title subheadline w-75 pt-5 pl-5">Management Trainee</div></a>
               <div className="large-card-caption body-12-caption-barlow pt-3 pl-5">
                 <li> Candidate must possess a Bachelor's Degree in Hotel and Restaurant Management, Hospitality Management, Business Administration/Management or equivalent <br/> </li>
@@ -108,7 +102,7 @@ class Careers extends React.Component{
                 <li> Fresh graduates are welcome to apply</li>
               </div>
           </div>
-          <div className="careers-q careers-q-dp pb-5 mb-4 ml-3">
+          <div className="careers-q careers-q-dp pb-md-5 mb-md-4 ml-md-3">
             <a href="https://www.facebook.com/152313069521480" target="_blank" rel=" noreferrer noopener"><div className="large-card-title subheadline w-75 pt-5 pl-5">Barista / Dining Personnel</div></a>
             <div className="large-card-caption body-12-caption-barlow pt-3 pl-5">
             <li> Candidate should be at least college level or HRM or any food service related course</li>
@@ -120,7 +114,7 @@ class Careers extends React.Component{
             </div>
           </div>      
         </div>
-        <div className="body-12-caption-barlow text-center pb-5">Interested applicants may send their resume or biodata at Door 4, QHP Business Center, Arsenal Street, <br/> 
+        <div className="body-12-caption-barlow text-center pb-5 mx-4 mx-md-0">Interested applicants may send their resume or biodata at Door 4, QHP Business Center, Arsenal Street, <br/> 
             Arsenal Aduana, Iloilo City or via email at hr@waffletime.com, or call 0933 851 3993, (033) 335 0935 / (033) 337 3228 
         </div>
       </div>
