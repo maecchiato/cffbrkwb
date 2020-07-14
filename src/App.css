@@ -119,12 +119,6 @@ html {
   text-transform: uppercase;
 }
 
-.subheadline-24{
-  font: 1.5rem 'Barlow-Bold', sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-}
 
 .side-title{
   color: var(--neutral-brown);
@@ -634,7 +628,7 @@ html {
   height: 8rem;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 2;
-  top: 5%;
+  top: 3rem;
 }
 
 
@@ -894,6 +888,7 @@ html {
   z-index: 2;
   top: 7rem;
   left: 17%;
+  width: 50%
 }
 
 .partners-upper-box{
@@ -1047,6 +1042,11 @@ html {
 
 }
 
+
+
+
+/* ============= CAREERS SECTION ============= */
+
 #careers-section
 {
   background-color: var(--gray-black);
@@ -1055,7 +1055,7 @@ html {
 #careers-section .careers-upper-section
 {
   height: 85%;
-  padding: 20% 5% 0 10% ;
+  padding: 10% ;
 }
 
 #careers-section .careers-lower-section
@@ -1080,6 +1080,14 @@ html {
 
 .careers-q:hover{
   transform: scale(1.1);
+}
+
+.careers-q li {
+  list-style: none;
+}
+
+.careers-q li::before {
+  content: "➼";
 }
 
 #careers-section .career-title
@@ -1249,7 +1257,7 @@ html {
 #events-section
 {
   background-color: var(--gray-black);
-  padding: 15% 0 5% 0;
+  /* padding: 15% 0 5% 0; */
   height: 250%;
   width: 100%;
 }
