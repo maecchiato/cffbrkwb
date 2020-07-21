@@ -1,0 +1,578 @@
+@media only screen and (max-width: 767px) {
+    /* =========== GENERAL ============ */
+    html {
+        overflow-x: hidden;
+    }
+
+    .togglenav-container {
+        display: initial;
+    }
+
+    /* Colors */
+    :root {
+        --gray-shadow: rgb(37, 37, 37);
+        --gray-black: #333333;
+        --gray-light: #6C6C6C;
+        --gold-dark: #AD802F;
+        --gold-button: #F2DD86;
+        --brown-black: #704800;
+        --ash-white: #F2F3F4;
+        --neutral-brown: #D7B894;
+    }
+
+    
+    /* ========= ANIMATIONS ========= */
+    .kenburns-top {
+        /* disable */
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    /* =========== COMPONENTS =========== */
+    .h1-barlow{
+        font-size: 2rem;
+    }
+
+    .h2-barlow{
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem
+    }
+
+    .h4-barlow{
+        font-size: 1.5rem;
+    }
+
+    .h2-underland{
+        font: normal 1.6rem 'Underland', sans-serif;
+    }
+
+    .h3-underland{
+        font: normal 1.2rem 'Underland', sans-serif;
+    }
+
+    
+    .h4-underland{
+        font-size: 1.5rem;
+    }
+
+
+
+    .body-16-main-barlow{
+        font:  normal .7rem 'Barlow-Thin', sans-serif;
+        line-height: 1rem;
+        letter-spacing: .1rem;
+    }
+
+
+
+    
+    .sec-title-white {
+        width: 100%;
+    }
+
+    .sec-title-gold {
+        width: 100%;
+        position: relative;
+        top: -.7rem;
+    }
+
+
+
+    .subheadline{
+        font: 1rem 'Barlow-Black', sans-serif;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+    }
+
+    /* .h4-subtext{
+        position: absolute;
+        top: 1rem;
+        height:80%;
+    } */
+
+    
+
+    /* MAINPAGE (comtains all the pages but contained inside main-container)  */
+    .mainpage-container {
+        flex: 12;
+    }
+
+
+    /* ============ NAVIGATION =========== */
+    .nav-container {
+        flex: 0;
+    }
+    
+    #navigation-wrapper {
+        display: none;
+    }
+
+    .toggle-navigation-wrapper {
+        display: initial;
+        left: -6rem;
+        padding-left: 6rem;
+    }
+
+    .sidebar-heading {
+        padding-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+
+    .footnote-text {
+        color: white;
+        font: normal 0.7rem 'Barlow-Thin', sans-serif;
+        line-height: 15px;
+    }
+
+    .footnote-signature {
+        bottom: 1%;
+        color: var(--gray-light);
+        font: normal 'Barlow-Thin', sans-serif;
+        line-height: 10px;
+        width: 100%;
+        left: 3rem;
+    }
+
+    /* burger nav */
+    /* Position and sizing of burger button */
+    .bm-burger-button {
+        position: fixed;
+        width: 36px;
+        height: 30px;
+        left: 10px;
+        top: 10px;
+    }
+    
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+        background: rgba(108, 108, 108, 0.4)
+    }
+    
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+        /* background: #a90000; */
+        
+    }
+    
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+        height: 24px;
+        width: 24px;
+    }
+    
+    /* Color/shape of close button cross */
+    .bm-cross {
+        background: #bdc3c7;
+    }
+    
+    /*
+    Sidebar wrapper styles
+    Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+    */
+    .bm-menu-wrap {
+        position: fixed;
+        height: 100%;
+    }
+    
+    /* General sidebar styles */
+    .bm-menu {
+        background: var(--gray-black);
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+    }
+    
+    /* Morph shape necessary with bubble or elastic */
+    .bm-morph-shape {
+        fill: #373a47;
+    }
+    
+    /* Wrapper for item list */
+    .bm-item-list {
+        color: #b8b7ad;
+        /* padding: 0.8em; */
+    }
+    
+    /* Individual item */
+    .bm-item {
+        display: inline-block;
+    }
+    
+    /* Styling of overlay */
+    .bm-overlay {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+
+    /* ============ HOME =============== */
+    .home-bg-img-canvas {
+        position: absolute;
+        right: 0%;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .upper-section-left {
+        display: none;
+    }
+
+    .home-intro {
+        width: 100%;
+        top: 40%;
+    }
+    
+
+
+    .home-img-logo {
+        width: 30%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .home-intro-sub {
+        text-align: center;
+    }
+
+    .body-main {
+        position: relative;
+        text-align: center;
+        top: 2rem;;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .home-section .upper-section .slick-slider:not(.slick-vertical).careers-slider.slick-initialized {
+        display: block;
+      
+        position: relative;
+        top: 3rem;
+        height: 20rem;
+        transform: scale(0.7);
+
+    }
+
+    .home-section .slick-slide:hover {
+        transform: none;
+    }
+
+    .home-section .upper-section .slick-slider:not(.slick-vertical) .slick-prev, .home-section .upper-section .slick-slider:not(.slick-vertical) .slick-next {
+        top: 30%;
+    }
+
+
+
+    .down-button {
+        right: -50%;
+        bottom: -95%;
+        transform: translateX(-25%) rotate(90deg) ;
+    }
+
+
+
+    #large-text-pc {
+        top: -1.3rem;
+    }
+
+    .sub-text {
+        width: 50%;
+        top: 40%;
+    }
+
+    .nextButton {
+        width: 2rem;
+        height: 4rem;
+        background-size: 2rem;
+    }
+
+    .link-button .button-wide {
+        padding: 0px 5px;
+    }
+
+    .lower-section .slider-content {
+        background-position: center center;
+    }
+
+
+
+    /* =========== ABOUT ============ */
+    .about-section {
+        overflow: auto;
+    }
+
+    .about-upper-section {
+        position: relative;
+    }
+
+    .title-header {
+        top: 3rem;
+        height: 4rem;
+    }
+
+    #title-header-left {
+        font-size: 1.1rem;
+        letter-spacing: 0rem;
+    }
+
+    #title-header-right {
+        font-size: 0.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .about-timeline-img {
+        display: none;
+    }
+    
+    .about-timeline-img-mobile {
+        display: block;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 5em;
+    }
+
+
+    .about-lower-section {
+        position: relative;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+   .about-bg-img-coffeebean {
+       width: 80%;
+       height: 70%;
+       left: 40%;
+   }
+
+   .about-lower-left {
+       padding-left: 5%;
+   }
+   
+    .about-lower-left-title {
+        padding-left: 0%;
+    }
+
+    .about-lower-left-text {
+        padding: 0% 0%;
+        padding-top: 5%;
+    }
+
+    .about-lower-left-subtext {
+        padding: 5%;
+        line-height: 1.5rem;
+    }
+    
+    .about-lower-right {
+        padding-left: 5%;
+        padding-top: 5rem;
+        height: 66%;
+    }
+
+    .about-lower-right-text {
+        padding-top: 5%;
+    }
+
+    .about-lower-right-cards {
+        padding-top: 5%;
+    }
+
+    .about-lower-right-cards img {
+        width: 95%;
+    }
+
+
+
+    /* ========= MENU ========== */
+    .menu-section {
+        height: 130%;
+    }
+
+    .menu-buttons {
+        width: 90%;
+        top: 6rem;
+    }    
+
+    .menu-button {
+        width: 35%;
+    }
+
+    .ReactGridGallery {
+        top: 8rem;
+        width: 90%;
+    }
+
+
+
+
+    /* =========== PARTNERS =========== */
+    .partners-section {
+        height: 100%;
+        min-height: 100px;
+        overflow: auto;
+    }
+
+    #partners-title {
+        width: 70%;
+        top: 6.25rem;
+    }
+
+    .partners-upper-section {
+        height: 50%;
+    }
+    
+    .partners-upper-box {
+        top: 8rem;
+        padding-top: 3rem;
+    }
+
+    
+
+    .partners-lower-section {
+        position: relative;
+        padding: 7rem 0rem 3rem;
+    }
+
+    .lower-section-right {
+        height: 50%;
+        padding-left: 13% !important;
+        margin-bottom: 3rem;
+    }
+
+
+    /* =========== CAREERS  =========== */
+    .careers-section {    
+        overflow-x: hidden;
+    }
+    
+    .careers-upper-section {
+        padding: 0;
+
+        position: relative;
+        top: 7rem
+    }
+
+    .careers-upper-left-section {
+        padding-left: 5%;
+        margin-right: 1rem;
+    }
+    
+
+    .careers-upper-section-slider {
+        width: 100%;
+        height: 20rem;
+    }
+
+
+    .careers-section .careers-upper-section .slick-slider.careers-slider.slick-initialized {
+        display: block;
+      
+        position: relative;
+        top: 3rem;
+        height: 13rem;
+        
+    }
+
+    .careers-section .slick-slide:hover {
+        transform: none;
+    }
+
+    .careers-lower-section {
+        top: 10rem;
+        position: relative;
+    }
+
+    .careers-q:hover{
+        transform: none;
+    }
+    
+    .careers-q {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+    .careers-q-mt {
+    }
+
+    .careers-q-dp {
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    /* iphone 5 */
+    .h1-barlow{
+        font-size: 1.7rem;
+    }
+
+    .h2-underland{
+        font-size: 1.5rem ;
+    }
+    
+
+    .home-intro {
+        top: 30%;
+    }
+
+    .home-section .slick-slider:not(.slick-vertical) {
+        left: -5%;
+    }
+
+    .toggle-navigation-wrapper .bm-menu{
+        padding-top: 1rem;
+    }
+
+    .footnote {
+        margin-top: 1rem;
+    }
+
+    /* ============== ABOUT ============== */
+    .about-section {
+        overflow-x: hidden;
+        height: 300%;
+    }
+
+    .about-bg-img-coffeebean {
+        width: 80%;
+        height: 70%;
+        left: 50%;
+    }
+
+    .about-timeline-img-mobile {
+        top: 5rem;
+    }
+
+
+    /* =========== PARTNERS ============ */
+    .partners-section {
+        height: 170%;
+    }
+
+    .partners-lower-section {
+        padding-top: 5rem;
+    }
+
+   
+
+}

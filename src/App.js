@@ -4,6 +4,7 @@ import './App.css';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Navigation from './Components/Navigation.js';
+import ToggleNavigation from './Components/ToggleNavigation.js';
 import Footer from './Components/Footer.js';
 import Home from './Components/Home.js';
 import About from './Components/About.js';
@@ -12,7 +13,6 @@ import StoreLocator from './Components/StoreLocator.js';
 import Partners from './Components/Partners.js';
 import Careers from './Components/Careers.js';
 import Events from './Components/Events.js';
-import Slide from './Components/Slide.js';
 
 class App extends Component {
   
@@ -24,6 +24,9 @@ class App extends Component {
             <div className="nav-container">
               <Navigation />
             </div>
+            <div className="togglenav-container">            
+              <ToggleNavigation />
+            </div>
             <div className="mainpage-container">
               <Switch>
                   <Route exact path = "/" component = {Home} />
@@ -33,7 +36,6 @@ class App extends Component {
                   <Route exact path = "/partners" component = {Partners} />
                   <Route exact path = "/careers" component = {Careers} />
                   <Route exact path = "/events" component = {Events} />
-                  <Route exact path = "/slide" component = {Slide} />
                 </Switch>
             </div>              
             {/* <Footer /> */}

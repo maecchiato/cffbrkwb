@@ -1,209 +1,60 @@
 import React from 'react';
 import '../App.css';
+import '../App-mobile.css';
 
 // attempt-f
 import PropTypes from 'prop-types';
 
 import placeholder from "../Library/img/transparent_placeholder.png'"
 
-import b_c_img1 from "../Library/img/menu/coffee/capp.jpg";
-import b_c_img2 from "../Library/img/menu/coffee/cppucino.jpg";
-import b_f_img3 from "../Library/img/menu/frappe/caramel-mac.jpg";
-import b_f_img4 from "../Library/img/menu/frappe/Espresso Crumble.jpg";
-import b_f_img5 from "../Library/img/menu/frappe/iriah-creme.jpg";
-import b_f_img6 from "../Library/img/menu/frappe/mocha.jpg";
-import b_f_img7 from "../Library/img/menu/frappe/white-mocha.jpg";
-import b_m_img8 from "../Library/img/menu/matcha/almond.jpg";
-import b_m_img9 from "../Library/img/menu/matcha/frappe.jpg";
-import b_m_img10 from "../Library/img/menu/matcha/latte.jpg";
-import b_mt_img11 from "../Library/img/menu/Milktea/matcha.jpg";
-import b_mt_img12 from "../Library/img/menu/Milktea/taro.jpg";
-import b_mt_img13 from "../Library/img/menu/Milktea/Wintermelon.jpg";
+import b_c_img1 from "../Library/img/menu/blends/coffee/capp.jpg";
+import b_c_img2 from "../Library/img/menu/blends/coffee/cppucino.jpg";
+import b_f_img3 from "../Library/img/menu/blends/frappe/caramel-mac.jpg";
+import b_f_img4 from "../Library/img/menu/blends/frappe/Espresso Crumble.jpg";
+import b_f_img5 from "../Library/img/menu/blends/frappe/iriah-creme.jpg";
+import b_f_img6 from "../Library/img/menu/blends/frappe/mocha.jpg";
+import b_f_img7 from "../Library/img/menu/blends/frappe/white-mocha.jpg";
+import b_m_img8 from "../Library/img/menu/blends/matcha/almond.jpg";
+import b_m_img9 from "../Library/img/menu/blends/matcha/frappe.jpg";
+import b_m_img10 from "../Library/img/menu/blends/matcha/latte.jpg";
+import b_mt_img11 from "../Library/img/menu/blends/milktea/matcha.jpg";
+import b_mt_img12 from "../Library/img/menu/blends/milktea/taro.jpg";
+import b_mt_img13 from "../Library/img/menu/blends/milktea/Wintermelon.jpg";
+import b_s_img14 from "../Library/img/menu/blends/smoothies/Strawberry.jpg";
+import b_s_img15 from "../Library/img/menu/blends/smoothies/banana.jpg";
+import b_set_img16 from "../Library/img/menu/set/americano.jpg";
+import b_set_img17 from "../Library/img/menu/set/caramel with hand.jpg";
+import b_set_img18 from "../Library/img/menu/set/Iced Latte.jpg";
 
-import b_s_img14 from "../Library/img/menu/smoothies/Strawberry.jpg";
-import b_s_img15 from "../Library/img/menu/smoothies/banana.jpg";
 
-// import b_img_16 from "../Library/img/menu-card-1.png";
-// import b_img_17 from "../Library/img/menu-card-2.png";
-// import b_img_18 from "../Library/img/menu-card-3.png";
-// import b_img_19 from "../Library/img/menu-card-4.png";
-// import b_img_20 from "../Library/img/menu-card-5.png";
-// import b_img_21 from "../Library/img/menu-card-6.png";
-// import b_img_22 from "../Library/img/menu-card-7.png";
-// import b_img_23 from "../Library/img/menu-card-8.png";
-
-import c_img1 from "../Library/img/menu/cakes/blueberry.jpg"
-import c_img2 from "../Library/img/menu/cakes/BTS.jpg"
-import c_img3 from "../Library/img/menu/cakes/caramel.jpg"
-import c_img4 from "../Library/img/menu/cakes/Kitkat.jpg"
-import c_img5 from "../Library/img/menu/cakes/red-velvet.jpg"
-
-import p_img1 from "../Library/img/menu/Muffins/blueberry.jpg"
-import p_img2 from "../Library/img/menu/Muffins/carrot.jpg"
-import p_img3 from "../Library/img/menu/Muffins/choco banana.jpg"
+import c_img1 from "../Library/img/menu/cakes/cake/blueberry.jpg"
+import c_img2 from "../Library/img/menu/cakes/cake/BTS.jpg"
+import c_img3 from "../Library/img/menu/cakes/cake/caramel.jpg"
+import c_img4 from "../Library/img/menu/cakes/cake/Kitkat.jpg"
+import c_img5 from "../Library/img/menu/cakes/cake/red-velvet.jpg"
+import c_set_img6 from "../Library/img/menu/set/IMG_9960.JPG"
+import c_set_img7 from "../Library/img/menu/set/IMG_9968.JPG"
 
 
 
+import p_m_img1 from "../Library/img/menu/pastries/muffins/blueberry.jpg"
+import p_m_img2 from "../Library/img/menu/pastries/muffins/carrot.jpg"
+import p_m_img3 from "../Library/img/menu/pastries/muffins/choco banana.jpg"
+import p_c_img4 from "../Library/img/menu/pastries/cookies/chocolate chip cookie.jpg"
+import p_c_img5 from "../Library/img/menu/pastries/cookies/oatmeal raisin cookie.jpg"
+import p_set_img6 from "../Library/img/menu/set/IMG_0345.JPG"
+import p_set_img7 from "../Library/img/menu/set/IMG_0365.JPG"
+import p_set_img8 from "../Library/img/menu/set/IMG_9855.JPG"
+import p_set_img9 from "../Library/img/menu/set/IMG_9914.JPG"
+import p_set_img10 from "../Library/img/menu/set/IMG_9865.JPG"
 
-// original:
-// import Gallery from "react-photo-gallery";
+
+
+
 
 // attempt-g
 import Gallery from 'react-grid-gallery';
 
-// const blends = [
-//   {
-//     src: b_c_img1,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_c_img2,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_f_img9,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_f_img10,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_f_img11,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_f_img12,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_m_img19,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_m_img20,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_m_img21,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_mt_img25,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_mt_img26,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_mt_img27,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_s_img30,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: b_s_img31,
-//     width: 1,
-//     height: 1
-//   }
-  
-// ]
-
-// const cakes = [
-//   {
-//     src: c_img1,
-//     width: 2,
-//     height: 2
-//   },
-//   {
-//     src: c_img2,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: c_img3,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: c_img4,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: c_img5,
-//     width: 1,
-//     height: 1
-//   }
-// ]
-
-// const pastas = [
-//   {
-//     src: b_c_img1,
-//     width: 1,
-//     height: 1
-//   }
-// ]
-
-// const cookies = [
-//   {
-//     src: ck_img1,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: ck_img2,
-//     width: 1,
-//     height: 1
-//   },
-//   {
-//     src: ck_img3,
-//     width: 1,
-//     height: 1
-//   }
-// ]
-
-
-
-// const galleries = [
-  
-//   {
-//     content:
-//     // <Gallery photos={blends} margin={5} />
-//     <Gallery images={images} enableImageSelection={false} enableLightbox={false} />
-//   },
-//   {
-//     content:
-//     // <Gallery photos={cakes} margin={5} />
-//     <Gallery images={images} enableImageSelection={false} enableLightbox={false} />
-//   },
-//   {
-//     content:
-//     // <Gallery photos={pastas} margin={5}/>
-//     <Gallery images={images} enableImageSelection={false} enableLightbox={false} />
-//   },
-//   {
-//     content:
-//     // <Gallery photos={cookies} margin={5}/>
-//     <Gallery images={images} enableImageSelection={false} enableLightbox={false} />
-//   },
-// ]
 
 function changeGallery (i) {
   return 
@@ -251,15 +102,11 @@ class Menu extends React.Component {
     return (
       
       <div id="our-specialty" className="menu-section">
-        {/* <div className="menu-header d-flex flex-row">
-          <p id="menu-header-left" className="align-self-center">Our Specialty Products</p>
-          <p id="menu-header-right" className="align-self-center">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
-        </div> */}
-        <div className="title-header">
-          <p id="title-header-left" className="">Our Specialty Products</p>
-          <p id="title-header-right" className="">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</p>
+        <div className="title-header d-flex flex-row justify-content-center align-items-center">
+          <div id="title-header-left" className="text-right ">Our Specialty Products</div>
+          <div id="title-header-right" className="ml-3">EXPERIENCE PREMIUM BLENDS <br/> COUPLED WITH DELICIOUS FOOD</div>
         </div>
-        <div className="menu-buttons d-flex justify-content-between">
+        <div className="menu-buttons d-flex justify-md-content-between justify-content-around">
           <button className="menu-button" onClick={() => this.setState({images: this.props.blends})}> 
             <a>BLENDS</a>
           </button>
@@ -273,8 +120,6 @@ class Menu extends React.Component {
             <a>PASTRIES</a>
           </button>
         </div>
-        {/* orignal: */}
-        {/* {galleries[this.state.index].content} */}
 
         {/* attempt-c */}
         {/* amo ni ang link: https://github.com/benhowell/react-grid-gallery/blob/master/examples/demo4.js#L136 */}
@@ -341,6 +186,20 @@ Menu.defaultProps = {
           caption: "Cappuccino"
       },
       {
+          src: b_set_img16,
+          thumbnail: b_set_img16,
+          thumbnailWidth: 1,
+          thumbnailHeight: 1,
+          caption: "Americano"
+      },
+      {
+          src: b_set_img17,
+          thumbnail: b_set_img17,
+          thumbnailWidth: 1,
+          thumbnailHeight: 1,
+          caption: "Caramel"
+      },
+      {
           src: b_c_img2,
           thumbnail: b_c_img2,
           thumbnailWidth: 1,
@@ -352,35 +211,42 @@ Menu.defaultProps = {
           thumbnail: b_f_img3,
           thumbnailWidth: 1,
           thumbnailHeight: 1,
-          caption: "Caramel Macchiato"
+          caption: "Caramel Macchiato Frappe"
       },
       {
           src: b_f_img4,
           thumbnail: b_f_img4,
           thumbnailWidth: 1,
           thumbnailHeight: 1,
-          caption: "Espresso Crumble"
+          caption: "Espresso Crumble Frappe"
       },
       {
           src: b_f_img5,
           thumbnail: b_f_img5,
           thumbnailWidth: 1,
           thumbnailHeight: 1,
-          caption: "Iriah Creme"
+          caption: "Iriah Creme Frappe"
       },
       {
           src: b_f_img6,
           thumbnail: b_f_img6,
           thumbnailWidth: 1,
           thumbnailHeight: 1,
-          caption: "Mocha"
+          caption: "Mocha Frappe"
       },
       {
           src: b_f_img7,
           thumbnail: b_f_img7,
           thumbnailWidth: 1,
           thumbnailHeight: 1,
-          caption: "White Mocha"
+          caption: "White Mocha Frappe"
+      },
+      {
+          src:  b_set_img18,
+          thumbnail:  b_set_img18,
+          thumbnailWidth: 1,
+          thumbnailHeight: 1,
+          caption: "Iced Latte"
       },
       {
           src: b_m_img8,
@@ -437,16 +303,16 @@ Menu.defaultProps = {
           thumbnailWidth: 1,
           thumbnailHeight: 1,
           caption: "Banana Smoothie"
-      },
-      {
-          src: placeholder,
-          thumbnail: placeholder,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: ""
       }
   ]),
   cakes: ([
+    {
+        src: c_set_img6,
+        thumbnail: c_set_img6,
+        thumbnailWidth: 1.5,
+        thumbnailHeight: 1,
+        caption: "",
+    },
     {
         src: c_img1,
         thumbnail: c_img1,
@@ -474,30 +340,95 @@ Menu.defaultProps = {
         thumbnailWidth: 1,
         thumbnailHeight: 1,
         caption: "Kitkat"
+    },
+    {
+        src: c_img5,
+        thumbnail: c_img5,
+        thumbnailWidth: 1,
+        thumbnailHeight: 1,
+        caption: "Red Velvet"
+    },
+    {
+        src: c_set_img7,
+        thumbnail: c_set_img7,
+        thumbnailWidth: 1.5,
+        thumbnailHeight: 1,
+        caption: "",
     }
   ]),
   pastries: ([
     {
-        src: p_img1,
-        thumbnail: p_img1,
+        src: p_m_img1,
+        thumbnail: p_m_img1,
         thumbnailWidth: 1,
         thumbnailHeight: 1,
         caption: "Blueberry"
     },
     {
-        src: p_img2,
-        thumbnail: p_img2,
+        src: p_m_img2,
+        thumbnail: p_m_img2,
         thumbnailWidth: 1,
         thumbnailHeight: 1,
         caption: "Carrot"
     },
     {
-        src: p_img3,
-        thumbnail: p_img3,
+        src: p_m_img3,
+        thumbnail: p_m_img3,
         thumbnailWidth: 1,
         thumbnailHeight: 1,
         caption: "Choco Banana"
-    }
+    },
+    {
+        src: p_set_img8,
+        thumbnail: p_set_img8,
+        thumbnailWidth: 1.5,
+        thumbnailHeight: 1,
+        caption: ""
+    },
+    {
+        src: p_set_img9,
+        thumbnail: p_set_img9,
+        thumbnailWidth: 1.5,
+        thumbnailHeight: 1,
+        caption: ""
+    },
+    {
+        src: p_c_img4,
+        thumbnail: p_c_img4,
+        thumbnailWidth: 1,
+        thumbnailHeight: 1,
+        caption: "Oatmeal Raisin"
+    },
+    {
+        src: p_c_img5,
+        thumbnail: p_c_img5,
+        thumbnailWidth: 1,
+        thumbnailHeight: 1,
+        caption: "Chocolate Chip"
+    },
+    {
+        src: p_set_img10,
+        thumbnail: p_set_img10,
+        thumbnailWidth: 1,
+        thumbnailHeight: 1,
+        caption: ""
+    },
+    {
+        src: p_set_img6,
+        thumbnail: p_set_img6,
+        thumbnailWidth: 1,
+        thumbnailHeight: 1,
+        caption: ""
+    },
+    {
+        src: p_set_img7,
+        thumbnail: p_set_img7,
+        thumbnailWidth: 1,
+        thumbnailHeight: 1,
+        caption: ""
+    },
+  
+
   ])
 };
 

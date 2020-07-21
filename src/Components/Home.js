@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import '../App-mobile.css';
+import '../App-ipad.css';
 
 import { HashLink as Link } from 'react-router-hash-link';
 import Slider from 'react-animated-slider';
@@ -11,12 +13,14 @@ import img3 from '../Library/img/home-bg-img-3.png';
 import img4 from '../Library/img/home-bg-canvas.png';
 import logo from '../Library/img/logo-stroke.svg';
 import VerticalSlider from './VerticalSlider';
+import HorizontalSlider from './HorizontalSlider';
+// link: https://kenwheeler.github.io/slick/
 
 const content = [
   {
     title: 'EXPERIENCE',
     subtitle: "Premium Blends",
-    description: <p>At Coffeebreak, every coffee served is more than just a cup of delight. A product of finely roasted beans, blended to perfection.<br/> The passion the brand holds for coffee translates to a warm experience beyond comparison.</p>,
+    description: <p>At Coffeebreak, every coffee served is more than just a cup of delight. A product of finely roasted beans, blended to perfection.<br/> <br/> The passion the brand holds for coffee translates to a warm experience beyond comparison.</p>,
     button: 'DISCOVER COFEEBREAK',
     hlink: "/menu/#our-specialty",
     image: img2
@@ -67,28 +71,31 @@ class Home extends React.Component {
             <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className="row h-100 w-100">
-            <div className="upper-section-left h-100 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-5">
+            <div className="upper-section-left w-100 h-100 col-md-3 col-0">
               <VerticalSlider/>
             </div>
-            <div className="upper-section-right h-100 col-xl-7 col-lg-5 col-md-7 col-sm-12 col-7">
-              <div className = "home-intro pt-5">
-                <img className="home-img-logo pt-5" src={logo}/>
-                <div className="pt-5">
+            <div className="upper-section-right d-flex justify-content-md-start justify-content-xs-center text-md-left text-xs-center h-100 offset-md-2 col-md-7 col-xs-12">
+              <div className ="home-intro pr-xs-5 pr-md-0">
+                <img className="home-img-logo" src={logo}/>
+                <div className="home-intro-sub">
                   <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>
                   <div className="h3-underland sec-title-gold">Definitely World-Class</div>
                 </div>
-                <div className="body-main pt-1">
+                <div className="body-main  body-16-main-barlow pt-lg-5 mx-lg-0 w-xs-75">
                   The goodness of the Coffeebreak experience goes beyond the warmth and delight of its impressive products. It takes pride in the excellent and quality service it offers.
                 </div>
+                
+                <HorizontalSlider/>
               </div>
+              
               <a class="down-button" href="#lower-section"></a>
             </div>
           </div>
         </div>
           
          
-        <div className = "lower-section" id="lower-section">
-          <Slider autoplay="7000" previousButton="" >
+        <div id="lower-section">
+          <Slider autoplay="7000" previousButton="" touchDisabled="true">
             {content.map((item, index) => (
               <div key={index}
                 className = "slider-content"
