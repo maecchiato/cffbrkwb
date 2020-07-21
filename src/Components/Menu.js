@@ -186,20 +186,6 @@ Menu.defaultProps = {
           caption: "Cappuccino"
       },
       {
-          src: b_set_img16,
-          thumbnail: b_set_img16,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: "Americano"
-      },
-      {
-          src: b_set_img17,
-          thumbnail: b_set_img17,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: "Caramel"
-      },
-      {
           src: b_c_img2,
           thumbnail: b_c_img2,
           thumbnailWidth: 1,
@@ -240,13 +226,6 @@ Menu.defaultProps = {
           thumbnailWidth: 1,
           thumbnailHeight: 1,
           caption: "White Mocha Frappe"
-      },
-      {
-          src:  b_set_img18,
-          thumbnail:  b_set_img18,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: "Iced Latte"
       },
       {
           src: b_m_img8,
@@ -307,13 +286,6 @@ Menu.defaultProps = {
   ]),
   cakes: ([
     {
-        src: c_set_img6,
-        thumbnail: c_set_img6,
-        thumbnailWidth: 1.5,
-        thumbnailHeight: 1,
-        caption: "",
-    },
-    {
         src: c_img1,
         thumbnail: c_img1,
         thumbnailWidth: 1,
@@ -347,13 +319,6 @@ Menu.defaultProps = {
         thumbnailWidth: 1,
         thumbnailHeight: 1,
         caption: "Red Velvet"
-    },
-    {
-        src: c_set_img7,
-        thumbnail: c_set_img7,
-        thumbnailWidth: 1.5,
-        thumbnailHeight: 1,
-        caption: "",
     }
   ]),
   pastries: ([

@@ -470,11 +470,14 @@
         position: relative;
         top: 3rem;
         height: 13rem;
-        
     }
 
     .careers-section .slick-slide:hover {
         transform: none;
+    }
+
+    .careers-section .slick-next:before, .careers-section .slick-prev:before {
+        display: none;
     }
 
     .careers-lower-section {
