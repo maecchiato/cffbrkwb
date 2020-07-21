@@ -57,7 +57,7 @@ class Partners extends React.Component {
                 <div className="h4-barlow">Coffeebreak</div>
                 <div className="h4-underland h4-subtext">Franchise Details</div>
               </div>
-              <div className="body-16-main-barlow w-75">
+              <div className="body-16-main-barlow w-75 pb-5 pb-md-0">
                 Package includes the following: <br/>
                 I. Use of the Coffeebreak Trade Name &amp; Marks <br/>
                 II. Business Operation System <br/>

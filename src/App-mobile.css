@@ -298,18 +298,12 @@
 
     /* =========== ABOUT ============ */
     .about-section {
-        overflow-x: hidden;
-        height: 260%;
-    }
-
-    .about-section > div {
-        height: initial;
+        overflow: auto;
     }
 
     .about-upper-section {
-        /* height: 50%; */
+        position: relative;
     }
-
 
     .title-header {
         top: 3rem;
@@ -317,13 +311,11 @@
     }
 
     #title-header-left {
-        /* width:  50%; */
         font-size: 1.1rem;
         letter-spacing: 0rem;
     }
 
     #title-header-right {
-        /* width: 50%; */
         font-size: 0.5rem;
         letter-spacing: 0.2rem;
     }
@@ -342,8 +334,9 @@
 
 
     .about-lower-section {
-        /* height: 66%; */
+        position: relative;
         padding-top: 5rem;
+        padding-bottom: 3rem;
     }
 
    .about-bg-img-coffeebean {
@@ -355,7 +348,6 @@
    .about-lower-left {
        padding-left: 5%;
    }
-
    
     .about-lower-left-title {
         padding-left: 0%;
@@ -374,6 +366,7 @@
     .about-lower-right {
         padding-left: 5%;
         padding-top: 5rem;
+        height: 66%;
     }
 
     .about-lower-right-text {
@@ -413,9 +406,19 @@
 
 
     /* =========== PARTNERS =========== */
+    .partners-section {
+        height: 100%;
+        min-height: 100px;
+        overflow: auto;
+    }
+
     #partners-title {
         width: 70%;
         top: 6.25rem;
+    }
+
+    .partners-upper-section {
+        height: 50%;
     }
     
     .partners-upper-box {
@@ -423,17 +426,17 @@
         padding-top: 3rem;
     }
 
-    .partners-section {
-        height: 150%;
-    }
+    
 
     .partners-lower-section {
-        padding-top: 5rem;
+        position: relative;
+        padding: 5rem 0rem 3rem;
     }
 
     .lower-section-right {
-        width: 100%;
+        height: 50%;
         padding-left: 13% !important;
+        margin-bottom: 3rem;
     }
 
 

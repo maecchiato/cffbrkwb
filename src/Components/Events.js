@@ -57,8 +57,10 @@ import cbmc_1 from "../Library/img/Events/CB Music Cafe/IMG_9574.JPG";
 import cbmc_2 from "../Library/img/Events/CB Music Cafe/IMG_9580.JPG";
 import cbmc_3 from "../Library/img/Events/CB Music Cafe/IMG_9581.JPG";
 
-
+const slidesToShowOnDesktop = window.matchMedia('(min-width: 376px)')
+const slidesToShowOnMobile = window.matchMedia('(max-width: 375px)');
 class Events extends React.Component {
+
     render(){
       var settings = {
         adaptiveHeight: true,
@@ -70,7 +72,7 @@ class Events extends React.Component {
         pauseOnHover: true,
         infinite: true,
         speed: 1500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 3
       }
       return (
@@ -84,7 +86,7 @@ class Events extends React.Component {
             <div className="d-flex events-box flex-column align-items-center">
               <div className="d-flex align-items-center pt-4 ">
                 <div className="gold-rec"></div>
-                <div className="events-name overline-16 px-3">Cup Design Competition</div>
+                <div className="events-name overline-16 px-3 text-center">Cup Design Competition</div>
                 <div className="gold-rec"></div>
               </div>
               <div className="d-flex h-75 justify-content-center w-100" >
@@ -130,7 +132,7 @@ class Events extends React.Component {
             <div className="d-flex events-box flex-column align-items-center">
               <div className="d-flex align-items-center pt-4 ">
                 <div className="gold-rec"></div>
-                <div className="events-name overline-16 px-3">Grand Latte Art Competition</div>
+                <div className="events-name overline-16 px-3 text-center">Grand Latte Art Competition</div>
                 <div className="gold-rec"></div>
               </div>
               <div className="d-flex h-75 justify-content-center w-100" >
@@ -179,7 +181,7 @@ class Events extends React.Component {
             <div className="d-flex events-box flex-column align-items-center">
               <div className="d-flex align-items-center pt-4 ">
                 <div className="gold-rec"></div>
-                <div className="events-name overline-16 px-3">Speed Dating 2018</div>
+                <div className="events-name overline-16 px-3 text-center">Speed Dating 2018</div>
                 <div className="gold-rec"></div>
               </div>
               <div className="d-flex h-75 justify-content-center w-100" >
@@ -216,7 +218,7 @@ class Events extends React.Component {
             <div className="d-flex events-box flex-column align-items-center">
               <div className="d-flex align-items-center pt-4 ">
                 <div className="gold-rec"></div>
-                <div className="events-name overline-16 px-3">Speed Dating 2019</div>
+                <div className="events-name overline-16 px-3 text-center">Speed Dating 2019</div>
                 <div className="gold-rec"></div>
               </div>
               <div className="d-flex h-75 justify-content-center w-100" >
@@ -247,7 +249,7 @@ class Events extends React.Component {
             <div className="d-flex events-box flex-column align-items-center">
               <div className="d-flex align-items-center pt-4 ">
                 <div className="gold-rec"></div>
-                <div className="events-name overline-16 px-3">ICD</div>
+                <div className="events-name overline-16 px-3 text-center">ICD</div>
                 <div className="gold-rec"></div>
               </div>
               <div className="d-flex h-75 justify-content-center w-100" >
@@ -278,7 +280,7 @@ class Events extends React.Component {
             <div className="d-flex events-box flex-column align-items-center">
             <div className="d-flex align-items-center pt-4 ">
               <div className="gold-rec"></div>
-              <div className="events-name overline-16 px-3">CB Music Cafe</div>
+              <div className="events-name overline-16 px-3 text-center">CB Music Cafe</div>
               <div className="gold-rec"></div>
             </div>
             <div className="d-flex h-75 justify-content-center w-100" >

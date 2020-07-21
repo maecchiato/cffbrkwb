@@ -45,7 +45,7 @@ class ToggleNavigation extends React.Component {
                     <div className="menu-item"><a onClick={() => this.closeMenu()} href="/menu" className="list-group-item-action pt-2 pb-2">MENU</a><div className="divider"></div></div>
                     <div className="menu-item"><a onClick={() => this.closeMenu()} href="/partners" className="list-group-item-action pt-2 pb-2">PARTNERS</a><div className="divider"></div></div>
                     <div className="menu-item"><a onClick={() => this.closeMenu()} href="/careers" className="list-group-item-action pt-2 pb-2">CAREERS</a><div className="divider"></div></div>
-                    <div className="menu-item"><a onClick={() => this.closeMenu()} href="/events" className="list-group-item-action pt-2 pb-2">EVENTS</a><div className="divider"></div></div>
+                    {/* <div className="menu-item"><a onClick={() => this.closeMenu()} href="/events" className="list-group-item-action pt-2 pb-2">EVENTS</a><div className="divider"></div></div> */}
                 </div>
                 <div className="footnote ml-sm-4 text-left">
                     <div className="body-12-caption-barlow side-title">CONTACT</div>
