@@ -299,6 +299,7 @@
     /* =========== ABOUT ============ */
     .about-section {
         overflow: auto;
+        /* height: auto; */
     }
 
     .about-upper-section {
@@ -342,7 +343,6 @@
    .about-bg-img-coffeebean {
        width: 80%;
        height: 70%;
-       left: 40%;
    }
 
    .about-lower-left {
@@ -371,6 +371,7 @@
 
     .about-lower-right-text {
         padding-top: 5%;
+        padding-right: 10%;
     }
 
     .about-lower-right-cards {
@@ -441,10 +442,6 @@
 
 
     /* =========== CAREERS  =========== */
-    .careers-section {    
-        overflow-x: hidden;
-    }
-    
     .careers-upper-section {
         padding: 0;
 
@@ -552,14 +549,16 @@
 
     /* ============== ABOUT ============== */
     .about-section {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: 300%;
     }
 
     .about-bg-img-coffeebean {
-        width: 80%;
+        /* width: 80%;
         height: 70%;
-        left: 50%;
+        right: 0; */
+        /* left: 50%; */
+        display: none;
     }
 
     .about-timeline-img-mobile {

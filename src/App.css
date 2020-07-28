@@ -612,7 +612,7 @@ html {
   height: 200vh;
 
   background-color: var(--gray-black);
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .about-section > div {
@@ -668,7 +668,7 @@ html {
 
 .about-lower-section {
   background: #33333300;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 5rem;
 }
 

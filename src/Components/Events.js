@@ -5,57 +5,57 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import cd_1 from "../Library/img/Events/Cup Design/_MG_4742.JPG";
-import cd_2 from "../Library/img/Events/Cup Design/_MG_4752.JPG";
-import cd_3 from "../Library/img/Events/Cup Design/_MG_4923.JPG";
-import cd_4 from "../Library/img/Events/Cup Design/_MG_4944.JPG";
-import cd_5 from "../Library/img/Events/Cup Design/_MG_4951.JPG";
-import cd_6 from "../Library/img/Events/Cup Design/_MG_4970.JPG";
-import cd_7 from "../Library/img/Events/Cup Design/_MG_4990.JPG";
-import cd_8 from "../Library/img/Events/Cup Design/_MG_4997.JPG";
-import cd_9 from "../Library/img/Events/Cup Design/_MG_5213.JPG";
-import cd_10 from "../Library/img/Events/Cup Design/_MG_5225.JPG";
-import cd_11 from "../Library/img/Events/Cup Design/_MG_5231.JPG";
+import cd_1 from "../Library/img/Events/Cup Design/_MG_4742.webp";
+import cd_2 from "../Library/img/Events/Cup Design/_MG_4752.webp";
+import cd_3 from "../Library/img/Events/Cup Design/_MG_4923.webp";
+import cd_4 from "../Library/img/Events/Cup Design/_MG_4944.webp";
+import cd_5 from "../Library/img/Events/Cup Design/_MG_4951.webp";
+import cd_6 from "../Library/img/Events/Cup Design/_MG_4970.webp";
+import cd_7 from "../Library/img/Events/Cup Design/_MG_4990.webp";
+import cd_8 from "../Library/img/Events/Cup Design/_MG_4997.webp";
+import cd_9 from "../Library/img/Events/Cup Design/_MG_5213.webp";
+import cd_10 from "../Library/img/Events/Cup Design/_MG_5225.webp";
+import cd_11 from "../Library/img/Events/Cup Design/_MG_5231.webp";
 
-import gla_1 from "../Library/img/Events/Grand Latte Art/_MG_3125.JPG";
-import gla_2 from "../Library/img/Events/Grand Latte Art/_MG_3188_edited.jpg";
-import gla_3 from "../Library/img/Events/Grand Latte Art/_MG_3440.JPG";
-import gla_4 from "../Library/img/Events/Grand Latte Art/_MG_3534_edited.jpg";
-import gla_5 from "../Library/img/Events/Grand Latte Art/_MG_3575.JPG";
-import gla_6 from "../Library/img/Events/Grand Latte Art/_MG_3628.JPG";
-import gla_7 from "../Library/img/Events/Grand Latte Art/_MG_4479_edited.jpg";
-import gla_8 from "../Library/img/Events/Grand Latte Art/_MG_4533_edited.jpg";
-import gla_9 from "../Library/img/Events/Grand Latte Art/group5.jpg";
-import gla_10 from "../Library/img/Events/Grand Latte Art/group6.jpg";
-import gla_11 from "../Library/img/Events/Grand Latte Art/jacob vincent.jpg";
-import gla_12 from "../Library/img/Events/Grand Latte Art/jj2.jpg";
+import gla_1 from "../Library/img/Events/Grand Latte Art/_MG_3125.webp";
+import gla_2 from "../Library/img/Events/Grand Latte Art/_MG_3188_edited.webp";
+import gla_3 from "../Library/img/Events/Grand Latte Art/_MG_3440.webp";
+import gla_4 from "../Library/img/Events/Grand Latte Art/_MG_3534_edited.webp";
+import gla_5 from "../Library/img/Events/Grand Latte Art/_MG_3575.webp";
+import gla_6 from "../Library/img/Events/Grand Latte Art/_MG_3628.webp";
+import gla_7 from "../Library/img/Events/Grand Latte Art/_MG_4479_edited.webp";
+import gla_8 from "../Library/img/Events/Grand Latte Art/_MG_4533_edited.webp";
+import gla_9 from "../Library/img/Events/Grand Latte Art/group5.webp";
+import gla_10 from "../Library/img/Events/Grand Latte Art/group6.webp";
+import gla_11 from "../Library/img/Events/Grand Latte Art/jacob vincent.webp";
+import gla_12 from "../Library/img/Events/Grand Latte Art/jj2.webp";
 
-import sd_18_1 from "../Library/img/Events/Speed dating/2018/IMG_0437.JPG";
-import sd_18_2 from "../Library/img/Events/Speed dating/2018/IMG_0438.JPG";
-import sd_18_3 from "../Library/img/Events/Speed dating/2018/IMG_0472.JPG";
-import sd_18_4 from "../Library/img/Events/Speed dating/2018/IMG_0475.JPG";
-import sd_18_5 from "../Library/img/Events/Speed dating/2018/IMG_0477.JPG";
-import sd_18_6 from "../Library/img/Events/Speed dating/2018/IMG_0479.JPG";
-import sd_18_7 from "../Library/img/Events/Speed dating/2018/IMG_0480.JPG";
-import sd_18_8 from "../Library/img/Events/Speed dating/2018/IMG_8087.JPG";
+import sd_18_1 from "../Library/img/Events/Speed dating/2018/IMG_0437.webp";
+import sd_18_2 from "../Library/img/Events/Speed dating/2018/IMG_0438.webp";
+import sd_18_3 from "../Library/img/Events/Speed dating/2018/IMG_0472.webp";
+import sd_18_4 from "../Library/img/Events/Speed dating/2018/IMG_0475.webp";
+import sd_18_5 from "../Library/img/Events/Speed dating/2018/IMG_0477.webp";
+import sd_18_6 from "../Library/img/Events/Speed dating/2018/IMG_0479.webp";
+import sd_18_7 from "../Library/img/Events/Speed dating/2018/IMG_0480.webp";
+import sd_18_8 from "../Library/img/Events/Speed dating/2018/IMG_8087.webp";
 
-import sd_19_1 from "../Library/img/Events/Speed dating/2019/IMG_0199.JPG";
-import sd_19_2 from "../Library/img/Events/Speed dating/2019/IMG_0233.JPG";
-import sd_19_3 from "../Library/img/Events/Speed dating/2019/IMG_0268.JPG";
-import sd_19_4 from "../Library/img/Events/Speed dating/2019/IMG_0329.JPG";
-import sd_19_5 from "../Library/img/Events/Speed dating/2019/IMG_0423.JPG";
-import sd_19_6 from "../Library/img/Events/Speed dating/2019/IMG_0432.JPG";
+import sd_19_1 from "../Library/img/Events/Speed dating/2019/IMG_0199.webp";
+import sd_19_2 from "../Library/img/Events/Speed dating/2019/IMG_0233.webp";
+import sd_19_3 from "../Library/img/Events/Speed dating/2019/IMG_0268.webp";
+import sd_19_4 from "../Library/img/Events/Speed dating/2019/IMG_0329.webp";
+import sd_19_5 from "../Library/img/Events/Speed dating/2019/IMG_0423.webp";
+import sd_19_6 from "../Library/img/Events/Speed dating/2019/IMG_0432.webp";
 
-import icd_1 from "../Library/img/Events/ICD/MG_4447.jpg";
-import icd_2 from "../Library/img/Events/ICD/MG_4467.jpg";
-import icd_3 from "../Library/img/Events/ICD/MG_4528.jpg";
-import icd_4 from "../Library/img/Events/ICD/MG_4605.jpg";
-import icd_5 from "../Library/img/Events/ICD/MG_4632.jpg";
-import icd_6 from "../Library/img/Events/ICD/MG_4670.jpg";
+import icd_1 from "../Library/img/Events/ICD/MG_4447.webp";
+import icd_2 from "../Library/img/Events/ICD/MG_4467.webp";
+import icd_3 from "../Library/img/Events/ICD/MG_4528.webp";
+import icd_4 from "../Library/img/Events/ICD/MG_4605.webp";
+import icd_5 from "../Library/img/Events/ICD/MG_4632.webp";
+import icd_6 from "../Library/img/Events/ICD/MG_4670.webp";
 
-import cbmc_1 from "../Library/img/Events/CB Music Cafe/IMG_9574.JPG";
-import cbmc_2 from "../Library/img/Events/CB Music Cafe/IMG_9580.JPG";
-import cbmc_3 from "../Library/img/Events/CB Music Cafe/IMG_9581.JPG";
+import cbmc_1 from "../Library/img/Events/CB Music Cafe/IMG_9574.webp";
+import cbmc_2 from "../Library/img/Events/CB Music Cafe/IMG_9580.webp";
+import cbmc_3 from "../Library/img/Events/CB Music Cafe/IMG_9581.webp";
 
 const slidesToShowOnDesktop = window.matchMedia('(min-width: 376px)')
 const slidesToShowOnMobile = window.matchMedia('(max-width: 375px)');
@@ -72,7 +72,7 @@ class Events extends React.Component {
         pauseOnHover: true,
         infinite: true,
         speed: 1500,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 3
       }
       return (
@@ -287,13 +287,13 @@ class Events extends React.Component {
               <div className="d-flex pt-4 w-75">
                 <Slider {...settings}>
                   <div className="events-slider-content row">
-                    <img className="events-img" src={cbmc_1}/>
+                    <img loading="lazy" className="events-img" src={cbmc_1}/>
                   </div>
                   <div className="events-slider-content row">
-                    <img className="events-img" src={cbmc_2}/>
+                    <img loading="lazy" className="events-img" src={cbmc_2}/>
                   </div>
                   <div className="events-slider-content row">
-                    <img className="events-img" src={cbmc_3}/>
+                    <img loading="lazy" className="events-img" src={cbmc_3}/>
                   </div>
                 </Slider>
               </div>      
