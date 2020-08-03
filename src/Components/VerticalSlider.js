@@ -5,10 +5,10 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from '../Library/img/home-ads/home-ads-1.jpg';
-import img2 from '../Library/img/home-ads/home-ads-2.jpg';
-import img3 from '../Library/img/home-ads/home-ads-3.jpg';
-import img4 from '../Library/img/home-ads/home-ads-4.jpg';
+import img1 from '../Library/img/home-ads/home-ads-1.webp';
+import img2 from '../Library/img/home-ads/home-ads-2.webp';
+import img3 from '../Library/img/home-ads/home-ads-3.webp';
+import img4 from '../Library/img/home-ads/home-ads-4.webp';
 
 class VerticalSlider extends React.Component {
     render() {

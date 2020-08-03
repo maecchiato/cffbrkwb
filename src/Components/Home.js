@@ -7,10 +7,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
-import img1 from '../Library/img/home-bg-img-1.png';
-import img2 from '../Library/img/home-bg-img-2.png';
-import img3 from '../Library/img/home-bg-img-3.png';
-import img4 from '../Library/img/home-bg-canvas.png';
+import img1 from '../Library/img/home-bg-img-1.webp';
+import img2 from '../Library/img/home-bg-img-2.webp';
+import img3 from '../Library/img/home-bg-img-3.webp';
+import img4 from '../Library/img/home-bg-canvas.webp';
 import logo from '../Library/img/logo-stroke.svg';
 import VerticalSlider from './VerticalSlider';
 import HorizontalSlider from './HorizontalSlider';
