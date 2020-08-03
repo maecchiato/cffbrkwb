@@ -146,32 +146,38 @@ html {
 /* Font Faces */
 @font-face {
   font-family: Barlow-ExtraBold;
-  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
+  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Bold;
-  src: url(Library/fonts/Barlow/Barlow-Bold.ttf)
+  src: url(Library/fonts/Barlow/Barlow-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Regular;
   src: url(Library/fonts/Barlow/Barlow-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Thin;
   src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Black;
   src: url(Library/fonts/Barlow/Barlow-Black.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Underland;
   src: url(Library/fonts/Underland-Alternative.otf);
+  font-display: swap;
 }
 
 
