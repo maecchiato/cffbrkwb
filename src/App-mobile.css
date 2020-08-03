@@ -265,7 +265,7 @@
 
     .down-button {
         right: -50%;
-        bottom: -95%;
+        bottom: -40rem;
         transform: translateX(-25%) rotate(90deg) ;
     }
 

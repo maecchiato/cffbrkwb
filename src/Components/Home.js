@@ -67,8 +67,8 @@ class Home extends React.Component {
       <div className="home-section">
         <div className="upper-section">
           <div className="bg-img-container">
-            <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.png")} />
-            <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
+            <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.webp")} />
+            <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.webp")}/>
           </div>
           <div className="row h-100 w-100">
             <div className="upper-section-left w-100 h-100 col-md-3 col-0">

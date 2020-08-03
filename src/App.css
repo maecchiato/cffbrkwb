@@ -493,7 +493,7 @@ html {
   position: relative;
   /* top: 80%;
   left: 80%; */
-  bottom: -85%;
+  bottom: -33rem;
   right: -85%;
   background: url('Library/img/next-button.png') no-repeat center center / 2rem;
   width: 4rem;
