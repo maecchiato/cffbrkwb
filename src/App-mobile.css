@@ -336,7 +336,8 @@
 
     .about-lower-section {
         position: relative;
-        padding-top: 5rem;
+        padding: 0rem;
+        padding-top: 10rem;
         padding-bottom: 3rem;
     }
 
