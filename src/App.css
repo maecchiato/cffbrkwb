@@ -497,11 +497,9 @@ html {
 .down-button {
   transform: rotate(90deg);
   position: relative;
-  /* top: 80%;
-  left: 80%; */
-  bottom: -33rem;
+  margin-top: 85%;
   right: -85%;
-  background: url('Library/img/next-button.png') no-repeat center center / 2rem;
+  background: url('Library/img/next-button.png') no-repeat center center / 3rem;
   width: 4rem;
   height: 6rem;
   cursor: pointer;

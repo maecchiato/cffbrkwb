@@ -264,8 +264,10 @@
 
 
     .down-button {
+        /* position: absolute; */
         right: -50%;
-        bottom: -40rem;
+        margin-top: 170%;
+        background-size: 2.5rem;
         transform: translateX(-25%) rotate(90deg) ;
     }
 
@@ -336,7 +338,7 @@
 
     .about-lower-section {
         position: relative;
-        padding: 0rem;
+        padding: .5rem;
         padding-top: 10rem;
         padding-bottom: 3rem;
     }
@@ -542,6 +544,10 @@
 
     .toggle-navigation-wrapper .bm-menu{
         padding-top: 1rem;
+    }
+
+    .down-button {
+        margin-top: 165%;
     }
 
     .footnote {
