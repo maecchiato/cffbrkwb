@@ -7,10 +7,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
-import img1 from '../Library/img/home-bg-img-1.webp';
-import img2 from '../Library/img/home-bg-img-2.webp';
-import img3 from '../Library/img/home-bg-img-3.webp';
-import img4 from '../Library/img/home-bg-canvas.webp';
+import img1 from '../Library/img/home-bg-img-1.png';
+import img2 from '../Library/img/home-bg-img-2.png';
+import img3 from '../Library/img/home-bg-img-3.png';
 import logo from '../Library/img/logo-stroke.svg';
 import VerticalSlider from './VerticalSlider';
 import HorizontalSlider from './HorizontalSlider';
@@ -67,8 +66,13 @@ class Home extends React.Component {
       <div className="home-section">
         <div className="upper-section">
           <div className="bg-img-container">
-            <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas.webp")} />
-            <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.webp")}/>
+            <img className="home-bg-img-canvas kenburns-top" 
+              src={require("../Library/img/home-bg-canvas-small.png")} 
+              srcset={require("../Library/img/home-bg-canvas-small.png") + " 500w, " +
+                require("../Library/img/home-bg-canvas.webp") + " 768w"}
+                sizes="(min-width: 768) 720px, 100vw"
+              />
+            <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
           </div>
           <div className="row h-100 w-100">
             <div className="upper-section-left w-100 h-100 col-md-3 col-0">
