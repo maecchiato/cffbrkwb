@@ -5,7 +5,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Navigation from './Components/Navigation.js';
 import ToggleNavigation from './Components/ToggleNavigation.js';
-import Footer from './Components/Footer.js';
+// import Footer from './Components/Footer.js';
 import Home from './Components/Home.js';
 import About from './Components/About.js';
 import Menu from './Components/Menu.js';

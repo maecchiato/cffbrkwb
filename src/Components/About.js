@@ -28,12 +28,12 @@ class About extends React.Component {
             <div id="title-header-left" className="h3-underland text-right mr-md-5 mr-3 align-middle flex-fill">Our Coffee Story</div>
             <div id="title-header-right" className="text-left flex-fill">THE BEGINNING OF COFFEE <br/> TRADITION AND HERITAGE</div>
           </div>
-          <img className="about-timeline-img" src={require("../Library/img/timeline.svg")} />
-          <img className="about-timeline-img-mobile" src={require("../Library/img/timeline-mobile.svg")} />
+          <img className="about-timeline-img" src={require("../Library/img/timeline.svg")} alt=""/>
+          <img className="about-timeline-img-mobile" src={require("../Library/img/timeline-mobile.svg")}  alt=""/>
         </div>
 
         <div className="about-lower-section d-flex flex-md-row flex-column">
-          <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")} />
+          <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}  alt=""/>
           <div className="about-lower-left text-center d-flex flex-column flex-fill">
             <div className="about-lower-left-title">
               Our Core Vision
@@ -55,10 +55,10 @@ class About extends React.Component {
             Coffeebreak Café International, Inc. commits to do the following mission:
             </div>
             <div className="about-lower-right-cards">
-              <img src={require("../Library/img/about-card-1.webp")}/>
-              <img src={require("../Library/img/about-card-2.webp")}/>
-              <img src={require("../Library/img/about-card-3.webp")}/>
-              <img src={require("../Library/img/about-card-4.webp")}/>
+              <img src={require("../Library/img/about-card-1.webp")} alt=""/>
+              <img src={require("../Library/img/about-card-2.webp")} alt=""/>
+              <img src={require("../Library/img/about-card-3.webp")} alt=""/>
+              <img src={require("../Library/img/about-card-4.webp")} alt=""/>
             </div>
           </div>
         </div>

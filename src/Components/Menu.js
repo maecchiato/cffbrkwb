@@ -1,11 +1,11 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import '../App.css';
 import '../App-mobile.css';
 
 // attempt-f
 import PropTypes from 'prop-types';
 
-import placeholder from "../Library/img/transparent_placeholder.png'"
+// import placeholder from "../Library/img/transparent_placeholder.png'"
 
 import b_c_img1 from "../Library/img/menu/blends/coffee/capp.webp";
 import b_c_img2 from "../Library/img/menu/blends/coffee/cppucino.webp";

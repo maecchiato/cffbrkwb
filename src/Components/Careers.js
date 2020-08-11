@@ -52,24 +52,24 @@ class Careers extends React.Component{
           
               <Slider {...settings}>
                 <div className="careers-slider-content row">
-                    <img src={img1} />
+                    <img src={img1} alt=""/>
                 </div>
                 <div className="careers-slider-content row">
-                  <img className="careers-img" src={img2}/>
+                  <img className="careers-img" src={img2} alt=""/>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img className="careers-img" src={img3}/>
+                    <img className="careers-img" src={img3} alt=""/>
                   </div>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img className="careers-img" src={img4}/>
+                    <img className="careers-img" src={img4} alt=""/>
                   </div>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img className="careers-img" src={img5}/>
+                    <img className="careers-img" src={img5} alt=""/>
                   </div>
                 </div>
                 </Slider>

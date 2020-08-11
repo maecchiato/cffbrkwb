@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Youtube from 'react-youtube';
 
-import awardsimg from '../Library/img/awards.png';
 import YouTube from 'react-youtube';
 
 class Partners extends React.Component {

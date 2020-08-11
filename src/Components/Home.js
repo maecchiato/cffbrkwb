@@ -66,13 +66,14 @@ class Home extends React.Component {
       <div className="home-section">
         <div className="upper-section">
           <div className="bg-img-container">
-            <img className="home-bg-img-canvas kenburns-top" 
-              src={require("../Library/img/home-bg-canvas-small.png")} 
-              srcset={require("../Library/img/home-bg-canvas-small.png") + " 500w, " +
-                require("../Library/img/home-bg-canvas.webp") + " 768w"}
-                sizes="(min-width: 768) 720px, 100vw"
-              />
-            <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}/>
+            <picture>
+              <source className="home-bg-img-canvas kenburns-top" srcSet={require("../Library/img/home-bg-canvas.webp")} media="(min-width: 768px)" />
+              <img className="home-bg-img-canvas kenburns-top" src={require("../Library/img/home-bg-canvas-small.png")} alt=""/>
+            </picture>
+            <picture>
+              <source className="home-bg-img-coffeebean" srcSet={require("../Library/img/home-bg-coffeebean.png")}/>
+              <img className="home-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.webp")} media="(min-width: 768px)" alt=""/>
+            </picture>
           </div>
           <div className="row h-100 w-100">
             <div className="upper-section-left w-100 h-100 col-md-3 col-0">
@@ -80,7 +81,7 @@ class Home extends React.Component {
             </div>
             <div className="upper-section-right d-flex justify-content-md-start justify-content-xs-center text-md-left text-xs-center h-100 offset-md-2 col-md-7 col-xs-12">
               <div className ="home-intro pr-xs-5 pr-md-0">
-                <img className="home-img-logo" src={logo}/>
+                <img className="home-img-logo" src={logo} alt=""/>
                 <div className="home-intro-sub">
                   <div className="h2-barlow sec-title-white">TOTALLY HOMEGROWN</div>
                   <div className="h3-underland sec-title-gold">Definitely World-Class</div>
@@ -92,7 +93,7 @@ class Home extends React.Component {
                 <HorizontalSlider/>
               </div>
               
-              <a class="down-button" href="#lower-section"></a>
+              <a className="down-button" href="#lower-section"></a>
             </div>
           </div>
         </div>

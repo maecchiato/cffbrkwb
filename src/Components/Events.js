@@ -57,8 +57,6 @@ import cbmc_1 from "../Library/img/Events/CB Music Cafe/IMG_9574.webp";
 import cbmc_2 from "../Library/img/Events/CB Music Cafe/IMG_9580.webp";
 import cbmc_3 from "../Library/img/Events/CB Music Cafe/IMG_9581.webp";
 
-const slidesToShowOnDesktop = window.matchMedia('(min-width: 376px)')
-const slidesToShowOnMobile = window.matchMedia('(max-width: 375px)');
 class Events extends React.Component {
 
     render(){
@@ -93,37 +91,37 @@ class Events extends React.Component {
                 <div className="d-flex pt-4 w-75">
                   <Slider {...settings}>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_1}/>
+                      <img className="events-img" src={cd_1} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_2}/>
+                      <img className="events-img" src={cd_2} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_3}/>
+                      <img className="events-img" src={cd_3} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_4}/>
+                      <img className="events-img" src={cd_4} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_5}/>
+                      <img className="events-img" src={cd_5} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_6}/>
+                      <img className="events-img" src={cd_6} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_7}/>
+                      <img className="events-img" src={cd_7} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_8}/>
+                      <img className="events-img" src={cd_8} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_9}/>
+                      <img className="events-img" src={cd_9} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_10}/>
+                      <img className="events-img" src={cd_10} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={cd_11}/>
+                      <img className="events-img" src={cd_11} alt=""/>
                     </div>
                   </Slider>
                 </div>      
@@ -139,40 +137,40 @@ class Events extends React.Component {
                 <div className="d-flex pt-4 w-75">
                   <Slider {...settings}>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_1}/>
+                      <img className="events-img" src={gla_1} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_2}/>
+                      <img className="events-img" src={gla_2} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_3}/>
+                      <img className="events-img" src={gla_3} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_4}/>
+                      <img className="events-img" src={gla_4} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_5}/>
+                      <img className="events-img" src={gla_5} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_6}/>
+                      <img className="events-img" src={gla_6} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_7}/>
+                      <img className="events-img" src={gla_7} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_8}/>
+                      <img className="events-img" src={gla_8} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_9}/>
+                      <img className="events-img" src={gla_9} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_10}/>
+                      <img className="events-img" src={gla_10} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_11}/>
+                      <img className="events-img" src={gla_11} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={gla_12}/>
+                      <img className="events-img" src={gla_12} alt=""/>
                     </div>
                   </Slider>
                 </div>      
@@ -188,28 +186,28 @@ class Events extends React.Component {
                 <div className="d-flex pt-4 w-75">
                   <Slider {...settings}>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_1}/>
+                      <img className="events-img" src={sd_18_1} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_2}/>
+                      <img className="events-img" src={sd_18_2} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_3}/>
+                      <img className="events-img" src={sd_18_3} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_4}/>
+                      <img className="events-img" src={sd_18_4} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_5}/>
+                      <img className="events-img" src={sd_18_5} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_6}/>
+                      <img className="events-img" src={sd_18_6} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_7}/>
+                      <img className="events-img" src={sd_18_7} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_18_8}/>
+                      <img className="events-img" src={sd_18_8} alt=""/>
                     </div>
                   </Slider>
                 </div>      
@@ -225,22 +223,22 @@ class Events extends React.Component {
                 <div className="d-flex pt-4 w-75">
                   <Slider {...settings}>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_19_1}/>
+                      <img className="events-img" src={sd_19_1} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_19_2}/>
+                      <img className="events-img" src={sd_19_2} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_19_3}/>
+                      <img className="events-img" src={sd_19_3} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_19_4}/>
+                      <img className="events-img" src={sd_19_4} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_19_5}/>
+                      <img className="events-img" src={sd_19_5} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={sd_19_6}/>
+                      <img className="events-img" src={sd_19_6} alt=""/>
                     </div>
                   </Slider>
                 </div>      
@@ -256,22 +254,22 @@ class Events extends React.Component {
                 <div className="d-flex pt-4 w-75">
                   <Slider {...settings}>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={icd_1}/>
+                      <img className="events-img" src={icd_1} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={icd_2}/>
+                      <img className="events-img" src={icd_2} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={icd_3}/>
+                      <img className="events-img" src={icd_3} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={icd_4}/>
+                      <img className="events-img" src={icd_4} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={icd_5}/>
+                      <img className="events-img" src={icd_5} alt=""/>
                     </div>
                     <div className="events-slider-content row">
-                      <img className="events-img" src={icd_6}/>
+                      <img className="events-img" src={icd_6} alt=""/>
                     </div>
                   </Slider>
                 </div>      
@@ -287,13 +285,13 @@ class Events extends React.Component {
               <div className="d-flex pt-4 w-75">
                 <Slider {...settings}>
                   <div className="events-slider-content row">
-                    <img loading="lazy" className="events-img" src={cbmc_1}/>
+                    <img loading="lazy" className="events-img" src={cbmc_1} alt=""/>
                   </div>
                   <div className="events-slider-content row">
-                    <img loading="lazy" className="events-img" src={cbmc_2}/>
+                    <img loading="lazy" className="events-img" src={cbmc_2} alt=""/>
                   </div>
                   <div className="events-slider-content row">
-                    <img loading="lazy" className="events-img" src={cbmc_3}/>
+                    <img loading="lazy" className="events-img" src={cbmc_3} alt=""/>
                   </div>
                 </Slider>
               </div>      
