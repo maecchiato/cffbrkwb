@@ -678,11 +678,11 @@ html {
 }
 
 .about-bg-img-coffeebean {
-  height: 120%;
-  width: 35%;
   position: absolute;
-  left: -6%;
-  z-index: 0;
+  height: 80%;
+  width: 25%;
+  bottom: 0%;
+  left: 0%;
 }
 
 
@@ -816,7 +816,7 @@ html {
 .ReactGridGallery {
   position: relative;
   width: 70%;
-  max-height: 70%;
+  max-height: 80%;
   top: 10rem;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -930,10 +930,14 @@ html {
   width: 50%;
 }
 
-.lower-section-right{
+.partners-lower-section-right{
   margin-top: 2%;
-  width: 50%;
+  width: 70%;
 
+}
+
+.partners-lower-section-text {
+  width: 75%;
 }
 
 
@@ -1455,5 +1459,3 @@ justify-content: center;
 .img-ads{
   background-color: aquamarine;
 }
-
-

@@ -433,13 +433,17 @@
 
     .partners-lower-section {
         position: relative;
-        padding: 7rem 0rem 3rem;
+        padding: 10rem 0rem 3rem;
     }
 
-    .lower-section-right {
+    .partners-lower-section-right {
         height: 50%;
         padding-left: 13% !important;
         margin-bottom: 3rem;
+    }
+
+    .partners-lower-section-text {
+        width: 85%;
     }
 
 
@@ -549,7 +553,7 @@
 
     /* ============== ABOUT ============== */
     .about-section {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: 300%;
     }
 

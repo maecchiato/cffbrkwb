@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import '../App.css';
 import '../App-mobile.css';
 import '../App-ipad.css';
