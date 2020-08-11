@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import '../App-mobile.css';
 
-// attempt-f
 import PropTypes from 'prop-types';
 
 // import placeholder from "../Library/img/transparent_placeholder.png'"
@@ -43,10 +42,6 @@ import p_set_img9 from "../Library/img/menu/set/IMG_9914.webp"
 import p_set_img10 from "../Library/img/menu/set/IMG_9865.webp"
 
 
-
-
-
-// attempt-g
 import Gallery from 'react-grid-gallery';
 
 
@@ -55,13 +50,11 @@ class Menu extends React.Component {
     super(props);
     this.state = {
       index: 0
-      // attempt-a
       ,images: this.props.blends
     };
   }
 
 
-  // attempt-b
   setCustomTags (i) {
     return (
       i.tags.map((t) => {
@@ -70,14 +63,13 @@ class Menu extends React.Component {
           style={customTagStyle}>
           {t.title}
           </div>);
-        })
-      );
-    }
+      })
+    );
+  }
 
 
   render () {
 
-    // attempt-h
     var images =
     this.state.images.map((i) => {
       i.customOverlay = (
@@ -110,7 +102,6 @@ class Menu extends React.Component {
           </button>
         </div>
 
-        {/* attempt-c */}
         {/* amo ni ang link: https://github.com/benhowell/react-grid-gallery/blob/master/examples/demo4.js#L136 */}
         <Gallery images={this.state.images} enableLightbox={false} enableImageSelection={false} />
       </div>
@@ -118,7 +109,6 @@ class Menu extends React.Component {
   }
 }
 
-// attempt-e
 Menu.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
@@ -391,4 +381,3 @@ Menu.defaultProps = {
 
 
 export default Menu;
-

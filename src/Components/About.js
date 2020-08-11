@@ -33,7 +33,7 @@ class About extends React.Component {
         </div>
 
         <div className="about-lower-section d-flex flex-md-row flex-column">
-          <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean.png")}  alt=""/>
+          <img className="about-bg-img-coffeebean" src={require("../Library/img/home-bg-coffeebean-left.png")}  alt=""/>
           <div className="about-lower-left text-center d-flex flex-column flex-fill">
             <div className="about-lower-left-title">
               Our Core Vision

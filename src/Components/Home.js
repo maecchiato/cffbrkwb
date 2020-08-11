@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import '../App.css';
 import '../App-mobile.css';
 import '../App-ipad.css';
@@ -59,7 +60,6 @@ class Home extends React.Component {
       slidesToScroll: 1,
       dots: false,
       vertical: true
-      // variableWidth: true
     }
     return(
 

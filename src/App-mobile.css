@@ -149,11 +149,6 @@
         background: rgba(108, 108, 108, 0.4)
     }
     
-    /* Color/shape of burger icon bars on hover*/
-    .bm-burger-bars-hover {
-        /* background: #a90000; */
-        
-    }
     
     /* Position and sizing of clickable cross button */
     .bm-cross-button {
@@ -304,8 +299,7 @@
 
     /* =========== ABOUT ============ */
     .about-section {
-        overflow: auto;
-        /* height: auto; */
+        /* overflow: auto; */
     }
 
     .about-upper-section {
@@ -349,7 +343,8 @@
 
    .about-bg-img-coffeebean {
        width: 80%;
-       height: 70%;
+       max-height: 70%;
+       bottom: 0%;
    }
 
    .about-lower-left {
@@ -499,12 +494,6 @@
         margin-bottom: 2rem;
         padding-bottom: 2rem;
     }
-    .careers-q-mt {
-    }
-
-    .careers-q-dp {
-    }
-
 
 
 
@@ -560,7 +549,7 @@
 
     /* ============== ABOUT ============== */
     .about-section {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         height: 300%;
     }
 

@@ -613,10 +613,10 @@ html {
 
 .about-section {
   width: 100%;
-  height: 220vh;
+  min-height: 200vh;
 
   background-color: var(--gray-black);
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .about-section > div {
@@ -1113,6 +1113,7 @@ html {
   display: inline-block;
   margin: 10px;
   -webkit-perspective: 600px;
+  perspective: 600px;
 }
 
 #careers-section .front,#careers-section .back {
@@ -1120,6 +1121,8 @@ html {
   transition: -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 #careers-section .front {
@@ -1139,6 +1142,7 @@ html {
   width: 250px;
   height: 300px;
   -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   overflow: scroll;
 }
 
@@ -1158,10 +1162,12 @@ html {
 
 #careers-section .info-card:hover .back {
   -webkit-transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 #careers-section .info-card:hover .front {
   -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 
