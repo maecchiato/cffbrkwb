@@ -29,28 +29,28 @@ class HorizontalSlider extends React.Component {
                 <div className="home-ads">
                   <a href="https://www.facebook.com/110830887284535" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img1}/>
+                        <img src={img1}  alt=""/>
                     </div>
                   </a>
                 </div>
                 <div className="home-ads">
                   <a href="https://www.facebook.com/10158429264610956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img2}/>
+                        <img src={img2}  alt=""/>
                     </div>
                   </a>
                 </div>
                 <div className="home-ads">
                   <a href="https://www.facebook.com/10158368766375956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img3}/>
+                        <img src={img3} alt=""/>
                     </div>
                   </a>
                 </div>
                 <div className="home-ads">
                   <a href="https://www.facebook.com/10158386889185956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img4}/>
+                        <img src={img4} alt=""/>
                     </div>
                   </a>
                 </div>

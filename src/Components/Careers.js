@@ -1,33 +1,21 @@
 import React from 'react';
 import Slider from 'react-slick';
-import ReactDOM from 'react-dom';
 import '../App.css';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img_mt from '../Library/img/card/q-bg-mt.svg';
-import img_dp from '../Library/img/card/q-bg-dp.svg';
-import events3 from '../Library/img/careers/avatar-03.png';
-import events4 from '../Library/img/careers/avatar-03.png';
-import events5 from '../Library/img/careers/avatar-03.png';
-import cbDP from '../Library/img/careers/avatar-06.png';
+// import img1 from '../Library/img/careers-carousel/careers_carousel-1.JPG';
+// import img2 from '../Library/img/careers-carousel/careers_carousel-2.JPG';
+// import img3 from '../Library/img/careers-carousel/careers_carousel-3.JPG';
+// import img4 from '../Library/img/careers-carousel/careers_carousel-4.JPG';
+// import img5 from '../Library/img/careers-carousel/careers_carousel-5.JPG';
 
-import img1 from '../Library/img/careers-carousel/careers_carousel-1.JPG';
-import img2 from '../Library/img/careers-carousel/careers_carousel-2.JPG';
-import img3 from '../Library/img/careers-carousel/careers_carousel-3.JPG';
-import img4 from '../Library/img/careers-carousel/careers_carousel-4.JPG';
-import img5 from '../Library/img/careers-carousel/careers_carousel-5.JPG';
-const content = [
-  {
-    date: "March 15, 2020",
-    image: img1
-  },
-  {
-    date: "April 14, 2020",
-    image: img2
-  }
-]
+import img1 from '../Library/img/careers-carousel/careers_carousel-1.webp';
+import img2 from '../Library/img/careers-carousel/careers_carousel-2.webp';
+import img3 from '../Library/img/careers-carousel/careers_carousel-3.webp';
+import img4 from '../Library/img/careers-carousel/careers_carousel-4.webp';
+import img5 from '../Library/img/careers-carousel/careers_carousel-5.webp';
 
 class Careers extends React.Component{
   render() {
@@ -64,24 +52,24 @@ class Careers extends React.Component{
           
               <Slider {...settings}>
                 <div className="careers-slider-content row">
-                    <img src={img1}/>
+                    <img src={img1} alt=""/>
                 </div>
                 <div className="careers-slider-content row">
-                  <img className="careers-img" src={img2}/>
+                  <img className="careers-img" src={img2} alt=""/>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img className="careers-img" src={img3}/>
+                    <img className="careers-img" src={img3} alt=""/>
                   </div>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img className="careers-img" src={img4}/>
+                    <img className="careers-img" src={img4} alt=""/>
                   </div>
                 </div>
                 <div className="careers-slider-content row">
                   <div className="">
-                    <img className="careers-img" src={img5}/>
+                    <img className="careers-img" src={img5} alt=""/>
                   </div>
                 </div>
                 </Slider>

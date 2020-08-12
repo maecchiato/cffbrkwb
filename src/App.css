@@ -146,32 +146,38 @@ html {
 /* Font Faces */
 @font-face {
   font-family: Barlow-ExtraBold;
-  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf)
+  src: url(Library/fonts/Barlow/Barlow-ExtraBold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Bold;
-  src: url(Library/fonts/Barlow/Barlow-Bold.ttf)
+  src: url(Library/fonts/Barlow/Barlow-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Regular;
   src: url(Library/fonts/Barlow/Barlow-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Thin;
   src: url(Library/fonts/Barlow/Barlow-Thin.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Barlow-Black;
   src: url(Library/fonts/Barlow/Barlow-Black.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Underland;
   src: url(Library/fonts/Underland-Alternative.otf);
+  font-display: swap;
 }
 
 
@@ -491,11 +497,9 @@ html {
 .down-button {
   transform: rotate(90deg);
   position: relative;
-  /* top: 80%;
-  left: 80%; */
-  bottom: -85%;
+  margin-top: 85%;
   right: -85%;
-  background: url('Library/img/next-button.png') no-repeat center center / 2rem;
+  background: url('Library/img/next-button.png') no-repeat center center / 3rem;
   width: 4rem;
   height: 6rem;
   cursor: pointer;
@@ -609,10 +613,10 @@ html {
 
 .about-section {
   width: 100%;
-  height: 200vh;
+  min-height: 200vh;
 
   background-color: var(--gray-black);
-  overflow: hidden;
+  /* overflow-y: hidden; */
 }
 
 .about-section > div {
@@ -657,6 +661,7 @@ html {
 }
 
 .about-timeline-img {
+  padding-top: 3rem;
   position: relative;
   top: 3rem;
 }
@@ -668,16 +673,15 @@ html {
 
 .about-lower-section {
   background: #33333300;
-  overflow: hidden;
-  top: 5rem;
+  padding: 10rem 0% 5% 7%;
 }
 
 .about-bg-img-coffeebean {
-  height: 120%;
-  width: 35%;
   position: absolute;
-  left: -6%;
-  z-index: 0;
+  height: 80%;
+  width: 25%;
+  bottom: 0%;
+  left: 0%;
 }
 
 
@@ -747,7 +751,7 @@ html {
 
 .menu-section {
   width: 100%;
-  height: 150%;
+  height: 140%;
   background-color: var(--gray-black);
 
   background: var(--gray-black) url("Library//img/menu-bg-img.png") no-repeat center / cover ;
@@ -811,7 +815,7 @@ html {
 .ReactGridGallery {
   position: relative;
   width: 70%;
-  max-height: 70%;
+  max-height: 80%;
   top: 10rem;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -914,7 +918,7 @@ html {
 .partners-lower-section{
   position: relative;
   display: flex;
-  padding: 5% 0 8% 0;
+  padding: 5% 0 8% 5%;
   width: 100%;
   height: 40%;
   /* background-color: blueviolet; */
@@ -925,10 +929,14 @@ html {
   width: 50%;
 }
 
-.lower-section-right{
+.partners-lower-section-right{
   margin-top: 2%;
-  width: 50%;
+  width: 70%;
 
+}
+
+.partners-lower-section-text {
+  width: 75%;
 }
 
 
@@ -1108,6 +1116,7 @@ html {
   display: inline-block;
   margin: 10px;
   -webkit-perspective: 600px;
+  perspective: 600px;
 }
 
 #careers-section .front,#careers-section .back {
@@ -1115,6 +1124,8 @@ html {
   transition: -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 #careers-section .front {
@@ -1134,6 +1145,7 @@ html {
   width: 250px;
   height: 300px;
   -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   overflow: scroll;
 }
 
@@ -1153,10 +1165,12 @@ html {
 
 #careers-section .info-card:hover .back {
   -webkit-transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 #careers-section .info-card:hover .front {
   -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 
@@ -1444,5 +1458,3 @@ justify-content: center;
 .img-ads{
   background-color: aquamarine;
 }
-
-

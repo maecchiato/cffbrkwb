@@ -5,10 +5,10 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from '../Library/img/home-ads/home-ads-1.jpg';
-import img2 from '../Library/img/home-ads/home-ads-2.jpg';
-import img3 from '../Library/img/home-ads/home-ads-3.jpg';
-import img4 from '../Library/img/home-ads/home-ads-4.jpg';
+import img1 from '../Library/img/home-ads/home-ads-1.webp';
+import img2 from '../Library/img/home-ads/home-ads-2.webp';
+import img3 from '../Library/img/home-ads/home-ads-3.webp';
+import img4 from '../Library/img/home-ads/home-ads-4.webp';
 
 class VerticalSlider extends React.Component {
     render() {
@@ -33,28 +33,28 @@ class VerticalSlider extends React.Component {
                 <div className="home-ads">
                   <a href="https://www.facebook.com/110830887284535" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img1}/>
+                        <img src={img1} alt="" />
                     </div>
                   </a>
                 </div>
                 <div className="home-ads">
                   <a href="https://www.facebook.com/10158429264610956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img2}/>
+                        <img src={img2} alt=""/>
                     </div>
                   </a>
                 </div>
                 <div className="home-ads">
                   <a href="https://www.facebook.com/10158368766375956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img3}/>
+                        <img src={img3} alt=""/>
                     </div>
                   </a>
                 </div>
                 <div className="home-ads">
                   <a href="https://www.facebook.com/10158386889185956" target="_blank" rel=" noreferrer noopener">
                     <div className="">
-                        <img src={img4}/>
+                        <img src={img4} alt=""/>
                     </div>
                   </a>
                 </div>

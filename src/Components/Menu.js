@@ -2,64 +2,47 @@ import React from 'react';
 import '../App.css';
 import '../App-mobile.css';
 
-// attempt-f
 import PropTypes from 'prop-types';
 
-import placeholder from "../Library/img/transparent_placeholder.png'"
+// import placeholder from "../Library/img/transparent_placeholder.png'"
 
-import b_c_img1 from "../Library/img/menu/blends/coffee/capp.jpg";
-import b_c_img2 from "../Library/img/menu/blends/coffee/cppucino.jpg";
-import b_f_img3 from "../Library/img/menu/blends/frappe/caramel-mac.jpg";
-import b_f_img4 from "../Library/img/menu/blends/frappe/Espresso Crumble.jpg";
-import b_f_img5 from "../Library/img/menu/blends/frappe/iriah-creme.jpg";
-import b_f_img6 from "../Library/img/menu/blends/frappe/mocha.jpg";
-import b_f_img7 from "../Library/img/menu/blends/frappe/white-mocha.jpg";
-import b_m_img8 from "../Library/img/menu/blends/matcha/almond.jpg";
-import b_m_img9 from "../Library/img/menu/blends/matcha/frappe.jpg";
-import b_m_img10 from "../Library/img/menu/blends/matcha/latte.jpg";
-import b_mt_img11 from "../Library/img/menu/blends/milktea/matcha.jpg";
-import b_mt_img12 from "../Library/img/menu/blends/milktea/taro.jpg";
-import b_mt_img13 from "../Library/img/menu/blends/milktea/Wintermelon.jpg";
-import b_s_img14 from "../Library/img/menu/blends/smoothies/Strawberry.jpg";
-import b_s_img15 from "../Library/img/menu/blends/smoothies/banana.jpg";
-import b_set_img16 from "../Library/img/menu/set/americano.jpg";
-import b_set_img17 from "../Library/img/menu/set/caramel with hand.jpg";
-import b_set_img18 from "../Library/img/menu/set/Iced Latte.jpg";
+import b_c_img1 from "../Library/img/menu/blends/coffee/capp.webp";
+import b_c_img2 from "../Library/img/menu/blends/coffee/cppucino.webp";
+import b_f_img3 from "../Library/img/menu/blends/frappe/caramel-mac.webp";
+import b_f_img4 from "../Library/img/menu/blends/frappe/Espresso Crumble.webp";
+import b_f_img5 from "../Library/img/menu/blends/frappe/iriah-creme.webp";
+import b_f_img6 from "../Library/img/menu/blends/frappe/mocha.webp";
+import b_f_img7 from "../Library/img/menu/blends/frappe/white-mocha.webp";
+import b_m_img8 from "../Library/img/menu/blends/matcha/almond.webp";
+import b_m_img9 from "../Library/img/menu/blends/matcha/frappe.webp";
+import b_m_img10 from "../Library/img/menu/blends/matcha/latte.webp";
+import b_mt_img11 from "../Library/img/menu/blends/milktea/matcha.webp";
+import b_mt_img12 from "../Library/img/menu/blends/milktea/taro.webp";
+import b_mt_img13 from "../Library/img/menu/blends/milktea/Wintermelon.webp";
+import b_s_img14 from "../Library/img/menu/blends/smoothies/Strawberry.webp";
+import b_s_img15 from "../Library/img/menu/blends/smoothies/banana.webp";
 
 
-import c_img1 from "../Library/img/menu/cakes/cake/blueberry.jpg"
-import c_img2 from "../Library/img/menu/cakes/cake/BTS.jpg"
-import c_img3 from "../Library/img/menu/cakes/cake/caramel.jpg"
-import c_img4 from "../Library/img/menu/cakes/cake/Kitkat.jpg"
-import c_img5 from "../Library/img/menu/cakes/cake/red-velvet.jpg"
-import c_set_img6 from "../Library/img/menu/set/IMG_9960.JPG"
-import c_set_img7 from "../Library/img/menu/set/IMG_9968.JPG"
+import c_img1 from "../Library/img/menu/cakes/cake/blueberry.webp"
+import c_img2 from "../Library/img/menu/cakes/cake/BTS.webp"
+import c_img3 from "../Library/img/menu/cakes/cake/caramel.webp"
+import c_img4 from "../Library/img/menu/cakes/cake/Kitkat.webp"
+import c_img5 from "../Library/img/menu/cakes/cake/red-velvet.webp"
 
 
-
-import p_m_img1 from "../Library/img/menu/pastries/muffins/blueberry.jpg"
-import p_m_img2 from "../Library/img/menu/pastries/muffins/carrot.jpg"
-import p_m_img3 from "../Library/img/menu/pastries/muffins/choco banana.jpg"
-import p_c_img4 from "../Library/img/menu/pastries/cookies/chocolate chip cookie.jpg"
-import p_c_img5 from "../Library/img/menu/pastries/cookies/oatmeal raisin cookie.jpg"
-import p_set_img6 from "../Library/img/menu/set/IMG_0345.JPG"
-import p_set_img7 from "../Library/img/menu/set/IMG_0365.JPG"
-import p_set_img8 from "../Library/img/menu/set/IMG_9855.JPG"
-import p_set_img9 from "../Library/img/menu/set/IMG_9914.JPG"
-import p_set_img10 from "../Library/img/menu/set/IMG_9865.JPG"
-
+import p_m_img1 from "../Library/img/menu/pastries/muffins/blueberry.webp"
+import p_m_img2 from "../Library/img/menu/pastries/muffins/carrot.webp"
+import p_m_img3 from "../Library/img/menu/pastries/muffins/choco banana.webp"
+import p_c_img4 from "../Library/img/menu/pastries/cookies/chocolate chip cookie.webp"
+import p_c_img5 from "../Library/img/menu/pastries/cookies/oatmeal raisin cookie.webp"
+import p_set_img6 from "../Library/img/menu/set/IMG_0345.webp"
+import p_set_img7 from "../Library/img/menu/set/IMG_0365.webp"
+import p_set_img8 from "../Library/img/menu/set/IMG_9855.webp"
+import p_set_img9 from "../Library/img/menu/set/IMG_9914.webp"
+import p_set_img10 from "../Library/img/menu/set/IMG_9865.webp"
 
 
-
-
-// attempt-g
 import Gallery from 'react-grid-gallery';
-
-
-function changeGallery (i) {
-  return 
-}
-
 
 
 class Menu extends React.Component {
@@ -67,12 +50,11 @@ class Menu extends React.Component {
     super(props);
     this.state = {
       index: 0
-      // attempt-a
       ,images: this.props.blends
     };
   }
 
-  // attempt-b
+
   setCustomTags (i) {
     return (
       i.tags.map((t) => {
@@ -81,14 +63,13 @@ class Menu extends React.Component {
           style={customTagStyle}>
           {t.title}
           </div>);
-        })
-      );
-    }
+      })
+    );
+  }
 
 
   render () {
 
-    // attempt-h
     var images =
     this.state.images.map((i) => {
       i.customOverlay = (
@@ -121,15 +102,13 @@ class Menu extends React.Component {
           </button>
         </div>
 
-        {/* attempt-c */}
         {/* amo ni ang link: https://github.com/benhowell/react-grid-gallery/blob/master/examples/demo4.js#L136 */}
-        <Gallery images={this.state.images} enableImageSelection={false} enableLightbox={false} rowHeight={200} margin={3} />
+        <Gallery images={this.state.images} enableLightbox={false} enableImageSelection={false} />
       </div>
     )
   }
 }
 
-// attempt-e
 Menu.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
@@ -147,7 +126,7 @@ Menu.propTypes = {
 };
 
 const captionStyle = {
-  backgroundColor: "rgba(0, 0, 0, .7)",
+  backgroundColor: "rgba(173, 128, 42, 0.75)",
   width: "100%",
   height: "100%",
   overflow: "hidden",
@@ -175,6 +154,8 @@ const customTagStyle = {
   margin: "2px"
 };
 
+
+
 Menu.defaultProps = {
   // if enableLightbox is set to false, src is not needed
   blends: ([
@@ -184,20 +165,6 @@ Menu.defaultProps = {
           thumbnailWidth: 1,
           thumbnailHeight: 1,
           caption: "Cappuccino"
-      },
-      {
-          src: b_set_img16,
-          thumbnail: b_set_img16,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: "Americano"
-      },
-      {
-          src: b_set_img17,
-          thumbnail: b_set_img17,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: "Caramel"
       },
       {
           src: b_c_img2,
@@ -240,13 +207,6 @@ Menu.defaultProps = {
           thumbnailWidth: 1,
           thumbnailHeight: 1,
           caption: "White Mocha Frappe"
-      },
-      {
-          src:  b_set_img18,
-          thumbnail:  b_set_img18,
-          thumbnailWidth: 1,
-          thumbnailHeight: 1,
-          caption: "Iced Latte"
       },
       {
           src: b_m_img8,
@@ -307,13 +267,6 @@ Menu.defaultProps = {
   ]),
   cakes: ([
     {
-        src: c_set_img6,
-        thumbnail: c_set_img6,
-        thumbnailWidth: 1.5,
-        thumbnailHeight: 1,
-        caption: "",
-    },
-    {
         src: c_img1,
         thumbnail: c_img1,
         thumbnailWidth: 1,
@@ -347,13 +300,6 @@ Menu.defaultProps = {
         thumbnailWidth: 1,
         thumbnailHeight: 1,
         caption: "Red Velvet"
-    },
-    {
-        src: c_set_img7,
-        thumbnail: c_set_img7,
-        thumbnailWidth: 1.5,
-        thumbnailHeight: 1,
-        caption: "",
     }
   ]),
   pastries: ([
@@ -435,4 +381,3 @@ Menu.defaultProps = {
 
 
 export default Menu;
-

@@ -40,7 +40,7 @@ class Navigation extends React.Component {
         <div id="sidebar-wrapper">
           <div className="text-center sidebar-heading">
             <Link to = "/">
-              <img className="d-inline-block" src={require("../Library/img/logo.svg")} />  
+              <img className="d-inline-block" src={require("../Library/img/logo.svg")} alt=""/>  
             </Link>
           </div>
           <div className="ml-sm-4 list-group">
@@ -62,14 +62,14 @@ class Navigation extends React.Component {
             </div>
             <div className="body-12-caption-barlow side-title mt-4">FOLLOW US</div>
             <div className="social-media-icons mt-1">
-              <a href="https://www.facebook.com/CoffeebreakCafe/" target="_blank">
+              <a href="https://www.facebook.com/CoffeebreakCafe/" target="_blank" rel="noopener noreferrer">
                 <i className="social-media-icon fab fa-facebook-square mr-2"></i>
               </a>
-              <a href="https://www.instagram.com/coffeebreakph/" target="_blank">
+              <a href="https://www.instagram.com/coffeebreakph/" target="_blank" rel="noopener noreferrer">
                 <i className="social-media-icon fab fa-instagram mr-2"></i>
               </a>
               <a href="https://twitter.com/iamcoffeebreak">
-                <i className="social-media-icon fab fa-twitter-square" target="_blank"></i>
+                <i className="social-media-icon fab fa-twitter-square" target="_blank" rel="noopener noreferrer"></i>
               </a></div>
           </div>
             <div className="footnote-signature footnote-text mt-5" >

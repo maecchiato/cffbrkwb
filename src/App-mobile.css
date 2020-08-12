@@ -149,11 +149,6 @@
         background: rgba(108, 108, 108, 0.4)
     }
     
-    /* Color/shape of burger icon bars on hover*/
-    .bm-burger-bars-hover {
-        /* background: #a90000; */
-        
-    }
     
     /* Position and sizing of clickable cross button */
     .bm-cross-button {
@@ -212,6 +207,10 @@
         width: 100%;
     }
 
+    /* .home-bg-img-coffeebean {
+        display: none;
+    } */
+
 
     .upper-section-left {
         display: none;
@@ -264,8 +263,10 @@
 
 
     .down-button {
+        /* position: absolute; */
         right: -50%;
-        bottom: -95%;
+        margin-top: 170%;
+        background-size: 2.5rem;
         transform: translateX(-25%) rotate(90deg) ;
     }
 
@@ -298,7 +299,7 @@
 
     /* =========== ABOUT ============ */
     .about-section {
-        overflow: auto;
+        /* overflow: auto; */
     }
 
     .about-upper-section {
@@ -335,14 +336,15 @@
 
     .about-lower-section {
         position: relative;
-        padding-top: 5rem;
+        padding: .5rem;
+        padding-top: 10rem;
         padding-bottom: 3rem;
     }
 
    .about-bg-img-coffeebean {
        width: 80%;
-       height: 70%;
-       left: 40%;
+       max-height: 70%;
+       bottom: 0%;
    }
 
    .about-lower-left {
@@ -371,6 +373,7 @@
 
     .about-lower-right-text {
         padding-top: 5%;
+        padding-right: 10%;
     }
 
     .about-lower-right-cards {
@@ -386,6 +389,7 @@
     /* ========= MENU ========== */
     .menu-section {
         height: 130%;
+        padding-bottom: 1rem;
     }
 
     .menu-buttons {
@@ -430,21 +434,25 @@
 
     .partners-lower-section {
         position: relative;
-        padding: 7rem 0rem 3rem;
+        padding: 10rem 0rem 3rem;
     }
 
-    .lower-section-right {
+    .partners-lower-section-right {
         height: 50%;
         padding-left: 13% !important;
         margin-bottom: 3rem;
     }
 
+    .partners-lower-section-right-subtext {
+        height: fit-content;
+    }
+
+    .partners-lower-section-text {
+        width: 85%;
+    }
+
 
     /* =========== CAREERS  =========== */
-    .careers-section {    
-        overflow-x: hidden;
-    }
-    
     .careers-upper-section {
         padding: 0;
 
@@ -470,11 +478,14 @@
         position: relative;
         top: 3rem;
         height: 13rem;
-        
     }
 
     .careers-section .slick-slide:hover {
         transform: none;
+    }
+
+    .careers-section .slick-next:before, .careers-section .slick-prev:before {
+        display: none;
     }
 
     .careers-lower-section {
@@ -492,12 +503,6 @@
         margin-bottom: 2rem;
         padding-bottom: 2rem;
     }
-    .careers-q-mt {
-    }
-
-    .careers-q-dp {
-    }
-
 
 
 
@@ -543,20 +548,26 @@
         padding-top: 1rem;
     }
 
+    .down-button {
+        margin-top: 165%;
+    }
+
     .footnote {
         margin-top: 1rem;
     }
 
     /* ============== ABOUT ============== */
     .about-section {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: 300%;
     }
 
     .about-bg-img-coffeebean {
-        width: 80%;
+        /* width: 80%;
         height: 70%;
-        left: 50%;
+        right: 0; */
+        /* left: 50%; */
+        display: none;
     }
 
     .about-timeline-img-mobile {
