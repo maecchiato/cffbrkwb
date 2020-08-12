@@ -126,7 +126,7 @@ Menu.propTypes = {
 };
 
 const captionStyle = {
-  backgroundColor: "rgba(0, 0, 0, .7)",
+  backgroundColor: "rgba(173, 128, 42, 0.75)",
   width: "100%",
   height: "100%",
   overflow: "hidden",

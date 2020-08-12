@@ -661,6 +661,7 @@ html {
 }
 
 .about-timeline-img {
+  padding-top: 3rem;
   position: relative;
   top: 3rem;
 }
@@ -672,9 +673,7 @@ html {
 
 .about-lower-section {
   background: #33333300;
-  /* overflow: hidden; */
-  /* top: 5rem; */
-  padding: 7rem;
+  padding: 10rem 0% 5% 7%;
 }
 
 .about-bg-img-coffeebean {
