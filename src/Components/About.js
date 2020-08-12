@@ -55,10 +55,10 @@ class About extends React.Component {
             Coffeebreak Café International, Inc. commits to do the following mission:
             </div>
             <div className="about-lower-right-cards">
-              <img src={require("../Library/img/about-card-1.webp")} alt=""/>
-              <img src={require("../Library/img/about-card-2.webp")} alt=""/>
-              <img src={require("../Library/img/about-card-3.webp")} alt=""/>
-              <img src={require("../Library/img/about-card-4.webp")} alt=""/>
+              <img src={require("../Library/img/about-card-1.png")} alt=""/>
+              <img src={require("../Library/img/about-card-2.png")} alt=""/>
+              <img src={require("../Library/img/about-card-3.png")} alt=""/>
+              <img src={require("../Library/img/about-card-4.png")} alt=""/>
             </div>
           </div>
         </div>
