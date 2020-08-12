@@ -263,10 +263,14 @@
 
 
     .down-button {
-        /* position: absolute; */
-        right: -50%;
-        margin-top: 170%;
-        background-size: 2.5rem;
+        position: absolute;
+        /* right: -50%;
+        top: 140%; */
+        right: initial;
+        margin-top: initial;
+        left: 50%;
+        top: 80%;
+        background-size: 2rem;
         transform: translateX(-25%) rotate(90deg) ;
     }
 
@@ -549,7 +553,8 @@
     }
 
     .down-button {
-        margin-top: 165%;
+        margin-top: 160%;
+        background-size: 1rem;
     }
 
     .footnote {
