@@ -389,6 +389,7 @@
     /* ========= MENU ========== */
     .menu-section {
         height: 130%;
+        padding-bottom: 1rem;
     }
 
     .menu-buttons {
@@ -440,6 +441,10 @@
         height: 50%;
         padding-left: 13% !important;
         margin-bottom: 3rem;
+    }
+
+    .partners-lower-section-right-subtext {
+        height: fit-content;
     }
 
     .partners-lower-section-text {

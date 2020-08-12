@@ -53,7 +53,7 @@ class Partners extends React.Component {
             <div className="partners-lower-section-right col-12 col-md-6">
               <div className="mb-5">
                 <div className="h4-barlow">Coffeebreak</div>
-                <div className="h4-underland h4-subtext">Franchise Details</div>
+                <div className="partners-lower-section-right-subtext h4-underland h4-subtext">Franchise Details</div>
               </div>
               <div className="partners-lower-section-text body-16-main-barlow pb-5 pb-md-0">
                 Package includes the following: <br/>
